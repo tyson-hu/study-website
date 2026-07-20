@@ -36,16 +36,6 @@ export function preferCompatibleMode(): void {
   }
 }
 
-export function clearCompatibleModePreference(): void {
-  if (typeof window === "undefined") return;
-
-  try {
-    window.sessionStorage.removeItem(SESSION_FLAG);
-  } catch {
-    // Ignore.
-  }
-}
-
 export function withCompatibleSearchParam(pathname: string): string {
   const url = new URL(pathname, "http://local.invalid");
   url.searchParams.set("compatible", "1");

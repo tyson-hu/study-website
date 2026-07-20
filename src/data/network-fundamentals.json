@@ -1,0 +1,6533 @@
+{
+  "title": "Network Fundamentals",
+  "source": "Blooket — Network Fund. (Kurutta6821)",
+  "totalQuestions": 217,
+  "schemaVersion": "1.0",
+  "questions": [
+    {
+      "id": "q001",
+      "number": 1,
+      "type": "single_choice",
+      "question": "What command will change R1(config)# to R1(config-router)#?",
+      "options": [
+        {
+          "id": "A",
+          "text": "R1(config)#router OSPF 10",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "R1(config)#router show 10",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "R1(config)#router show OSPF",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "R1(config)#router int 10",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q002",
+      "number": 2,
+      "type": "single_choice",
+      "question": "Refer to the exhibit. Port security has been configured on the Fa 0/12 interface of switch S1. What action will occur when PC1 is attached to switch S1 with the applied configuration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Frames from PC1 will cause the interface to shut down immediately, and a log entry will be made.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Frames from PC1 will be forwarded since the switchport port-security violation command is\nmissing.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Frames from PC1 will be forwarded to its destination, but a log entry will not be created.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Frames from PC1 will be dropped, and there will be no log of the violation.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771597636/pwezjg3z8lpx729jul49.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q003",
+      "number": 3,
+      "type": "single_choice",
+      "question": "If your physical connection is working as expected, but there is still a problem, what would be the next step?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Call your ISP.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Unplug cables and plug them back in.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Check your IP configuration.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Reboot all the devices on the network.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q004",
+      "number": 4,
+      "type": "single_choice",
+      "question": "The address pool of a DHCP server is configured with 10.19.44.0/24. The network administrator reserves 3 IP addresses for servers. How many IP addresses are left in the pool to be assigned to other hosts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "252",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "241",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "255",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "251",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q005",
+      "number": 5,
+      "type": "single_choice",
+      "question": "What must the network administrator do to remove Fast Ethernet port fa0/1 from VLAN 2 and assign it to VLAN 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enter the switchport trunk native vlan 3 command in interface configuration mode.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Enter the switchport access vlan 3 command in interface configuration mode.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Enter the no vlan 2 and the vlan 3 commands in global configuration mode.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Enter the no shutdown in interface configuration mode to return it to the default\nconfiguration and then configure the port for VLAN 3.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q006",
+      "number": 6,
+      "type": "single_choice",
+      "question": "A router in an OSPF enterprise network has a default static route that has been configured via the interface that connects to the ISP. Which command would the network administrator apply on this router so that other routers in the OSPF network will use this default route?",
+      "options": [
+        {
+          "id": "A",
+          "text": "default-information originate",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "redistribute connected",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "redistribute static subnets",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "redistribute static",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q007",
+      "number": 7,
+      "type": "single_choice",
+      "question": "Which media uses patterns of microwaves to represent bits?",
+      "options": [
+        {
+          "id": "A",
+          "text": "copper",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "wireless",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "fiber-optic",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q008",
+      "number": 8,
+      "type": "single_choice",
+      "question": "Match the following: Submarine Cable Networks",
+      "options": [
+        {
+          "id": "A",
+          "text": "Used for backbone cabling applications and interconnecting infrastructure devices",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Used to provide reliable high-speed, high-capacity solutions capable of surviving in harsh undersea environments at up to transoceanic distances.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Used by service providers to connect countries and cities",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Used to provide always-on broadband services to homes and small businesses",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q009",
+      "number": 9,
+      "type": "single_choice",
+      "question": "Match the following: Long-Haul Networks",
+      "options": [
+        {
+          "id": "A",
+          "text": "Used for backbone cabling applications and interconnecting infrastructure devices",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Used to provide always-on broadband services to homes and small businesses",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Used to provide reliable high-speed, high-capacity solutions capable of surviving in harsh\nundersea environments at up to transoceanic distances.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Used by service providers to connect countries and cities",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q010",
+      "number": 10,
+      "type": "single_choice",
+      "question": "Match the following: Fiber-to-the-Home (FTTH)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Used to provide reliable high-speed, high-capacity solutions capable of surviving in harsh\nundersea environments at up to transoceanic distances.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Used by service providers to connect countries and cities",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Used for backbone cabling applications and interconnecting infrastructure devices",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Used to provide always-on broadband services to homes and small businesses",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q011",
+      "number": 11,
+      "type": "single_choice",
+      "question": "Match the following: Enterprise Networks",
+      "options": [
+        {
+          "id": "A",
+          "text": "Used by service providers to connect countries and cities",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Used to provide always-on broadband services to homes and small businesses",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Used to provide reliable high-speed, high-capacity solutions capable of surviving in harsh\nundersea environments at up to transoceanic distances.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Used for backbone cabling applications and interconnecting infrastructure devices",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q012",
+      "number": 12,
+      "type": "multiple_choice",
+      "question": "What 3 sources help provide troubleshooting expertise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "colleagues",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "internet searches",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "manuals",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "documentation",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q013",
+      "number": 13,
+      "type": "single_choice",
+      "question": "What does OSPF stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Open Shortest Path First",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Open Standard Protocol Framework",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Optical Signal Processing Format",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Organizational Security Policy Framework",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q014",
+      "number": 14,
+      "type": "single_choice",
+      "question": "Which DHCPv4 message client send to accept an IPv4 address that is offered by a DHCP server?",
+      "options": [
+        {
+          "id": "A",
+          "text": "unicast DHCPREQUEST",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "unicast DHCPACK",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "broadcast DHCPACK",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "broadcast DHCPREQUEST",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "number": 15,
+      "type": "single_choice",
+      "question": "The address pool of a DHCP server is configured with 172.23.143.0/26. The network administrator reserves 14 IP addresses for file servers. How many IP addresses are left in the pool to be assigned to other hosts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "50",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "61",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "48",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "58",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q016",
+      "number": 16,
+      "type": "single_choice",
+      "question": "True or False. MMF has a greater dispersion than SMF.",
+      "options": [
+        {
+          "id": "A",
+          "text": "False",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "True",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q017",
+      "number": 17,
+      "type": "single_choice",
+      "question": "What is the administrative distance of OSPF?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "120",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "110",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "90",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "number": 18,
+      "type": "single_choice",
+      "question": "A company uses DHCP servers to dynamically assign IPv4 addresses to employee workstations. The address lease duration is set as 5 days. An employee returns to the office after an absence of one week. When the employee boots the workstation, it sends a message to obtain an IP address. Which Layer 2 and Layer 3 destination addresses will the message contain?",
+      "options": [
+        {
+          "id": "A",
+          "text": "FF-FF-FF-FF-FF-FF and 255.255.255.255",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "both MAC and IPv4 addresses of the DHCP server",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "FF-FF-FF-FF-FF-FF and IPv4 address of the DHCP server",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "MAC address of the DHCP server and 255.255.255.255",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q019",
+      "number": 19,
+      "type": "single_choice",
+      "question": "What happens to a port that is associated with VLAN 10 when the administrator deletes VLAN 10 from the switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The port creates the VLAN again.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The port becomes inactive.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The port goes back to the default VLAN.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The port automatically associates itself with the native VLAN.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q020",
+      "number": 20,
+      "type": "single_choice",
+      "question": "What route would have the lowest administrative distance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "a static route",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "a route received through the OSPF routing protocol",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "a directly connected network",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "a route received through the EIGRP routing protocol",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q021",
+      "number": 21,
+      "type": "single_choice",
+      "question": "Which of these is the name for the capacity of a medium to carry data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "bandwidth",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "speed",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "data rate",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "throughput",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q022",
+      "number": 22,
+      "type": "single_choice",
+      "question": "Which interface is the default SVI on a cisco switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "VLAN10",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "VLAN0",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "VLAN2",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "VLAN1",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q023",
+      "number": 23,
+      "type": "single_choice",
+      "question": "A network administrator is configuring port security on a Cisco switch. The company security policy specifies that when a violation occurs, packets with unknown source addresses should be dropped and no notification should be sent. Which violation mode should be configured on the interfaces?",
+      "options": [
+        {
+          "id": "A",
+          "text": "restrict",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "off",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "protect",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "shutdown",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q024",
+      "number": 24,
+      "type": "single_choice",
+      "question": "What type of route is indicated by the code C in an IPv4 routing table on a Cisco router?",
+      "options": [
+        {
+          "id": "A",
+          "text": "dynamic route that is learned through EIGRP",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "default route",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "static route",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "directly connected route",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q025",
+      "number": 25,
+      "type": "single_choice",
+      "question": "Which command could be used on a router to ensure that an OSPF adjacency is formed with another router?",
+      "options": [
+        {
+          "id": "A",
+          "text": "show ip interface brief",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "show ip route",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "show ip ospf neighbor",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "show ip ospf interface",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q026",
+      "number": 26,
+      "type": "single_choice",
+      "question": "When a Cisco switch receives untagged frames on a 802.1Q trunk port, Which VLAN ID is the traffic switched to by default?",
+      "options": [
+        {
+          "id": "A",
+          "text": "data VLAN ID",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "unused VLAN ID",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "native VLAN ID",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "management VLAN ID",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q027",
+      "number": 27,
+      "type": "single_choice",
+      "question": "True or False. Does Single-mode fiber uses leds for the light source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "False",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "True",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q028",
+      "number": 28,
+      "type": "single_choice",
+      "question": "A host PC is attempting to lease an address through DHCP. What message is sent by the server to let the client know it is able to use the provided IP information?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCPDISCOVER",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "DHCPACK",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "DHCPNACK",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "DHCPREQUEST",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q029",
+      "number": 29,
+      "type": "single_choice",
+      "question": "Which statement regarding the service password-encryption command is true?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To see the passwords encrypted by the service password-encryption command in plain\ntext, issue the no service password-encryption command.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It encrypts only line mode passwords.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "As soon as the service password-encryption command is entered, all currently set passwords formerly displayed in plain text are encrypted.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "It is configured in privileged EXEC mode.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q030",
+      "number": 30,
+      "type": "single_choice",
+      "question": "A Cisco switch currently allows traffic tagged with VLANs 10 and 20 across trunk port Fa0/5. What is the effect of issuing a switchport trunk allowed vlan 30 command on Fa0/5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It allows a native VLAN of 30 to be implemented on Fa0/5.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It allows only VLAN 30 on Fa0/5.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "It allows VLANs 10, 20, and 30 on Fa0/5.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It allows VLANs 1 to 30 on Fa0/5.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q031",
+      "number": 31,
+      "type": "single_choice",
+      "question": "Which value in a routing table represents trustworthiness and is used by the router to determine which route to install into the routing table when there are multiple routes towards the same destination?",
+      "options": [
+        {
+          "id": "A",
+          "text": "metric",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "outgoing interface",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "routing protocol",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "administrative distance",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q032",
+      "number": 32,
+      "type": "single_choice",
+      "question": "True or False. Single mode fiber was designed for long distances.",
+      "options": [
+        {
+          "id": "A",
+          "text": "False",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "True",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q033",
+      "number": 33,
+      "type": "single_choice",
+      "question": "Which command would be best to use on an unused switch port if a company adheres to the best practices as recommended by cisco?",
+      "options": [
+        {
+          "id": "A",
+          "text": "shutdown",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "switchport port-security mac-address sticky",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "ip dhcp snooping",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "switchport port-security violation shutdown",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q034",
+      "number": 34,
+      "type": "single_choice",
+      "question": "Which type of vlan is used to designate which traffic is untagged when crossing a trunk port?",
+      "options": [
+        {
+          "id": "A",
+          "text": "management",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "native",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "data",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "default",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q035",
+      "number": 35,
+      "type": "single_choice",
+      "question": "Which standards organization oversees development of wireless LAN standards?",
+      "options": [
+        {
+          "id": "A",
+          "text": "IANA",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "IOS",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "TIA",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "IEEE",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q036",
+      "number": 36,
+      "type": "single_choice",
+      "question": "What is the current version of OSPF being used for IPv4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Version 5",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Version 2",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Version 3",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Version 6",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q037",
+      "number": 37,
+      "type": "single_choice",
+      "question": "Which of the following is the most common network media?",
+      "options": [
+        {
+          "id": "A",
+          "text": "UTP",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "STP",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Coaxial",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q038",
+      "number": 38,
+      "type": "single_choice",
+      "question": "Which command is used to remove only vlan 20 from a switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "no vlan 20",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "delete vlan.dat",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "delete flash:vlan.dat",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "no switchport access vlan 20",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q039",
+      "number": 39,
+      "type": "single_choice",
+      "question": "Which connector does the STP cable use?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RJ-11",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Optic Fiber Cables",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "RGB",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "RJ-45",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q040",
+      "number": 40,
+      "type": "single_choice",
+      "question": "Which action will bring an error-disabled switch port back to an operational state?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Clear the MAC address table on the switch.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Issue the shutdown and then no shutdown interface commands.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Remove and reconfigure port security on the interface.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Issue the switchport mode access command on the interface.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q041",
+      "number": 41,
+      "type": "single_choice",
+      "question": "When configuring a router as part of a router-on-a-stick inter-vlan routing topology, where should the IP address be assigned?",
+      "options": [
+        {
+          "id": "A",
+          "text": "to the SVI",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "to the VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "to the subinterface",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "to the interface",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q042",
+      "number": 42,
+      "type": "single_choice",
+      "question": "Which of the following fiber-optic cable types use light emitting diodes (LEDs) as a data light source transmitter?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Single-Mode",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Multi-Mode Fiber (MMF)",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q043",
+      "number": 43,
+      "type": "single_choice",
+      "question": "What is one indication that a Windows computer did not receive an IPv4 address from a DHCP server?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Windows displays a DHCP timeout message.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The computer receives an IP address that starts with 169.254.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The computer cannot ping other devices on the same network with IP addresses in the\n169.254.0.0/16 range.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The computer cannot ping 127.0.0.1.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q044",
+      "number": 44,
+      "type": "single_choice",
+      "question": "Where are dynamically learned MAC addresses stored when sticky learning is enabled with the switchport port-security mac-address sticky command?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NVRAM",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "flash",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "RAM",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "ROM",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q045",
+      "number": 45,
+      "type": "single_choice",
+      "question": "What is a characteristic of a default static route?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It uses a single network address to send multiple static routes to one destination address.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It is configured with a higher administrative distance than is the original dynamic routing\nprotocol.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It identifies the gateway IP address to which the router sends all IP packets for which it does not have a learned or static route.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "It backs up a route already discovered by a dynamic routing protocol.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q046",
+      "number": 46,
+      "type": "single_choice",
+      "question": "The following three networks are directly connected to an OSPF router; 192.168.0.0/24, 192.168.1.0/24, and 192.168.2.0/24. Which OSPF network command would advertise only the 192.168.1.0 network to neighbors?",
+      "options": [
+        {
+          "id": "A",
+          "text": "router(config-router)# network 192.168.1.0 0.0.0.0 area 0",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "router(config-router)# network 192.168.0.0 0.0.15.255 area 0",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "router(config-router)# network 192.168.1.0 0.0.0.255 area 0",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "router(config-router)# network 192.168.1.0 255.255.255.255 area 0",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q047",
+      "number": 47,
+      "type": "single_choice",
+      "question": "What command is used to verify the condition of the switch interfaces, including the status of the interfaces and a configured IP address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "show ip route",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "show ip ospf interface",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "show ip ospf neighbor",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "show ip interface brief",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q048",
+      "number": 48,
+      "type": "single_choice",
+      "question": "The address pool of a DHCP server is configured with 192.168.184.0/26. The network administrator reserves 18 IP addresses for access points. How many IP addresses are left in the pool to be assigned to other hosts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "36",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "54",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "57",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "44",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q049",
+      "number": 49,
+      "type": "single_choice",
+      "question": "You are configuring Single-Area OSPF. how many areas will be used?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Four Area",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Six Area",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Two Area",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "One Area",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q050",
+      "number": 50,
+      "type": "single_choice",
+      "question": "What identifies the address of the remote network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "next hop",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "administrative distance",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "metric",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "destination network",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q051",
+      "number": 51,
+      "type": "single_choice",
+      "question": "What identifies how a route was learned?",
+      "options": [
+        {
+          "id": "A",
+          "text": "outgoing interface",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "next-hop",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "route source",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "route address",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q052",
+      "number": 52,
+      "type": "single_choice",
+      "question": "A technician is configuring a router to allow for all forms of management access. As part of each different type of access, the technician is trying to type the command login. Which configuration mode should be entered to do this task?",
+      "options": [
+        {
+          "id": "A",
+          "text": "user executive mode",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "global configuration mode",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "privileged EXEC mode",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "any line configuration mode",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q053",
+      "number": 53,
+      "type": "single_choice",
+      "question": "Which media uses patterns of light to represent bits?",
+      "options": [
+        {
+          "id": "A",
+          "text": "copper",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "wireless",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "fiber-optic",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q054",
+      "number": 54,
+      "type": "single_choice",
+      "question": "A network administrator configures a router by the command ip route 0.0.0.0 0.0.0.0 209.165.200.226. What is the purpose of this command?",
+      "options": [
+        {
+          "id": "A",
+          "text": "to provide a route to forward packets for which there is no route in the routing table",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "to add a dynamic route for the destination network 0.0.0.0 to the routing table",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "to forward all packets to the device with IP address 209.165.200.226",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "to forward packets destined for the network 0.0.0.0 to the device with IP address\n209.165.200.226",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q055",
+      "number": 55,
+      "type": "single_choice",
+      "question": "Why would a Layer 2 switch need an IP address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "to enable the switch to be managed remotely",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "to enable the switch to send broadcast frames to attached PCs",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "to enable the switch to function as a default gateway",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "to enable the switch to receive frames from attached PCs",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q056",
+      "number": 56,
+      "type": "single_choice",
+      "question": "The address pool of a DHCP server is configured with 172.18.93.0/25. The network administrator reserves 10 IP addresses for web servers. How many IP addresses are left in the pool to be assigned to other hosts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "116",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "114",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "117",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "106",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q057",
+      "number": 57,
+      "type": "multiple_choice",
+      "question": "Which two statements are true regarding switch port security? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "If fewer than the maximum number of MAC addresses for a port are configured statically, dynamically learned addresses are added to CAM until the maximum number is reached.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Dynamically learned secure MAC addresses are lost when the switch reboots.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "After entering the sticky parameter, only MAC addresses subsequently learned are\nconverted to secure MAC addresses.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The three configurable violation modes all require user intervention to re-enable ports.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q058",
+      "number": 58,
+      "type": "single_choice",
+      "question": "Allan contacts the ISP complaining of issues connecting to the internet. He is unsure of the problem. The ISP sends a new preconfigured modem to Allan in hopes that it solves the situation. Which structured troubleshooting method is the ISP using?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Substitution",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Divide-and-Conquer",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Follow-the-Path",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Bottom-Up",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q059",
+      "number": 59,
+      "type": "multiple_choice",
+      "question": "What are three characteristics of an SVI? (Choose three.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "It provides a means to remotely manage a switch.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "It is not associated with any physical interface on a switch.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "It is a special interface that allows connectivity by different types of media.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It is associated with VLAN1 by default.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q060",
+      "number": 60,
+      "type": "single_choice",
+      "question": "Match each DHCP message type with its description. DHCP DISCOVER",
+      "options": [
+        {
+          "id": "A",
+          "text": "A client initiating a message to find a DHCP server",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A DHCP server responding to the initial request by a client",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The DHCP server confirming that the address lease has been accepted",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The client accepting the IP address provided by the DHCP server",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q061",
+      "number": 61,
+      "type": "single_choice",
+      "question": "Match each DHCP message type with its description. DHCP REQUEST",
+      "options": [
+        {
+          "id": "A",
+          "text": "The client accepting the IP address provided by the DHCP server",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A client initiating a message to find a DHCP server",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A DHCP server responding to the initial request by a client",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The DHCP server confirming that the address lease has been accepted",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q062",
+      "number": 62,
+      "type": "single_choice",
+      "question": "Match each DHCP message type with its description. DHCP ACK",
+      "options": [
+        {
+          "id": "A",
+          "text": "The client accepting the IP address provided by the DHCP server",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The DHCP server confirming that the address lease has been accepted",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "A client initiating a message to find a DHCP server",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A DHCP server responding to the initial request by a client",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q063",
+      "number": 63,
+      "type": "single_choice",
+      "question": "Match each DHCP message type with its description. DHCP OFFER",
+      "options": [
+        {
+          "id": "A",
+          "text": "The DHCP server confirming that the address lease has been accepted",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A client initiating a message to find a DHCP server",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The client accepting the IP address provided by the DHCP server",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A DHCP server responding to the initial request by a client",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q064",
+      "number": 64,
+      "type": "single_choice",
+      "question": "Which wildcard mask would be used to advertise the 192.168.5.96/27 network as part of an OSPF configuration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "255.255.255.223",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "0.0.0.31",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "255.255.255.224",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "0.0.0.32",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q065",
+      "number": 65,
+      "type": "single_choice",
+      "question": "Which distinct type of VLAN is used by an administrator to access and configure a switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "default VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "data VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "native VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "management VLAN",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q066",
+      "number": 66,
+      "type": "single_choice",
+      "question": "Refer to the exhibit. A router-on-a-stick configuration was implemented for VLANS 15, 30, and 45, according to the show running-config command output. PCs on VLAN 45 that are using the 172.16.45.0 /24 network are having trouble connecting to PCs on VLAN 30 in the 172.16.30.0 /24 network. Which error is most likely causing this problem?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The GigabitEthernet 0/0 interface is missing an IP address.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The command no shutdown is missing on GigabitEthernet 0/0.30",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "There is an incorrect IP address configured on GigabitEthernet 0/0.30.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The wrong VLAN has been configured on GigabitEthernet 0/0.45.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771596925/gbaze5zp68bo3lcsfne9.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q067",
+      "number": 67,
+      "type": "single_choice",
+      "question": "Ture or False. This is the correct standard for the T568B pinout.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q068",
+      "number": 68,
+      "type": "single_choice",
+      "question": "A high school uses VLAN15 for the laboratory network and VLAN30 for the faculty network. What is required to enable communication between these two VLANs while using the router-on-a-stick approach?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A multilayer switch is needed.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A router with at least two LAN interfaces is needed.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Two groups of switches are needed, each with ports that are configured for one VLAN.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A switch with a port that is configured as a trunk is needed when connecting to the router.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q069",
+      "number": 69,
+      "type": "single_choice",
+      "question": "What is NOT considered a physical layer problem?",
+      "options": [
+        {
+          "id": "A",
+          "text": "wireless configuration",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "device power turned off or unplugged",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "loose or incorrect cable",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "faulty wireless access point",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q070",
+      "number": 70,
+      "type": "single_choice",
+      "question": "True or False. Multi mode Fiber uses Lasers as the light source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q071",
+      "number": 71,
+      "type": "single_choice",
+      "question": "Refer to the exhibit. The Fa0/2 interface on switch S1 has been configured with the switchport port-security mac-address 0023.189d.6456 command and a workstation has been connected. What could be the reason that the Fa0/2 interface is shutdown?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Fa0/24 interface of S1 is configured with the same MAC address as the Fa0/2 interface.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The MAC address of PC1 that connects to the Fa0/2 interface is not the configured MAC address.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "S1 has been configured with a switchport port-security aging command.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The connection between S1 and PC1 is via a crossover cable.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771596511/j6zo35nvj9vvrjle4bye.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q072",
+      "number": 72,
+      "type": "single_choice",
+      "question": "What is the effect of using the switchport port- security command?",
+      "options": [
+        {
+          "id": "A",
+          "text": "enables port security globally on the switch",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "automatically shuts an interface down if applied to a trunk port",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "enables port security on an interface",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "detects the first MAC address in a frame that comes into a port and places that MAC\naddress in the MAC address table",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q073",
+      "number": 73,
+      "type": "single_choice",
+      "question": "An IT security specialist enables port security on a switch port of a Cisco switch. What is the default violation mode in use until the switch port is configured to use a different violation mode?",
+      "options": [
+        {
+          "id": "A",
+          "text": "protect",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "disabled",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "restrict",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "shutdown",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q074",
+      "number": 74,
+      "type": "single_choice",
+      "question": "Match the following: Goodput",
+      "options": [
+        {
+          "id": "A",
+          "text": "Amount of time, including delays, for data to travel from one given point to another",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The measure of the transfer of bits across the media over a given period of time",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The measure of usable data transferred over a given period of time",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q075",
+      "number": 75,
+      "type": "single_choice",
+      "question": "Match the following: Throughput",
+      "options": [
+        {
+          "id": "A",
+          "text": "The measure of the transfer of bits across the media over a given period of time",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Amount of time, including delays, for data to travel from one given point to another",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The measure of usable data transferred over a given period of time",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q076",
+      "number": 76,
+      "type": "single_choice",
+      "question": "Match the following: Latency",
+      "options": [
+        {
+          "id": "A",
+          "text": "The measure of the transfer of bits across the media over a given period of time",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Amount of time, including delays, for data to travel from one given point to another",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The measure of usable data transferred over a given period of time",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q077",
+      "number": 77,
+      "type": "multiple_choice",
+      "question": "A network administrator is determining the best placement of VLAN trunk links. Which two types of point-to-point connections utilize VLAN trunking? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "between two switches that utilize multiple VLANs",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "between two switches that share a common VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "between a switch and a client PC",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "between a switch and a server that has an 802.1Q NIC",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "q078",
+      "number": 78,
+      "type": "single_choice",
+      "question": "What command is used to advertise the default route via OSPFv2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Default-vlan originate",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "show ip config",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Default-information originate",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q079",
+      "number": 79,
+      "type": "single_choice",
+      "question": "When would it be more beneficial to use a dynamic routing protocol instead of static routing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "in an organization where routers suffer from performance issues",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "in an organization with a smaller network that is not expected to grow in size",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "on a network where there is a lot of topology changes",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "on a stub network that has a single exit point",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q080",
+      "number": 80,
+      "type": "single_choice",
+      "question": "When data is encoded as pulses of light, which media is being used to transmit the data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "wireless",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "copper cable",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Fiber-optic cable",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q081",
+      "number": 81,
+      "type": "single_choice",
+      "question": "A technician configures a switch with these commands: SwitchA(config)# interface vlan 1 SwitchA(config-if)# ip address 192.168.1.1 255.255.255.0 SwitchA(config-if)# no shutdown What is the technician configuring?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SVI",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Telnet access",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "password encryption",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "physical switchport access",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q082",
+      "number": 82,
+      "type": "single_choice",
+      "question": "True or False. Single Mode Fiber has a larger core than Multi mode Fiber.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q083",
+      "number": 83,
+      "type": "single_choice",
+      "question": "What network address and subnet mask combination would be used to create a default static route that matches any IPv4 destination?",
+      "options": [
+        {
+          "id": "A",
+          "text": "255.255.255.255 0.0.0.0",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "0.0.0.0 0.0.0.0",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "255.255.255.255 255.255.255.255",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "0.0.0.0 255.255.255.255",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q084",
+      "number": 84,
+      "type": "multiple_choice",
+      "question": "What are two common types of static routes in routing tables? (Choose two)",
+      "options": [
+        {
+          "id": "A",
+          "text": "a default static route",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "a static route to a specific network",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "a static route shared between two neighboring routers",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "a static route converted from a route that is learned through a dynamic routing protocol",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q085",
+      "number": 85,
+      "type": "single_choice",
+      "question": "What is a result when the DHCP servers are not operational in a network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Workstations are assigned with IP addresses in the 169.254.0.0/16 network.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Workstations are assigned with the IP address 127.0.0.1.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Workstations are assigned with IP addresses in the 10.0.0.0/8 network.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Workstations are assigned with the IP address 0.0.0.0.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q086",
+      "number": 86,
+      "type": "single_choice",
+      "question": "Port Fa0/11 on a switch is assigned to VLAN 30. If the command no switchport access vlan 30 is entered on the Fa0/11 interface, what will happen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An error message would be displayed.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "VLAN 30 will be deleted.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Port Fa0/11 will be shutdown.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Port Fa0/11 will be returned to VLAN 1.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q087",
+      "number": 87,
+      "type": "single_choice",
+      "question": "What is the purpose of the startup configuration file on a Cisco router?",
+      "options": [
+        {
+          "id": "A",
+          "text": "to facilitate the basic operation of the hardware components of a device",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "to contain the configuration commands that the router IOS is currently using",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "to contain the commands that are used to initially configure a router on startup",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "to provide a limited backup version of the IOS, in case the router cannot load the full\nfeatured IOS",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q088",
+      "number": 88,
+      "type": "single_choice",
+      "question": "Which message does an IPv4 host use to reply when it receives a DHCPOFFER message from a DHCP server?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCPACK",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "DHCPDISCOVER",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "DHCPREQUEST",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "DHCPOFFER",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q089",
+      "number": 89,
+      "type": "single_choice",
+      "question": "What is a disadvantage of using dynamic routing protocols?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They send messages about network status insecurely across networks by default.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "They require administrator intervention when the pathway of traffic changes.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "They are only suitable for simple topologies.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Their configuration complexity increases as the size of the network grows.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q090",
+      "number": 90,
+      "type": "single_choice",
+      "question": "An administrator who is troubleshooting connectivity issues on a switch notices that a switch port configured for port security is in the err-disabled state. After verifying the cause of the violation, how should the administrator re-enable the port without disrupting network operation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Issue the no switchport port-security violation shutdown command on the interface.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Issue the no switchport port-security command, then re-enable port security.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Reboot the switch.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Issue the shutdown command followed by the no shutdown command on the interface.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q091",
+      "number": 91,
+      "type": "single_choice",
+      "question": "Which of the following terminates with BNC, N type and F type connectors?",
+      "options": [
+        {
+          "id": "A",
+          "text": "coaxial",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "STP",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "UTP",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q092",
+      "number": 92,
+      "type": "single_choice",
+      "question": "What is the default administrative distance of OSPF?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "90",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "110",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "120",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q093",
+      "number": 93,
+      "type": "single_choice",
+      "question": "What is the Max Length of the Shielded twisted pair cable?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150m",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "50m",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "200m",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "100m",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q094",
+      "number": 94,
+      "type": "single_choice",
+      "question": "Which characteristic describes crosstalk?",
+      "options": [
+        {
+          "id": "A",
+          "text": "the distortion of the transmitted messages from signals carried in adjacent wires",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "the loss of wireless signal over excessive distance from the access point",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "the distortion of the network signal from fluorescent lighting",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "the weakening of the network signal over long cable lengths",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q095",
+      "number": 95,
+      "type": "multiple_choice",
+      "question": "Which two pieces of information are in the RAM of a Cisco router during normal operation? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "IP routing table",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Cisco IOS",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "startup configuration file",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "backup IOS file",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q096",
+      "number": 96,
+      "type": "single_choice",
+      "question": "Which of the following conjurations will shutdown multiple switchports at one time?",
+      "options": [
+        {
+          "id": "A",
+          "text": "S1(config)#interface range f0/1-10, S1(config-if-range)#shutdown",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "S1(config)#disable interface f0/1-10",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "S1(config)#interface f0/1, S1(config-if)#shutdown",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "S1(config)#shutdown interface range f0/1-10",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q097",
+      "number": 97,
+      "type": "single_choice",
+      "question": "A network administrator has just changed the router ID on a router that is working in an OSPFv2\nenvironment. What should the administrator do to reset the adjacencies and use the new router\nID?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Issue the clear ip ospf process privileged mode command.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Change the interface priority.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Change the OSPFv2 process ID.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Configure the network statements.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q098",
+      "number": 98,
+      "type": "single_choice",
+      "question": "Which media uses electrical pulses to represent bits?",
+      "options": [
+        {
+          "id": "A",
+          "text": "copper",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "fiber-optic",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "wireless",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q099",
+      "number": 99,
+      "type": "single_choice",
+      "question": "Refer to the Exhibit.\nWhich Fiber-Optic Connector is this?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Duplex Multimode LC Connector",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Singlemode LC Connector",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Straight Tip Connector",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Subscriber Connector",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771598604/eqcuyzo3ie9bus59nyfz.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q100",
+      "number": 100,
+      "type": "single_choice",
+      "question": "Refer to the exhibit.\n\nWhat can be determined about port security from the information that is shown?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The port violation mode is the default for any port that has port security enabled.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The port has the maximum number of MAC addresses that is supported by a Layer 2 switch\nport which is configured for port security.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The port has been shut down.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The port has two attached devices.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771598822/cilxi6frcnexr7j35ukd.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q101",
+      "number": 101,
+      "type": "single_choice",
+      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are\nused.)\nall IP address bits must match exactly",
+      "options": [
+        {
+          "id": "A",
+          "text": "host 192.168.15.2",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "192.168.3.64 0.0.0.7",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "192.168.15.65 255.255.255.240",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "192.168.5.0 0.0.3.255",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q102",
+      "number": 102,
+      "type": "single_choice",
+      "question": "Which entry in the roung table identifies the trustworthiness of the route source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Next-hop IP address",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Administrative Distance",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Metric",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Route Age",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q103",
+      "number": 103,
+      "type": "multiple_choice",
+      "question": "Which two of the following sources of help typically provide troubleshooting expertise? (Choose\ntwo.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "FAQs",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "colleagues",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "internet searches",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "documentation",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q104",
+      "number": 104,
+      "type": "single_choice",
+      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are\nused.)\nthe first valid host address in a subnet",
+      "options": [
+        {
+          "id": "A",
+          "text": "192.168.15.65 255.255.255.240",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "192.168.5.0 0.0.3.255",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "192.168.3.64 0.0.0.7",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "192.168.15.144 0.0.0.15",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q105",
+      "number": 105,
+      "type": "single_choice",
+      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are used.)\n\nsubnetwork address of a subnet with 14 valid host addresses",
+      "options": [
+        {
+          "id": "A",
+          "text": "192.168.15.144 0.0.0.15",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "192.168.3.64 0.0.0.7",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "192.168.5.0 0.0.3.255",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "192.168.15.65 255.255.255.240",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q106",
+      "number": 106,
+      "type": "single_choice",
+      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are used.)\n\naddress with a subnet 255.255.255.248",
+      "options": [
+        {
+          "id": "A",
+          "text": "192.168.3.64 0.0.0.7",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "host 192.168.15.2",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "192.168.5.0 0.0.3.255",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "192.168.15.144 0.0.0.15",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q107",
+      "number": 107,
+      "type": "single_choice",
+      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are used.)\n\nhosts in a subnet with SM 255.255.252.0",
+      "options": [
+        {
+          "id": "A",
+          "text": "192.168.5.0 0.0.3.255",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "host 192.168.15.2",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "192.168.15.144 0.0.0.15",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "192.168.3.64 0.0.0.7",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q108",
+      "number": 108,
+      "type": "single_choice",
+      "question": "Refer to the exhibit.\n\nA network administrator is configuring access control to switch SW1. If the administrator uses a console connection to connect to the switch, which password is needed to access user EXEC mode?",
+      "options": [
+        {
+          "id": "A",
+          "text": "letmein",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "lineconin",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "secretin",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "linevtyin",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771599542/nfg5yyahxnk6rwfrzcgv.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q109",
+      "number": 109,
+      "type": "multiple_choice",
+      "question": "Which four steps are needed to configure a voice VLAN on a switch port? (Choose four).",
+      "options": [
+        {
+          "id": "A",
+          "text": "Assign the voice VLAN to the switch port. (1)",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Ensure that voice traffic is trusted and tagged with a CoS priority value. (2)",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Add a voice VLAN. (3)",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Configure the switch port in access mode. (4)",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q110",
+      "number": 110,
+      "type": "single_choice",
+      "question": "Refer to the exhibit.\n\nWhat does the number 10 represent in the exhibit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Process-id",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Metric Value",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Autonomous System Number",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Area ID",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771599747/h1qyvrmut3ot823rxbi7.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q111",
+      "number": 111,
+      "type": "multiple_choice",
+      "question": "Which two characteristics describe the native VLAN? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "The native VLAN traffic will be untagged across the trunk link.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The native VLAN provides a common identifier to both ends of a trunk.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "This VLAN is necessary for remote management of a switch.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Designed to carry traffic that is generated by users, this type of VLAN is also known as the\ndefault VLAN.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q112",
+      "number": 112,
+      "type": "single_choice",
+      "question": "What is the meaning of the number 10 in the encapsulation dot1Q 10 native router subinterface\ncommand?",
+      "options": [
+        {
+          "id": "A",
+          "text": "the VLAN ID",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "the interface number",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "the subnet number",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "the subinterface number",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q113",
+      "number": 113,
+      "type": "single_choice",
+      "question": "Which of these criteria is the preferred method for a router to derive the router ID?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The IP address of the first Fast Ethernet interface",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The lowest IP address of any active interface",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The router ID is explicitly configured using the OSPF router-id command",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The highest IP address on a loopback interface",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q114",
+      "number": 114,
+      "type": "single_choice",
+      "question": "True or false?\nAfter a problem is resolved, there is no further action you need to take.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q115",
+      "number": 115,
+      "type": "single_choice",
+      "question": "A network administrator configures the port security feature on a switch. The security policy\nspecifies that each access port should allow up to two MAC addresses. When the maximum\nnumber of MAC addresses is reached, a frame with the unknown source MAC address is dropped\nand a notification is sent to the syslog server. Which security violation mode should be configured\nfor each access port?",
+      "options": [
+        {
+          "id": "A",
+          "text": "restrict",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "shutdown",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "protect",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "warning",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q116",
+      "number": 116,
+      "type": "single_choice",
+      "question": "Which of the following is a correct router ID in OSPF?",
+      "options": [
+        {
+          "id": "A",
+          "text": "172.16.5.5",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "172.16.5",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "256.0.0.1",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "172.16.500.1",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q117",
+      "number": 117,
+      "type": "single_choice",
+      "question": "Refer to the exhibit.\n\nA network administrator needs to configure router-on-a-stick for the networks that are shown. How many sub interfaces will have to be created on the router if each VLAN that is shown is to be routed and each VLAN has its own sub interface?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "3",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "1",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "2",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771600278/naevl6gz1n1zkzggajl9.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q118",
+      "number": 118,
+      "type": "single_choice",
+      "question": "What is required to perform router-on-a-stick inter-VLAN routing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "a multilayer switch",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "a router with multiple physical interfaces",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "a Layer 2 switch that is configured with multiple trunk ports",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "a router that is configured with multiple subinterfaces",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q119",
+      "number": 119,
+      "type": "single_choice",
+      "question": "With respect to physical media, STP cables stands for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Standard Twisted Pair",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Synchronous Transmission Protocol",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Straight Terminated Patch",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Shielded Twisted Pair Cable",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q120",
+      "number": 120,
+      "type": "single_choice",
+      "question": "Which of the following counters EMI and RFI by using shielding techniques and special\nconnectors?",
+      "options": [
+        {
+          "id": "A",
+          "text": "coaxial",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "STP",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "UTP",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q121",
+      "number": 121,
+      "type": "single_choice",
+      "question": "If a VLAN 10 is created with active ports then it needs to be deleted what must happen before the\ndeletion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The switch must be restarted in privileged EXEC mode.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The VLAN database must be exported to a backup file.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The administrator needs to migrate the active ports to a new VLAN",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "VLAN 10 must be renamed to VLAN 1 before deletion.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q122",
+      "number": 122,
+      "type": "single_choice",
+      "question": "A network administrator issues the show vlan brief command while troubleshooting a user\nsupport ticket. What output will be displayed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "the VLAN assignment and trunking encapsulation",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "the VLAN assignment and membership for device MAC addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "the VLAN assignment and native VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "the VLAN assignment and membership for all switch ports",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q123",
+      "number": 123,
+      "type": "single_choice",
+      "question": "Match the routing table entry to the corresponding function. (Not all options are used.)\nadministrative distance",
+      "options": [
+        {
+          "id": "A",
+          "text": "identifies how a route was learned",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "identifies the trustworthiness of a route source",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "identifies the value assigned to reach a remote network",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "identifies the address of the remote network",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q124",
+      "number": 124,
+      "type": "single_choice",
+      "question": "What is the purpose of Cisco Discovery Protocol (CDP)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CDP is an open source protocol that runs on the data link layer by default. CDP automatically identifies all\ndirectly connected devices.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "CDP is a Cisco proprietary protocol that runs on the data link layer by default. CDP\nautomatically discovers directly connected Cisco devices.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "CDP is a Cisco proprietary protocol that runs on the Network layer by default. CDP provides logical to\nphysical address translation",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "CDP is an open source protocol that runs on the network layer by default. CDP issues layer 3 addresses\ndynamically.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q125",
+      "number": 125,
+      "type": "multiple_choice",
+      "question": "Which is true of VLAN 1? (Choose all that apply.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "All switch ports are assigned to VLAN 1 by default.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The native VLAN is VLAN 1 by default.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "VLAN 1 cannot be renamed or deleted.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The management VLAN is VLAN 1 by default",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q126",
+      "number": 126,
+      "type": "single_choice",
+      "question": "Match the routing table entry to the corresponding function. (Not all options are used.)\ndestination network",
+      "options": [
+        {
+          "id": "A",
+          "text": "identifies the address of the remote network",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "identifies the trustworthiness of a route source",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "identifies the value assigned to reach a remote network",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "identifies how a route was learned",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q127",
+      "number": 127,
+      "type": "single_choice",
+      "question": "Refer to the exhibit.\nPC1 is configured to obtain a dynamic IP address from the DHCP server. PC1 has been shut down\nfor two weeks. When PC1 boots and tries to request an available IP address, which destination IP\naddress will PC1 place in the IP header?",
+      "options": [
+        {
+          "id": "A",
+          "text": "255.255.255.255",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "192.168.1.255",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "192.168.1.1",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "192.168.1.8",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771601338/yf2j6llcd4tfptykliun.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q128",
+      "number": 128,
+      "type": "multiple_choice",
+      "question": "What are two advantages of static routing over dynamic routing? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Static routing is more secure because it does not advertise over the network.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Static routing uses fewer router resources than dynamic routing.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Static routing requires very little knowledge of the network for correct implementation.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Static routing is relatively easy to configure for large networks.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q129",
+      "number": 129,
+      "type": "single_choice",
+      "question": "Refer to the Exhibit.\n\nWhich Fiber-Optic Connector is this?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Straight-Tip (ST) Connectors",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Subscriber Connector (SC) Connectors",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Lucent Connector (LC) Simplex Connectors",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Duplex Multimode LC Connectors",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/v1771601680/oj6mab87pz1ri410gyps.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q130",
+      "number": 130,
+      "type": "single_choice",
+      "question": "What command can you use to ask the DHCP server to refresh your IP addressing configuration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "netstat",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "tracert",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "nslookup",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "ipconfig /renew",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q131",
+      "number": 131,
+      "type": "single_choice",
+      "question": "Match the routing table entry to the corresponding function. (Not all options are used.)\n\nroute source",
+      "options": [
+        {
+          "id": "A",
+          "text": "identifies the value assigned to reach a remote network",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "identifies the address of the remote network",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "identifies how a route was learned",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "identifies the trustworthiness of a route source",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q132",
+      "number": 132,
+      "type": "single_choice",
+      "question": "What is a disadvantage of using router-on-a-stick inter-VLAN routing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "does not scale well beyond 50 VLANs",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "requires the use of more physical interfaces than legacy inter-VLAN routing",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "does not support VLAN-tagged packets",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "requires the use of multiple router interfaces configured to operate as access links",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q133",
+      "number": 133,
+      "type": "single_choice",
+      "question": "As part of the new security policy, all switches on the network are configured to automatically\nlearn MAC addresses for each port. All running configurations are saved at the start and close of\nevery business day. A severe thunderstorm causes an extended power outage several hours after\nthe close of business. When the switches are brought back online, the dynamically learned MAC\naddresses are retained. Which port security configuration enabled this?",
+      "options": [
+        {
+          "id": "A",
+          "text": "dynamic secure MAC addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "static secure MAC addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "auto secure MAC addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "sticky secure MAC addresses",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q134",
+      "number": 134,
+      "type": "single_choice",
+      "question": "True or False.\nFiber Optic Cable can be effected by EMI and RFI.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q135",
+      "number": 135,
+      "type": "multiple_choice",
+      "question": "What are the three inter-VLAN routing options (Check all that apply)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Legacy Inter-VLAN routing",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Router-on-a-stick",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Layer 3 switch using virtual interfaces (SVI)",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "VLAN Bridging",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q136",
+      "number": 136,
+      "type": "single_choice",
+      "question": "What is the significance of the passive-inerface router configuration mode command?",
+      "options": [
+        {
+          "id": "A",
+          "text": "it stops transmitting OSPF messages through non OSPF enabled interfaces, but still advertises to other routers",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "It turns off the interface completely, making it inactive in the routing table.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It disables all routing protocols on the router.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It prevents the router from sending or receiving any packets on that interface.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q137",
+      "number": 137,
+      "type": "single_choice",
+      "question": "Match the routing table entry to the corresponding function. (Not all options are used.)\nmetric",
+      "options": [
+        {
+          "id": "A",
+          "text": "identifies how a route was learned",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "identifies the address of the remote network",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "identifies the trustworthiness of a route source",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "identifies the value assigned to reach a remote network",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q138",
+      "number": 138,
+      "type": "single_choice",
+      "question": "What is the correct wildcard mask for the Ip address of 192.168.1.10 255.255.255.252",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.0.0.252",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "0.0.0.255",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "0.0.0.15",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "0.0.0.3",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q139",
+      "number": 139,
+      "type": "single_choice",
+      "question": "(True or False) Goodput is the capacity of a medium to carry",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q140",
+      "number": 140,
+      "type": "single_choice",
+      "question": "A trunk interface in a switch:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Allows multiple VLANs to pass through",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Allows only one VLAN at a time",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Is used for connecting to endpoints like PCs",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Is always in the default VLAN",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q141",
+      "number": 141,
+      "type": "single_choice",
+      "question": "A type of routing where the admin sets up the route manually and it doesn't change unless the admin changes it is called:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Static Routing",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Dynamic Routing",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "OSPF",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "EIGRP",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q142",
+      "number": 142,
+      "type": "single_choice",
+      "question": "By default, a trunk port supports:",
+      "options": [
+        {
+          "id": "A",
+          "text": "All VLANs",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "No VLANs",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Only VLAN 1",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Only configured VLANs",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q143",
+      "number": 143,
+      "type": "single_choice",
+      "question": "(True or False) Cisco recommends you start with area 1 when implementing OSPF?",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q144",
+      "number": 144,
+      "type": "single_choice",
+      "question": "When dealing with Port Security, if a port configuration is set to \"Dynamic\", what happens to its settings upon reboot?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mac-address is dropped",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Mac-address is saved",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Asks for confirmation",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Reverts to default",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q145",
+      "number": 145,
+      "type": "single_choice",
+      "question": "What is the maximum cable distance for Multimode Fiber (MMF)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "550 Meters",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "100 Meters",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "300 Meters",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Totally depends on the color of the cable",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q146",
+      "number": 146,
+      "type": "single_choice",
+      "question": "(True or False) OSPF \"passive-interface\" command will block OSPF advertisements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q147",
+      "number": 147,
+      "type": "single_choice",
+      "question": "The command \"Router OSPF 1\" in OSPF configuration represents:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The OSPF area",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The OSPF router ID",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The OSPF process ID",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The OSPF version",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q148",
+      "number": 148,
+      "type": "single_choice",
+      "question": "The command to configure sub-interfaces for VLANs on a router is:",
+      "options": [
+        {
+          "id": "A",
+          "text": "encapsulation vlan_id",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "vlan_id",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "vlan sub-int id",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "encapsulation dot1q vlan_id",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q149",
+      "number": 149,
+      "type": "single_choice",
+      "question": "The IEEE 802.15 Wireless media standard is used for:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wireless pay options",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Wireless home LAN connections",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Wireless telephone services",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Wireless Personal Area Networks",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q150",
+      "number": 150,
+      "type": "single_choice",
+      "question": "The IP address 127.0.0.1 is used for:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Loopback testing",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Public communication",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Network broadcast",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Private network communication",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q151",
+      "number": 151,
+      "type": "single_choice",
+      "question": "The primary function of a switch's MAC address table is to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Assign IP addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Forward frames based on MAC addresses",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Resolve domain names",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Block unauthorized traffic",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q152",
+      "number": 152,
+      "type": "single_choice",
+      "question": "To facilitate communication between two different VLANs, you require a:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Layer 2 switch",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Layer 1 switch",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Router",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Firewall",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q153",
+      "number": 153,
+      "type": "single_choice",
+      "question": "To use SSH/Telnet on a switch, which component is set up on the switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MAC address",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Router default gateway",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Default VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Port number",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q154",
+      "number": 154,
+      "type": "single_choice",
+      "question": "What does the switch’s MAC address table store?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MAC addresses of connected devices and their associated ports",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "IP addresses of connected devices",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "MAC addresses of all devices in the network",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The routing table for network traffic",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q155",
+      "number": 155,
+      "type": "single_choice",
+      "question": "What is the definition of a “Passphrase” on Cisco Routers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The method of avoiding passwords based on repetition, common dictionary words, or information easily known about you.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The method of using a combination of many words with spaces in between to create a phrase",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The method of making passwords complex by including a mix of uppercase and lowercase letters, numbers, and spaces if allowed",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The method of deliberately misspelling words or replacing letters with similar looking numbers or characters.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q156",
+      "number": 156,
+      "type": "single_choice",
+      "question": "What is the main reason for subnetting a network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increase broadcast traffic",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Organize and manage IP addresses efficiently",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Reduce network congestion",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Implement better security",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q157",
+      "number": 157,
+      "type": "single_choice",
+      "question": "Where is the startup configuration saved on the router?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NVRAM",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "ROM",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Flash Memory",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "RAM",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q158",
+      "number": 158,
+      "type": "single_choice",
+      "question": "Which of these is a benefit of implementing VLANs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increased broadcast traffic",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Complicated management",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Improved security",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Higher costs",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q159",
+      "number": 159,
+      "type": "single_choice",
+      "question": "What tool is used to terminate an RJ-45?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Optical Domain Reflectometer",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Cable Tester",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Crimper",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Wire Cutter",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q160",
+      "number": 160,
+      "type": "single_choice",
+      "question": "When a PC wants to renew its IP lease, what message does it first send?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCP Discover",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "DHCP Offer",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "DHCP Request",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "DHCP Ack",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q161",
+      "number": 161,
+      "type": "single_choice",
+      "question": "In which memory location are the VLAN configurations of the normal range VLANs stored on a Catalyst switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NVRAM",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "RAM",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Flash",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "ROM",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q162",
+      "number": 162,
+      "type": "single_choice",
+      "question": "Cisco routers derive the router ID based on one of three criteria, which is NOT one \nof the criteria?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The router ID is explicitly configured using the OSPF router-id rid router \nconfiguration mode command. This is the recommended method to assign a router ID.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The router chooses the highest active IPv4 address of any of its physical interfaces.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The router chooses the highest IPv4 address of any configured loopback interfaces.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The router chooses the lowest IPv4 address of any of configured loopback \ninterfaces.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q163",
+      "number": 163,
+      "type": "single_choice",
+      "question": "What device is used to test a MMF connection?",
+      "options": [
+        {
+          "id": "A",
+          "text": "OTDR",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A cable tester",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A multimeter",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q164",
+      "number": 164,
+      "type": "single_choice",
+      "question": "what are the source and destination ports for DHCP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "source port 67, destination port 68",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "source port 68, destination port 67",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "source port 20, destination port 21",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "destination port 21, source port 20",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q165",
+      "number": 165,
+      "type": "single_choice",
+      "question": "A network technician is verifying his propagated default route by using the show ip route\ncommand. He received the below results showing the route source on R1 is O*E2. What information can\nthe technician gather from that route source output?\nR1# show ip route | begin Gateway\nGateway of last resort is 10.1.1.6 to network 0.0.0.0\nO*E2 0.0.0.0/0 [110/1] via 10.1.1.6, 00:11:08, GigabitEthernet0/0/0\n10.0.0.0/8 is variably subnetted, 9 subnets, 3 masks",
+      "options": [
+        {
+          "id": "A",
+          "text": "The default route is a good candidate for the default route",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The default route is a loopback address",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The router is using a static default route",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "This is an internal route",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q166",
+      "number": 166,
+      "type": "single_choice",
+      "question": "De-encapsulation starts at which layer of the OSI Model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "6",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "1",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q167",
+      "number": 167,
+      "type": "single_choice",
+      "question": "Which IOS CLI Mode allows access to all commands and features?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Global Configuration Mode",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Privileged EXEC Mode",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "User Exec Mode",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Interface Configuration Mode",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q168",
+      "number": 168,
+      "type": "single_choice",
+      "question": "Which of these devices is used to test errors in MMF media?",
+      "options": [
+        {
+          "id": "A",
+          "text": "TFOCA",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "OTDR",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Multimeter",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Cable Tester",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q169",
+      "number": 169,
+      "type": "single_choice",
+      "question": "The vlan.dat file serves what purpose on a switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "it is the only way to delete VLAN 1",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Operating system is stored in it",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "stores the VLAN database",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "stores information in the RAM",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q170",
+      "number": 170,
+      "type": "single_choice",
+      "question": "What is the proper command for the DHCP relay?",
+      "options": [
+        {
+          "id": "A",
+          "text": "R1(config-if)# ip helper-addon 192.168.11.6",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "R1(config-if)# ip helper-address 192.168.11.6",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "R1(config)# help me DHCP",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "R1(config-if)# help-address 192.168.11.6",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q171",
+      "number": 171,
+      "type": "single_choice",
+      "question": "A network manager is configuring port security on a switch, what will happen when these\ncommands are entered?\nswitch(config-if)#switchport mode access\nswitch(config-if)#switchport access vlan 37\nswitch(config-if)# switchport port-security",
+      "options": [
+        {
+          "id": "A",
+          "text": "A dynamically learned MAC address is saved but will not show up in the running-configuration file",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A dynamically learned MAC address is saved and shown in the startup-configuration file",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Statically configured MAC address is saved and shows up in the running-configuration file",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A dynamically learned MAC address is saved and shown in the running-configuration file",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q172",
+      "number": 172,
+      "type": "single_choice",
+      "question": "Match the correct description with the type of routing:\nAdministrator Intervention is required:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Static Routing",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Dynamic Routing",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q173",
+      "number": 173,
+      "type": "single_choice",
+      "question": "Match the correct description with the type of routing:\nLess Secure:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Static Routing",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Dynamic Routing",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q174",
+      "number": 174,
+      "type": "single_choice",
+      "question": "What is the minimum recommended modulus length for the generated RSA keys?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2048",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "360",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "512",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "1024",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q175",
+      "number": 175,
+      "type": "multiple_choice",
+      "question": "Which two show commands will give you the operational status and protocol status of an\ninterface?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Show interface interface ID",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Show ip interface brief",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Show interfaces",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Show ip route",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q176",
+      "number": 176,
+      "type": "single_choice",
+      "question": "True or False a router cannot be configured as a DHCP server?",
+      "options": [
+        {
+          "id": "A",
+          "text": "false",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "true",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q177",
+      "number": 177,
+      "type": "single_choice",
+      "question": "Which protocol data unit involves data delivery being guaranteed form source to destination?",
+      "options": [
+        {
+          "id": "A",
+          "text": "segments",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Bits",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Packets",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "data",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q178",
+      "number": 178,
+      "type": "single_choice",
+      "question": "Which CLI command would be given to encrypt all plaintext passwords?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enable Secret password",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "All of the above",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Service password-encryption",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Password [value]",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q179",
+      "number": 179,
+      "type": "single_choice",
+      "question": "Match the correct description with the type of routing:\nRoute to destination is always the same:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Static Routing",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Dynamic Routing",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q180",
+      "number": 180,
+      "type": "single_choice",
+      "question": "When port security is activated on a switch port, what is the maximum number of MAC addresses\nit can learn by default?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "1",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "2",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "0",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q181",
+      "number": 181,
+      "type": "single_choice",
+      "question": "What keyword can be used to permit or deny any IP address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "any",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "all",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "some",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "host",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q182",
+      "number": 182,
+      "type": "multiple_choice",
+      "question": "What are the two commands that are used to learn a MAC address dynamically?",
+      "options": [
+        {
+          "id": "A",
+          "text": "switchport port-security dynamic",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "switchport port-security mac-address sticky",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "switchport port-security sticky",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Switchport port-security",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q183",
+      "number": 183,
+      "type": "single_choice",
+      "question": "Which of these statement is true about Administrative Distance:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The smaller the number the more trustworthy the route source",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "OSPF has an Administrative Distance of 1",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The larger the number the more trustworthy the route source",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Static Routes are the most trustworthy route source",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q184",
+      "number": 184,
+      "type": "single_choice",
+      "question": "Match the correct description with the type of routing:\nUses CPU, Memory, link bandwidth:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Static Routing",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Dynamic Routing",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q185",
+      "number": 185,
+      "type": "single_choice",
+      "question": "What IOS CLI Prompt is identified by the \" > \" Symbol?",
+      "options": [
+        {
+          "id": "A",
+          "text": "User Exec Mode",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Line Configuration Mode",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Global Configuration Mode",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Privileged Exec Mode",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q186",
+      "number": 186,
+      "type": "single_choice",
+      "question": "A user unplugged his work laptop from switch port Fast Ethernet 0/5. The user then plugged his personal laptop into Fast Ethernet 0/5. The switch LEDs no longer light up for that switch port and the laptop cannot establish a connection with the internet. Why can't the laptop establish an internet connection?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The laptop has the wrong default gateway",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The switch is turned off",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The laptop MAC-address is not known by the switches port security, so the port was disabled",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The laptop does not know the IP address of the DHCP server and can not pull an IP address",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q187",
+      "number": 187,
+      "type": "single_choice",
+      "question": "What is the correct wildcard mask for the Ip address of 192.168.1.10 255.255.255.252",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.0.0.255",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "0.0.0.3",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "0.0.0.128",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "0.0.0.8",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q188",
+      "number": 188,
+      "type": "single_choice",
+      "question": "What kind of address is represented in dotted decimal notation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hexadecimal Address",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "MAC Address",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "IPv4 Address",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "IPv6 Address",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q189",
+      "number": 189,
+      "type": "single_choice",
+      "question": "A data VLAN is a VLAN that is configured to carry what type of data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "VLAN data",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Metadata",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "User-Generated data",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Management",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q190",
+      "number": 190,
+      "type": "single_choice",
+      "question": "true or False The Dynamic Host Configuration Protocol (DHCP) for IPv4 automates the\nassignment of IPv4 addresses, subnet masks, gateways, and other parameters.",
+      "options": [
+        {
+          "id": "A",
+          "text": "true",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "false",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q191",
+      "number": 191,
+      "type": "multiple_choice",
+      "question": "What is the purpose of VLANs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Creates smaller broadcast domains",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Isolates broadcast, multicast, and unicast to one VLAN",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Simpler management",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Allows you to reach remote networks",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q192",
+      "number": 192,
+      "type": "single_choice",
+      "question": "Where is the default gateway address located?",
+      "options": [
+        {
+          "id": "A",
+          "text": "On the interface of the switch attached to the local network",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "On the router interface attached to a remote network",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "On the router interface attached to the local network",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "On the interface of the switch attached to the router",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q193",
+      "number": 193,
+      "type": "single_choice",
+      "question": "DHCP uses UDP",
+      "options": [
+        {
+          "id": "A",
+          "text": "yes",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "no",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q194",
+      "number": 194,
+      "type": "single_choice",
+      "question": "What does DHCP stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dynamic Here Configuration Protocol",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Done Host Configuration Protocol",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Dynamic Host Context Protocol",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Dynamic Host Configuration Protocol",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q195",
+      "number": 195,
+      "type": "single_choice",
+      "question": "An 802.1Q trunk port receives traffic that is untagged, by default what VLAN -ID will the traffic be\nforwarded to?",
+      "options": [
+        {
+          "id": "A",
+          "text": "the default VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Access VLAN-ID",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "VLAN 1",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Native VLAN ID",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q196",
+      "number": 196,
+      "type": "single_choice",
+      "question": "What is displayed when a technician uses the \"Show Interfaces\" Command?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Displays the contents of the IP routing tables stored in RAM",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Displays statistics for all interfaces on the device. Only displays the IPv4 addressing information",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Displays the IPv4 statistics for all interfaces on a router",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Displays all interfaces, their IP addresses, and their current status",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q197",
+      "number": 197,
+      "type": "single_choice",
+      "question": "A Layer 3 switch is also called?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Router-on-a-stick",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "AVLAN subinterface",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Multilayer switch",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "VLAN- Tagged Traffic",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q198",
+      "number": 198,
+      "type": "single_choice",
+      "question": "What operational mode should be used on a switch port to connect it to a router for router-on-a-stick inter-VLAN routing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "dynamic desirable",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "access",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "dynamic",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "trunk",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q199",
+      "number": 199,
+      "type": "multiple_choice",
+      "question": "Which two system files store device configuration information?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Running-config",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Startup-config",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "System-Config00",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Running",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q200",
+      "number": 200,
+      "type": "multiple_choice",
+      "question": "What are some simple steps that are applied to improve the security of most Operating Systems? (Check all that apply)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Update any software and install any security patches prior to implementation",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Any unnecessary services and apps should be turned off and uninstalled",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Change the default username and password",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "All services and applications should be installed and turned on",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q201",
+      "number": 201,
+      "type": "single_choice",
+      "question": "A small college uses VLAN 10 for the classroom network and VLAN 20 for the office network. What is needed to enable communication between these two VLANs while using legacy inter-VLAN routing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A router with at least two LAN interfaces should be used",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A router with one VLAN interface is needed to connect to the SVI on a switch",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Two groups of switches are needed, each with ports that are configured for one VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A switch with a port that is configured as trunk is needed to connect to a router",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q202",
+      "number": 202,
+      "type": "single_choice",
+      "question": "Which one of these Media types is used for high-speed internet connectivity, has high EMI/RFI immunity and uses LEDs to transmit data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MMF",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "SMF",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Ethernet",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Wireless",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q203",
+      "number": 203,
+      "type": "single_choice",
+      "question": "(True or False) Shielded Twisted Pair media is the best media type to prevent EMI, RFI and CrossTalk.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q204",
+      "number": 204,
+      "type": "single_choice",
+      "question": "All reside on layer one of the OSI Model except:(Choose One)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Switch",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Hubs",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Fiber Optic Cable",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Wireless",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q205",
+      "number": 205,
+      "type": "single_choice",
+      "question": "What information is not shown when using the \"Show cdp neighbors\" command?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The software version of the neighboring device",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Local Interface leading to the neighboring devices",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The capabilities of the neighboring device",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Device ID of the neighboring devices",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q206",
+      "number": 206,
+      "type": "single_choice",
+      "question": "Which is the correct command to deter a brute-force password guessing attack for 2 minutes if 4 incorrect passwords have been entered within 1 minute?",
+      "options": [
+        {
+          "id": "A",
+          "text": "login block-for 120 attempts 60 within 4",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "login block-for 120 attempts 4 within 60",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "login block-for 60 attempts 4 within 120",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "login block-for 4 attempts 120 within 60",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q207",
+      "number": 207,
+      "type": "single_choice",
+      "question": "What show command displays the Router's Routing Table?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Show ip route",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Show IP interfaces",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Show version",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Show run",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q208",
+      "number": 208,
+      "type": "single_choice",
+      "question": "Which CLI Command will \"reboot\" the network device when given?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Device# Reload",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Device(config)# Restart",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Device# Reboot",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Device(config)# Reload",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q209",
+      "number": 209,
+      "type": "multiple_choice",
+      "question": "What are the switch port violation modes: (Mark all the correct answers)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Protect",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Shutdown",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Restrict",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Err-Disabled",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q210",
+      "number": 210,
+      "type": "single_choice",
+      "question": "What was an old version of DHCP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "bootp",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "DHCP",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "transport",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Application Layer",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q211",
+      "number": 211,
+      "type": "single_choice",
+      "question": "Why is port security implemented on a switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To reduce MAC address table attacks",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "To Stop a denial of service attack",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "To mitigate virus attacks",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "To stop IP spoofing",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q212",
+      "number": 212,
+      "type": "single_choice",
+      "question": "The network administrator put in the following commands on the switch port Fast Ethernet 0/10:\nswitch(config-if)# switchport port-security\nswitch(config-if)# switchport port-security maximum 3\nswitch(config-if)# switchport port-security mac-address AAAA.BBBB.CCCC\nswitch(config-if)# switchport port-security sticky\nswitch(config-if)# switchport port-security sticky CCCC.BBBB.AAAA\nWhat is the violation mode for Fast Ethernet 0/10?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Shutdown",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Restrict",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Protect",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Err-Disabled",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q213",
+      "number": 213,
+      "type": "single_choice",
+      "question": "Both ends of the trunk link must be configured with different native VLANs. (true or false)",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q214",
+      "number": 214,
+      "type": "multiple_choice",
+      "question": "Which two commands can be used to verify a trunk link configuration status on a Cisco switch? (Choose\ntwo)",
+      "options": [
+        {
+          "id": "A",
+          "text": "show interface trunk",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "show interface switchport",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "show interface vlan",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "show ip interface brief",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q215",
+      "number": 215,
+      "type": "single_choice",
+      "question": "True or False DHCP-distributed addresses are leased for a set period of time, then returned to pool for reuse.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q216",
+      "number": 216,
+      "type": "single_choice",
+      "question": "VLANs are based on logical connections, instead of physical connections. (true or false)",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q217",
+      "number": 217,
+      "type": "single_choice",
+      "question": "All statements are true about VLAN 1 except which one?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Can be deleted",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "default native VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "default Management VLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "default VLAN",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    }
+  ]
+}

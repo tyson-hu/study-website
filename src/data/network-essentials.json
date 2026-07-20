@@ -1,0 +1,6141 @@
+{
+  "title": "Networking Essentials",
+  "source": "Network Essentials Practice Exam + Question Set",
+  "totalQuestions": 205,
+  "schemaVersion": "1.1",
+  "questions": [
+    {
+      "id": "ne-q001",
+      "number": 1,
+      "type": "text_input",
+      "question": "What is the compressed format of FE80:030C:0000:0000:0000:ACAD:0000:0040?",
+      "options": [],
+      "correctOptionIds": [],
+      "acceptedAnswers": [
+        "FE80:30C::ACAD:0:40"
+      ],
+      "textMatchMode": "ipv6"
+    },
+    {
+      "id": "ne-q002",
+      "number": 2,
+      "type": "text_input",
+      "question": "What is the preferred format for 2001::1?",
+      "options": [],
+      "correctOptionIds": [],
+      "acceptedAnswers": [
+        "2001:0000:0000:0000:0000:0000:0000:0001"
+      ],
+      "textMatchMode": "ipv6"
+    },
+    {
+      "id": "ne-q003",
+      "number": 3,
+      "type": "text_input",
+      "question": "What is the binary conversion of 728?",
+      "options": [],
+      "correctOptionIds": [],
+      "acceptedAnswers": [
+        "1011011000"
+      ],
+      "textMatchMode": "exact"
+    },
+    {
+      "id": "ne-q004",
+      "number": 4,
+      "type": "text_input",
+      "question": "What is the hexadecimal conversion of 1254?",
+      "options": [],
+      "correctOptionIds": [],
+      "acceptedAnswers": [
+        "0x4E6"
+      ],
+      "textMatchMode": "hex"
+    },
+    {
+      "id": "ne-q005",
+      "number": 5,
+      "type": "text_input",
+      "question": "How many usable addresses are in 255.255.255.240?",
+      "options": [],
+      "correctOptionIds": [],
+      "acceptedAnswers": [
+        "14"
+      ],
+      "textMatchMode": "exact"
+    },
+    {
+      "id": "ne-q006",
+      "number": 6,
+      "type": "text_input",
+      "question": "How many total addresses are in 255.255.255.254?",
+      "options": [],
+      "correctOptionIds": [],
+      "acceptedAnswers": [
+        "2"
+      ],
+      "textMatchMode": "exact"
+    },
+    {
+      "id": "ne-q007",
+      "number": 7,
+      "type": "text_input",
+      "question": "What is the hexadecimal conversion of 753?",
+      "options": [],
+      "correctOptionIds": [],
+      "acceptedAnswers": [
+        "0x2F1"
+      ],
+      "textMatchMode": "hex"
+    },
+    {
+      "id": "ne-q008",
+      "number": 8,
+      "type": "text_input",
+      "question": "What is the decimal conversion of 1101001100?",
+      "options": [],
+      "correctOptionIds": [],
+      "acceptedAnswers": [
+        "844"
+      ],
+      "textMatchMode": "exact"
+    },
+    {
+      "id": "ne-q009",
+      "number": 9,
+      "type": "text_input",
+      "question": "What is the hexadecimal conversion of 11100010010?",
+      "options": [],
+      "correctOptionIds": [],
+      "acceptedAnswers": [
+        "0x712"
+      ],
+      "textMatchMode": "hex"
+    },
+    {
+      "id": "ne-q010",
+      "number": 10,
+      "type": "single_choice",
+      "question": "What is the amount of time, including delays, for data to travel one point to another?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Goodput",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Bandwidth",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Latency",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Data Rate",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "ne-q011",
+      "number": 11,
+      "type": "single_choice",
+      "question": "Which IEEE Standard governs the WLAN environment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "802.12",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "802.15.4",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "802.5",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "802.11",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q012",
+      "number": 12,
+      "type": "single_choice",
+      "question": "When a new standard is proposed, what document is used at each stage of development and in the approval process?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RFC",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "NFC",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "IEEE",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "IETF",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "ne-q013",
+      "number": 13,
+      "type": "single_choice",
+      "question": "Which of the following is NOT a criterion for choosing network media?",
+      "options": [
+        {
+          "id": "A",
+          "text": "What is the cost of the media installation?",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "What is the environment in which the media will be installed?",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "What is the amount of time it takes to install the media?",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "What is the amount of data and at what speed must it be transmitted?",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "ne-q014",
+      "number": 14,
+      "type": "single_choice",
+      "question": "__________ contains a list of all active ports and the host MAC addresses that are assigned to the LAN.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mac address table",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Ethernet table",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Layer 2 table",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Data Link Table",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "ne-q015",
+      "number": 15,
+      "type": "multiple_choice",
+      "question": "What does an end device need to communicate on the network? (Choose 3)",
+      "options": [
+        {
+          "id": "A",
+          "text": "IP address",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Subnet Mask",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "RAM",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Default Gateway",
+          "isCorrect": true
+        },
+        {
+          "id": "E",
+          "text": "Destination MAC Address",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q016",
+      "number": 16,
+      "type": "single_choice",
+      "question": "Which transmission type refers to one device sending a message to another device in one-to-one communication?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Anycast",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Unicast",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Broadcast",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Multicast",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q017",
+      "number": 17,
+      "type": "single_choice",
+      "question": "True or False. Routers forward broadcast traffic out of all ports, except the incoming port.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q018",
+      "number": 18,
+      "type": "single_choice",
+      "question": "How many bits are in an IPv6 address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "32",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "16",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "128",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q019",
+      "number": 19,
+      "type": "single_choice",
+      "question": "Which step in the DORA process does the DHCP server confirm that the address lease has been accepted?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCP ACK",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "DHCP OFFER",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "DHCP DISCOVER",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "DHCP REQUEST",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "ne-q020",
+      "number": 20,
+      "type": "single_choice",
+      "question": "__________ is the process used to convert private addresses to internet-routable addresses?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCP",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Telnet",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "NAT",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "ARP Request",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "ne-q021",
+      "number": 21,
+      "type": "single_choice",
+      "question": "True or False. A logical address is used for NIC-to-NIC communication on an ethernet network.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q022",
+      "number": 22,
+      "type": "single_choice",
+      "question": "Routers make forwarding decisions based on which address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MAC address",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Physical Address",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Layer 2 Address",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "IP address",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q023",
+      "number": 23,
+      "type": "single_choice",
+      "question": "True or False. UDP is best effort delivery that does not require acknowledgement of receipt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "ne-q024",
+      "number": 24,
+      "type": "single_choice",
+      "question": "What is the port number for the DNS protocol?",
+      "options": [
+        {
+          "id": "A",
+          "text": "443",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "80",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "22",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "53",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q025",
+      "number": 25,
+      "type": "match",
+      "question": "Match these troubleshooting utilities to their definitions.",
+      "options": [],
+      "correctOptionIds": [],
+      "matchPairs": [
+        {
+          "id": "ipconfig",
+          "left": "ipconfig",
+          "right": "Displays IP configuration information."
+        },
+        {
+          "id": "tracert",
+          "left": "tracert",
+          "right": "Displays the route taken to the destination."
+        },
+        {
+          "id": "nslookup",
+          "left": "nslookup",
+          "right": "Directly queries the name server for information on the destination domain."
+        },
+        {
+          "id": "ping",
+          "left": "ping",
+          "right": "Tests connections to another IP host."
+        },
+        {
+          "id": "netstat",
+          "left": "netstat",
+          "right": "Displays network connections."
+        }
+      ]
+    },
+    {
+      "id": "ne-q026",
+      "number": 26,
+      "type": "single_choice",
+      "question": "Which of the following is NOT one of the four basic characteristics that network architects must address to meet user expectations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Security",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Manageability",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "QOS",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Fault Tolerance",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q027",
+      "number": 27,
+      "type": "single_choice",
+      "question": "True or False. The hexadecimal numbering system has a base 16 numbering system.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "ne-q028",
+      "number": 28,
+      "type": "multiple_choice",
+      "question": "Which two layers of the OSI model do the Ethernet standards specify protocols? (Choose two)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data Link Layer",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Presentation Layer",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Session Layer",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Physical Layer",
+          "isCorrect": true
+        },
+        {
+          "id": "E",
+          "text": "Application Layer",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q029",
+      "number": 29,
+      "type": "single_choice",
+      "question": "Which layer of the OSI model provides services to allow end devices to exchange data across networks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Layer 1",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Layer 7",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Layer 2",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Layer 3",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q030",
+      "number": 30,
+      "type": "single_choice",
+      "question": "Which is NOT a troubleshooting method?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Follow-The-Path",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Substitution",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Comparison",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Left-to-Right",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q031",
+      "number": 31,
+      "type": "single_choice",
+      "question": "The IOS image file is stored in ________?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RAM",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "NVRAM",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The Cloud",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "FLASH",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q032",
+      "number": 32,
+      "type": "single_choice",
+      "question": "True or False. The internet is owned by the Institution of Electrical and Electronic Engineers.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q033",
+      "number": 33,
+      "type": "single_choice",
+      "question": "Which is not a type of personal data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Observed data",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Secret data",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Volunteered data",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Inferred data",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q034",
+      "number": 34,
+      "type": "single_choice",
+      "question": "__________ is the capacity of a medium to carry data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Throughput",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Latency",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Bandwidth",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Goodput",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "ne-q035",
+      "number": 35,
+      "type": "single_choice",
+      "question": "A network where two computers are communicating with each other as both a client and server is known as a:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Server-to-server network",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Client-to-client network",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Peer-to-client network",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "None of the above",
+          "isCorrect": true
+        },
+        {
+          "id": "E",
+          "text": "A,B,C",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q036",
+      "number": 36,
+      "type": "single_choice",
+      "question": "Which wireless technology uses a device-pairing process to communicate and operate over short distances?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wi-Fi",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "GPS",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "WLAN",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Bluetooth",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "ne-q037",
+      "number": 37,
+      "type": "single_choice",
+      "question": "What does the acronym SSID stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Service Set Identifier",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Special Set Identification",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Super Set Idea",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Service Set Indicator",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "ne-q038",
+      "number": 38,
+      "type": "text_input",
+      "question": "From this IP address 192.168.5.0/24 what is the Network Portion and what is the host portion?",
+      "options": [],
+      "correctOptionIds": [],
+      "textFields": [
+        {
+          "id": "network",
+          "label": "Network portion",
+          "acceptedAnswers": [
+            "192.168.5"
+          ],
+          "placeholder": "e.g. 192.168.5"
+        },
+        {
+          "id": "host",
+          "label": "Host portion",
+          "acceptedAnswers": [
+            "0"
+          ],
+          "placeholder": "e.g. 0"
+        }
+      ]
+    },
+    {
+      "id": "ne-q039",
+      "number": 39,
+      "type": "single_choice",
+      "question": "__________ is a set of rules that determines how something must be done.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Encapsulation",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Format",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Standard",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Encoding",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "ne-q040",
+      "number": 40,
+      "type": "single_choice",
+      "question": "RFCs for internet standards are published and managed by what organization?",
+      "options": [
+        {
+          "id": "A",
+          "text": "IANA",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "IETF",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "ICANN",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "IEEE",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q041",
+      "number": 41,
+      "type": "single_choice",
+      "question": "Which is NOT a Twisted-Pair Cable type?",
+      "options": [
+        {
+          "id": "A",
+          "text": "STP",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "UTP",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "TTP",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "All the above.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "ne-q043",
+      "number": 42,
+      "type": "single_choice",
+      "question": "The process of placing one message format (the letter) inside another message format (the envelope) is called ________?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Encapsulation",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Post office protocol",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Network address translation",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Instant messaging",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "ne-q044",
+      "number": 43,
+      "type": "single_choice",
+      "question": "The command to encrypt all plain-text passwords?",
+      "options": [
+        {
+          "id": "A",
+          "text": "R1(config-if)#service password-encryption",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "R1(config-line)#transport input ssh",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "R1(config)#service password-encryption",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "R1#enable secret class",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "ne-q045",
+      "number": 44,
+      "type": "single_choice",
+      "question": "True or False. The IP address of a host machine is the physical address.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q046",
+      "number": 45,
+      "type": "single_choice",
+      "question": "True or False. The MAC address can be automatically assigned with the use of a DHCP server.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q047",
+      "number": 46,
+      "type": "single_choice",
+      "question": "True or False. Routers are layer 2 devices.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "ne-q048",
+      "number": 47,
+      "type": "single_choice",
+      "question": "__________ management allows us to remotely connect to devices to perform administrative task.",
+      "options": [
+        {
+          "id": "A",
+          "text": "In-Band",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Out-of-Band",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "With-the-Band",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Making-the-Band",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "ne-q049",
+      "number": 48,
+      "type": "single_choice",
+      "question": "What two are responsible for transmission at the Network Layer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "HTTP and HTTPS",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "TCP and UDP",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "POP3 and IMAP",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "DNS and DHCP",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q001",
+      "number": 49,
+      "type": "single_choice",
+      "question": "Match the type of malware with the definition: spyware.",
+      "options": [
+        {
+          "id": "A",
+          "text": "automatically installs other malicious programs",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "gather personal information about a user without permission or knowledge",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "allow personalization for visited web sites",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "advertising windows that display when visiting a web site",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q002",
+      "number": 50,
+      "type": "single_choice",
+      "question": "Match the type of malware with the definition: tracking cookies.",
+      "options": [
+        {
+          "id": "A",
+          "text": "gather personal information about a user without permission or knowledge",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "a program that demands a ransom to decrypt files",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "allow personalization for visited web sites",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "advertising windows that display when visiting a web site",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q003",
+      "number": 51,
+      "type": "single_choice",
+      "question": "Match the type of malware with the definition: pop-ups.",
+      "options": [
+        {
+          "id": "A",
+          "text": "advertising windows that display when visiting a web site",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "a self-replicating program that spreads over a network",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "an application that changes a browser's home page and search engine",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "gather personal information about a user without permission or knowledge",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q004",
+      "number": 52,
+      "type": "single_choice",
+      "question": "An intruder tries a large number of possibilities in rapid succession to guess a password. As a result, other users on the network are locked out. What type of attack has occurred?",
+      "options": [
+        {
+          "id": "A",
+          "text": "phishing",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Denial of Service (DoS)",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "man-in-the-middle",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "brute force",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q005",
+      "number": 53,
+      "type": "multiple_choice",
+      "question": "Which three attacks exploit human behavior? (Choose three)",
+      "options": [
+        {
+          "id": "A",
+          "text": "phishing",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "vishing",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "pretexting",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "brute force",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q006",
+      "number": 54,
+      "type": "single_choice",
+      "question": "What is the effect of setting the security mode to WEP on a small wireless router?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It provides the strongest current encryption available for wireless networks.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It encrypts data between the wireless client and the access point.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "It disables the broadcast of the SSID, hiding the network from view.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It prevents unauthorized MAC addresses from connecting to the network.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q007",
+      "number": 55,
+      "type": "single_choice",
+      "question": "Which solution allows external users to access only an internal FTP server on a private network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "VPN tunneling",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "DHCP relay",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "static routing",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "port forwarding",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q008",
+      "number": 56,
+      "type": "single_choice",
+      "question": "What is an inherent security vulnerability of SSID broadcasting?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It allows a brute force attack against the pre-shared key.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It broadcasts the identity of the network.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "It prevents the use of MAC address filtering.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It causes all data transmitted to be unencrypted.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q009",
+      "number": 57,
+      "type": "single_choice",
+      "question": "A newly purchased client laptop is connecting to a network using a wireless router providing dynamic addressing. Which IP address does the laptop use as a destination address when requesting a dynamically assigned address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.0.0.0",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "127.0.0.1",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "255.255.255.255",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The router's configured IP address (Default Gateway)",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q010",
+      "number": 58,
+      "type": "single_choice",
+      "question": "A DHCP server uses an address pool of 192.168.10.0/24. If 3 printers on this network need reserved static IP addresses from the pool, how many IP addresses in the pool are left to be assigned to other hosts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "250",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "251",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "253",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "254",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q011",
+      "number": 59,
+      "type": "match",
+      "question": "Match each DHCP message type with its description.",
+      "options": [],
+      "correctOptionIds": [],
+      "matchPairs": [
+        {
+          "id": "discover",
+          "left": "DHCPDISCOVER",
+          "right": "a client initiating a message to find a DHCP server"
+        },
+        {
+          "id": "offer",
+          "left": "DHCPOFFER",
+          "right": "A DHCP server responding to the initial request by a client"
+        },
+        {
+          "id": "request",
+          "left": "DHCPREQUEST",
+          "right": "the client accepting the IP address provided by the DHCP server"
+        },
+        {
+          "id": "ack",
+          "left": "DHCPACK",
+          "right": "the DHCP server confirming that the address lease has been accepted"
+        }
+      ]
+    },
+    {
+      "id": "orig-q015",
+      "number": 60,
+      "type": "single_choice",
+      "question": "A client device on an Ethernet segment needs an IP address. A DHCP server with IP address 192.168.1.1 is configured and enabled. How will a client device obtain a usable IP address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Send a DHCPOFFER message to IP address 255.255.255.255.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Send a DHCPREQUEST message directly to 192.168.1.1.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Send a DHCPDISCOVER message to IP address 255.255.255.255.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Send an ARP request to determine the IP address of the DHCP server.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q016",
+      "number": 61,
+      "type": "multiple_choice",
+      "question": "Which two criteria are used to help select a network medium for a network? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "the distance the selected medium can successfully carry a signal",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "the color-coding scheme used on the patch cables",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "the brand name of the network interface card (NIC)",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "the environment where the selected medium is to be installed",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q017",
+      "number": 62,
+      "type": "single_choice",
+      "question": "What is an advantage of using standards to develop and implement protocols?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It prevents technology in one layer from affecting other layers.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It requires manufacturers to use the least expensive components.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It speeds up the process of protocol design and implementation.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Products from different manufacturers can interoperate successfully.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q018",
+      "number": 63,
+      "type": "single_choice",
+      "question": "At which layer of the OSI model would a logical address be added during encapsulation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Layer 2 (Data Link Layer)",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Layer 4 (Transport Layer)",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Layer 3 (Network Layer)",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Layer 1 (Physical Layer)",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q019",
+      "number": 64,
+      "type": "single_choice",
+      "question": "Which wireless RF band do IEEE 802.11b/g devices use?",
+      "options": [
+        {
+          "id": "A",
+          "text": "900 MHz",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "6 GHz",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "2.4 GHz",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "5 GHz",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q020",
+      "number": 65,
+      "type": "single_choice",
+      "question": "Refer to the exhibit. Which router port connects to the modem provided by the service provider? (Assume port C is the WAN port)",
+      "options": [
+        {
+          "id": "A",
+          "text": "A",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The console port",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "B",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "C",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/c_limit,f_auto,h_250,fl_lossy,q_auto:low/v1769541473/jmvaniodmmi2iojucxoq.png"
+        }
+      ]
+    },
+    {
+      "id": "orig-q021",
+      "number": 66,
+      "type": "single_choice",
+      "question": "Which type of device filtering can be enabled on some wireless access points or wireless routers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Default Gateway",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "DNS name",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "TCP port",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "MAC address",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q022",
+      "number": 67,
+      "type": "multiple_choice",
+      "question": "Using a systematic troubleshooting approach, a help desk technician suspects a problem at Layer 3 of the OSI model. Which two questions are associated with Layer 3? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Is the PC configured for DHCP?",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "From the PC, is the default gateway reachable using the ping command?",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Are the cables functional and properly plugged in?",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Is the link light active on the network adapter?",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q023",
+      "number": 68,
+      "type": "single_choice",
+      "question": "A customer calls the help line to report a computer problem, but the technician cannot identify the root cause. What should the technician do next to help the customer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Disconnect the call and wait for the customer to call back at a later time.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Search the internet for possible solutions while the customer waits on the line.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Tell the customer that a ticket is created and another technician will contact the user soon.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Suggest the customer reboot the computer one more time and call back.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q024",
+      "number": 69,
+      "type": "single_choice",
+      "question": "After moving offices, a few workstations cannot get a valid IP address. What should be checked first to identify the root cause of the problem?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Disable and re-enable the network adapter on the workstation.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Make sure the cables are functional and properly plugged.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Verify the Default Gateway IP address on the workstations.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Check the DHCP server logs for address pool exhaustion.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q025",
+      "number": 70,
+      "type": "single_choice",
+      "question": "A user is setting up a home wireless network. Which type of device must the user have in order to establish the wireless network and provide access to the internet for multiple home devices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "repeater",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "wireless router",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "modem",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "wireless NIC",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q026",
+      "number": 71,
+      "type": "single_choice",
+      "question": "A consumer places a smartphone close to a pay terminal at a store and the shopping charge is successfully paid. Which type of wireless technology was used?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wi-Fi",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Bluetooth",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "RFID",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "NFC",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q027",
+      "number": 72,
+      "type": "single_choice",
+      "question": "When troubleshooting network problems, where would a network administrator find the configuration information, such as the computer names and the IP addresses that are used?",
+      "options": [
+        {
+          "id": "A",
+          "text": "cable inventory",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "the wiring closet map",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "physical topology diagram",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "logical topology diagram",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q028",
+      "number": 73,
+      "type": "single_choice",
+      "question": "Which network migration technique encapsulates IPv6 packets inside IPv4 packets to carry them over IPv4 network infrastructures?",
+      "options": [
+        {
+          "id": "A",
+          "text": "dual stacking",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "subnetting",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "tunneling",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "translation",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q029",
+      "number": 74,
+      "type": "multiple_choice",
+      "question": "A small office wireless router provides internet access. In which two scenarios does the wireless router perform Network Address Translation (NAT)? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "when a host is sending packets to a remote site owned by the manufacturer of the wireless router in order to request a digital copy of the device manual",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "when a host is sending packets to a local printer on the same internal network",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "when the router is receiving a DHCP lease renewal from the ISP",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "when a host is sending packets to the ISP in order to request a speed increase for Internet services",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q030",
+      "number": 75,
+      "type": "multiple_choice",
+      "question": "What are two common media used in networks? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "copper",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "water",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "fiber",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "carbon",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q031",
+      "number": 76,
+      "type": "multiple_choice",
+      "question": "Which two types of interference may affect the data throughput on UTP cables? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "attenuation",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "EMI",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "crosstalk",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "latency",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q032",
+      "number": 77,
+      "type": "multiple_choice",
+      "question": "What are two wiring schemes defined by the TIA/EIA organization for Ethernet installation in homes and businesses? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "IEEE 802.3",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "T568A",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "T568B",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "T110",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q033",
+      "number": 78,
+      "type": "single_choice",
+      "question": "A host needs to reach another host on a remote network, but the ARP cache has no mapping entries. To what destination address will the host send an ARP request?",
+      "options": [
+        {
+          "id": "A",
+          "text": "the multicast MAC address",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "the destination host's MAC address",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "the broadcast MAC address",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "the default gateway's MAC address",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q034",
+      "number": 79,
+      "type": "single_choice",
+      "question": "Which type of address does a switch use to build the MAC address table?",
+      "options": [
+        {
+          "id": "A",
+          "text": "destination MAC address",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "source MAC address",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "default gateway IP address",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "source IP address",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q035",
+      "number": 80,
+      "type": "multiple_choice",
+      "question": "What are two benefits of using a layered network model? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "It assists in protocol design.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "It eliminates the need for any standardization organizations.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It prevents technology in one layer from affecting other layers.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "It automatically translates between different protocols.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q036",
+      "number": 81,
+      "type": "multiple_choice",
+      "question": "Which two devices are considered end devices? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "router",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "printer",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "switch",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "laptop",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q037",
+      "number": 82,
+      "type": "single_choice",
+      "question": "Which factor does not influence throughput?",
+      "options": [
+        {
+          "id": "A",
+          "text": "the load on intermediary network devices",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "the operating system that is used by end devices",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "latency and jitter across the network path",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "bandwidth of the network medium",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q038",
+      "number": 83,
+      "type": "single_choice",
+      "question": "What is a characteristic of a peer-to-peer application?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The entire application runs on a single powerful central server.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A dedicated server provides resources that all clients can access.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The primary communication uses the DHCP and DNS protocols.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Each device using the application provides a user interface and runs a background service.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q039",
+      "number": 84,
+      "type": "single_choice",
+      "question": "Using default settings, what is the next step in the switch boot sequence after the IOS loads from flash?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enter ROMMON mode and await administrative command input.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Load the running-config file from RAM.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Check for a boot image on the TFTP server.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Locate and load the startup-config file from NVRAM.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q040",
+      "number": 85,
+      "type": "multiple_choice",
+      "question": "Which two files are copied into RAM as a router with the default configuration register setting boots up? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "startup configuration",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "ROMMON image",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "VLAN database",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "IOS image file",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q041",
+      "number": 86,
+      "type": "multiple_choice",
+      "question": "What are two features of protocols used within the TCP/IP protocol stack? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "UDP uses a three-way handshake to establish a reliable connection.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "TCP automatically includes the MAC address in the segment header.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "UDP is used when an application must be delivered as quickly as possible and some loss of data can be tolerated.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "TCP mechanisms retransmit data when an acknowledgment is not received from the destination system within a set period of time.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q042",
+      "number": 87,
+      "type": "single_choice",
+      "question": "A student is uploading files from a phone to a server on another network. Which layer of the TCP/IP model is responsible for providing an addressing scheme to transmit the data between the devices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "transport",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "network access",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "application",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "internet",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q043",
+      "number": 88,
+      "type": "single_choice",
+      "question": "Which statement correctly describes data transmission at the transport layer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only UDP handles segmentation and reassembly of data.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "TCP is connectionless, while UDP is connection-oriented.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Both UDP and TCP use port numbers.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Port numbers are added at the Internet layer, not the transport layer.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q044",
+      "number": 89,
+      "type": "single_choice",
+      "question": "What type of technology converts analog voice signals into digital data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "POTS (Plain Old Telephone System)",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "VoIP",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "PSTN (Public Switched Telephone Network)",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "TDM",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q045",
+      "number": 90,
+      "type": "single_choice",
+      "question": "Match the protocol with the function: DNS.",
+      "options": [
+        {
+          "id": "A",
+          "text": "provides remote access to servers",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "automatically configures hosts with IP addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "resolves internet names to IP addresses",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "transfers files between a client and a server",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q046",
+      "number": 91,
+      "type": "single_choice",
+      "question": "Match the protocol with the function: DHCP.",
+      "options": [
+        {
+          "id": "A",
+          "text": "ensures reliable, ordered delivery of data",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "provides remote access to servers",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "resolves internet names to IP addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "automatically configures hosts with IP addresses",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q047",
+      "number": 92,
+      "type": "single_choice",
+      "question": "Match the protocol with the function: SSH.",
+      "options": [
+        {
+          "id": "A",
+          "text": "synchronizes clocks across a computer network",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "automatically configures hosts with IP addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "transfers data from a web server to a client",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "provides remote access to servers",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q048",
+      "number": 93,
+      "type": "multiple_choice",
+      "question": "Which three protocols should be allowed to provide for the use of email on a network? (Choose three.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "POP3",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "SMTP",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "IMAP4",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "FTP",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q049",
+      "number": 94,
+      "type": "single_choice",
+      "question": "In Software Defined Network (SDN) architecture, what function is removed from network devices and performed by an SDN controller?",
+      "options": [
+        {
+          "id": "A",
+          "text": "physical layer",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "data plane",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "management plane",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "control plane",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q050",
+      "number": 95,
+      "type": "single_choice",
+      "question": "A user is configuring a wireless access point and wants to prevent any neighbors from discovering the network. What action does the user need to take?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enable MAC address filtering.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Change the default IP address of the router.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Disable SSID broadcast.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Configure WEP encryption.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q051",
+      "number": 96,
+      "type": "single_choice",
+      "question": "A data center has updated a physical server to host multiple operating systems on a single CPU, providing each customer with a separate web server without having to allocate a discrete server. What is the networking trend being implemented?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Internet of Things (IoT)",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "cloud computing",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "virtualization",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "bring your own device (BYOD)",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q052",
+      "number": 97,
+      "type": "single_choice",
+      "question": "A network administrator installs a network device that focuses on interconnecting independent local networks. At which layer of the hierarchical network design model does this technology reside?",
+      "options": [
+        {
+          "id": "A",
+          "text": "distribution",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "core",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "access",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "physical",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q053",
+      "number": 98,
+      "type": "single_choice",
+      "question": "A computer has to send a packet to a destination host in the same LAN. How will the packet be sent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The packet will be sent to the default gateway, which will then forward",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The packet will be sent directly to the destination host.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The packet will be encapsulated inside an IPv6 packet before being sent.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The packet will be sent as a Layer 3 broadcast to reach the destination.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q054",
+      "number": 99,
+      "type": "single_choice",
+      "question": "If the default gateway is configured incorrectly on the host, what is the impact on communications?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The host receives duplicate IP addresses from the DHCP server.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The host is unable to communicate with any other hosts, even on the local network.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The host can communicate with remote networks, but its packets will always be filtered by the router.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q055",
+      "number": 100,
+      "type": "multiple_choice",
+      "question": "Which three commands are used to set up secure access to a router through a connection to the console interface? (Choose three.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "line console 0",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "password cisco",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "login",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "transport input ssh",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q056",
+      "number": 101,
+      "type": "single_choice",
+      "question": "A network administrator establishes a connection to a switch via SSH. What characteristic uniquely describes the SSH connection?",
+      "options": [
+        {
+          "id": "A",
+          "text": "allows a configuration file to be transferred from a TFTP server",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "remote access to a switch where data is sent as plaintext",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "remote access to a switch where data is encrypted during the session",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "direct access via the console port using a rollover cable",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q057",
+      "number": 102,
+      "type": "single_choice",
+      "question": "Which type of access is secured on a Cisco router or switch with the enable secret command?",
+      "options": [
+        {
+          "id": "A",
+          "text": "global configuration",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "privileged EXEC",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "user EXEC",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "VTY lines",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q058",
+      "number": 103,
+      "type": "multiple_choice",
+      "question": "When configuring SSH on a router to implement secure network management, a network engineer has issued the login local and transport input ssh line vty commands. What three additional configuration actions have to be performed to complete the SSH configuration? (Choose three.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Create a valid local username and password database.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Configure the correct IP domain name.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Set the enable password to the strongest possible hash.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Generate the asymmetric RSA keys.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q059",
+      "number": 104,
+      "type": "single_choice",
+      "question": "Match the Cisco command to the correct action: Router(config-line)# password Cisco.",
+      "options": [
+        {
+          "id": "A",
+          "text": "encrypts all plaintext passwords in the configuration",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "displays a message when the router is accessed",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "configures a name on the router",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "provides security on the console",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q060",
+      "number": 105,
+      "type": "single_choice",
+      "question": "Match the Cisco command to the correct action: Router(config)# banner motd #.",
+      "options": [
+        {
+          "id": "A",
+          "text": "configures a password for privileged EXEC mode",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "displays a message when the router is accessed",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "provides security on the console",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "configures a name on the router",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q061",
+      "number": 106,
+      "type": "single_choice",
+      "question": "Match the Cisco command to the correct action: Router(config)# hostname CL1.",
+      "options": [
+        {
+          "id": "A",
+          "text": "allows the administrator to access user EXEC mode",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "provides security on the console",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "configures a name on the router",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "displays a message when the router is accessed",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q062",
+      "number": 107,
+      "type": "single_choice",
+      "question": "What is the purpose of the subnet mask in conjunction with an IP address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "to ensure the IP address is unique across the entire network",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "to determine the subnet to which the host belongs",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "to identify the Layer 2 physical address of the host",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "to specify the default gateway for remote communication",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q063",
+      "number": 108,
+      "type": "multiple_choice",
+      "question": "Which two statements describe characteristics of network addresses? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "A MAC address is also referred to as a physical address because it is permanently embedded on the NIC.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "An IP address is permanent and does not change when the host moves to a different network.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A valid public IPv4 or IPv6 address is needed in order for devices to communicate over the internet.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "A MAC address is a Layer 3 address, while an IP address is a Layer 2 address.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q064",
+      "number": 109,
+      "type": "multiple_choice",
+      "question": "What are three characteristics of multicast transmission? (Choose three.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "A single packet can be sent to a group of hosts.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The destination MAC address is always FF-FF-FF-FF-FF-FF.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Multicast transmission can be used by routers to exchange routing information.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The range of 224.0.0.0 to 224.0.0.255 is reserved to reach multicast groups on a local network.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q065",
+      "number": 110,
+      "type": "single_choice",
+      "question": "Match the router prompt to the configuration task: RouterA#.",
+      "options": [
+        {
+          "id": "A",
+          "text": "configure vty lines",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "enter configuration mode",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "configure a WAN interface",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "add a password required to access the privileged EXEC mode",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q066",
+      "number": 111,
+      "type": "single_choice",
+      "question": "Match the router prompt to the configuration task: RouterA(config-if)#.",
+      "options": [
+        {
+          "id": "A",
+          "text": "add a password required to access the privileged EXEC mode",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "enter configuration mode",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "configure vty lines",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "configure a WAN interface",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q067",
+      "number": 112,
+      "type": "single_choice",
+      "question": "Match the router prompt to the configuration task: RouterA(config-line)#.",
+      "options": [
+        {
+          "id": "A",
+          "text": "add a password required to access the privileged EXEC mode",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "configure a WAN interface",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "configure vty lines",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "configure the router's host name",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q068",
+      "number": 113,
+      "type": "single_choice",
+      "question": "A network administrator issues the command Switch(config)# interface FastEthernet 0/1 on a Cisco switch. Which term is used to describe the 0/1 part in the command?",
+      "options": [
+        {
+          "id": "A",
+          "text": "parameter",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "mode",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "keyword",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "argument",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q069",
+      "number": 114,
+      "type": "multiple_choice",
+      "question": "What three facts can be determined from the viewable output of the show ip interface brief command? (Choose three.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "The switch can be remotely managed.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "One device is attached to a physical interface.",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The default SVI has been configured.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The router has an active routing table.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q070",
+      "number": 115,
+      "type": "single_choice",
+      "question": "Which command can an administrator execute to determine what interface a router will use to reach remote networks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "show interfaces",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "ping 8.8.8.8",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "show ip route",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "show cdp neighbors",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q071",
+      "number": 116,
+      "type": "single_choice",
+      "question": "What is the delay in the amount of time for data to travel between two points on a network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jitter",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Bandwidth",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Latency",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Throughput",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q072",
+      "number": 117,
+      "type": "single_choice",
+      "question": "What is the primary purpose of a Demilitarized Zone (DMZ) in a network topology?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To enforce a single security policy across the entire network, both internal and external.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "To serve as the primary routing table for all internal traffic.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It isolates external hosts' access to specific company servers while protecting the internal network.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "To completely block all traffic from external hosts to internal servers.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q073",
+      "number": 118,
+      "type": "single_choice",
+      "question": "Convert the following Decimal number into hexadecimal: 941",
+      "options": [
+        {
+          "id": "A",
+          "text": "3CB",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "3AD",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "395",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "3B5",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q074",
+      "number": 119,
+      "type": "single_choice",
+      "question": "What is the effect of setting the security mode to Wired Equivalent Privacy (WEP) on a small wireless router?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It blocks unauthorized devices from joining the network using MAC filtering.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It enables two-factor authentication for all users.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It encrypts data between the wireless client and the access point.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "It requires the use of the 802.1X protocol for authentication.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q075",
+      "number": 120,
+      "type": "multiple_choice",
+      "question": "Which two actions improve security on a wireless network, even though one is considered obsolete and the other is easily bypassed? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Disable the firewall on the router.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Use the default SSID and password.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Enable MAC Filtering",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Enable WEP",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q076",
+      "number": 121,
+      "type": "single_choice",
+      "question": "Convert the following IPv6 address into the most compressed form: 0000:0000:8CEA:00DC:DF23:A320:0000:0D00. (Must be in CAPS)",
+      "options": [
+        {
+          "id": "A",
+          "text": "8CEA:DC:DF23:A320:D00",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "::8CEA:DC:DF23:A320:0:D00",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "0:0:8CEA:DC:DF23:A320:0:D00",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "::8CEA:DC:DF23:A320::D00",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q077",
+      "number": 122,
+      "type": "single_choice",
+      "question": "You have a network with a custom subnet mask of 255.255.255.192. How many usable IP addresses are available within each subnet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "62",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "64",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "30",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "126",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q078",
+      "number": 123,
+      "type": "multiple_choice",
+      "question": "Which two criteria are most critical when selecting a network medium for a specific installation? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "The distance the selected medium can successfully carry a signal",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The environment where the selected medium is to be installed",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The age of the routers and switches in the facility.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The price of the network interface cards (NICs).",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q079",
+      "number": 124,
+      "type": "single_choice",
+      "question": "Convert the following IPv6 address into the most compressed form: 0000:0000:0000:000D:3440:00BD:CADE:55C0. (Must be in CAPS)",
+      "options": [
+        {
+          "id": "A",
+          "text": "0000:0000:0000:D:3440:BD:CADE:55C0",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "::D:3440:BD:CADE:55C0",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "0:0:0:D:3440:BD:CADE:55C0",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "::D:3440:BD:CADE:55C0:0:0",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q080",
+      "number": 125,
+      "type": "single_choice",
+      "question": "What is the primary means for mitigating virus and Trojan horse attacks on endpoints?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Antivirus Software",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Intrusion Detection System (IDS)",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "VPN Tunnelling",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Network Segmentation",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q081",
+      "number": 126,
+      "type": "multiple_choice",
+      "question": "Which two statements are correct about the addresses in the IPv4 and IPv6 protocols? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "IPv6 addresses are represented by a hexadecimal number.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "IPv4 addresses are 64 bits in length.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "IPv4 addresses are 32 bits in length.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "IPv4 addresses are represented by a hexadecimal number.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q082",
+      "number": 127,
+      "type": "single_choice",
+      "question": "You have a prefix length of /17. What is your custom subnet mask for an IPv4 address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "255.255.192.0",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "255.255.0.0",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "255.255.255.0",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "255.255.128.0",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q083",
+      "number": 128,
+      "type": "single_choice",
+      "question": "What is the broadcast address for the network 192.168.15.220/30?",
+      "options": [
+        {
+          "id": "A",
+          "text": "192.168.15.25",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "192.168.15.224",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "192.168.15.221",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "192.168.15.223",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q084",
+      "number": 129,
+      "type": "multiple_choice",
+      "question": "Which two ports can be used for the initial, out-of-band configuration of a Cisco router or switch? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "VTY lines",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Console",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Auxiliary (Aux)",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "FastEthernet",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q085",
+      "number": 130,
+      "type": "single_choice",
+      "question": "An IPv6 address can have a prefix length that ranges from 0 to 128.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q086",
+      "number": 131,
+      "type": "single_choice",
+      "question": "Which type of cable connection would typically be used to connect a FastEthernet port on a PC to a switch port?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Console cable",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Straight-through cable",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Crossover cable",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Rollover cable",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q087",
+      "number": 132,
+      "type": "single_choice",
+      "question": "What feature can be used by an administrator to prevent unauthorized users from connecting to a wireless access point by restricting access to a list of allowed hardware identifiers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SSID broadcast suppression",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Port security",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "MAC filtering",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "WPA3 encryption",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q088",
+      "number": 133,
+      "type": "single_choice",
+      "question": "What is the term used when a malicious party sends a fraudulent email disguised as being from a legitimate, trusted source to trick a victim into revealing sensitive information?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trojan Horse",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Denial of Service (DoS)",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "SQL Injection",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Phishing",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q089",
+      "number": 134,
+      "type": "single_choice",
+      "question": "A network administrator for a small campus network has issued the show ip interface brief command on a Layer 3 switch. What is the administrator primarily verifying with this command?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The operational status of all physical access ports and their link light colors.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The entire MAC address table for all connected devices.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The status of the switch interfaces and the IP address configured on the management interface (VLAN 1).",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The current spanning-tree topology and root bridge election.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q090",
+      "number": 135,
+      "type": "single_choice",
+      "question": "IPv6 addresses that are used for communicating only on the same LAN or between a limited number of sites, are known as what type of address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unique Local Addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Link-Local Addresses",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Global Unicast Addresses",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Anycast Addresses",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q091",
+      "number": 136,
+      "type": "multiple_choice",
+      "question": "A network administrator is designing the layout of a new wireless network. Which three areas of concern should be accounted for when building a wireless network? (Choose three.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cable distance limits (100 meters)",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Interface",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Coverage area",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Security",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q092",
+      "number": 137,
+      "type": "single_choice",
+      "question": "What is the result when the command transport input ssh is entered on the switch VTY (Virtual Teletype) lines?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It allows remote login to the switch only via the Telnet protocol.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It configures the switch to route SSH packets to the default gateway.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Communication between the switch and remote users is encrypted.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "It enables Power over Ethernet (PoE) on all VTY interfaces.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q093",
+      "number": 138,
+      "type": "single_choice",
+      "question": "What are three types of communication methods used in IPv6?",
+      "options": [
+        {
+          "id": "A",
+          "text": "TCP, UDP, ICMPv6",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Global, Link-Local, Site-Local",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Broadcast, Unicast, Multicast",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Unicast, Multicast, Anycast",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q094",
+      "number": 139,
+      "type": "single_choice",
+      "question": "What is the primary software required for a technician to install a hypervisor on a client machine?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Operating System Emulator",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Virtual Private Network (VPN)",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Virtualization Software",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Remote Desktop Protocol (RDP)",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q095",
+      "number": 140,
+      "type": "single_choice",
+      "question": "What is required for a network administrator to perform out-of-band management tasks on a Cisco device?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A computer directly connected to the console port.",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A computer connected to a network port with a Telnet client.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A Layer 3 switch configured with a static route to the device.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "A wireless connection to the device's management SSID.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q096",
+      "number": 141,
+      "type": "single_choice",
+      "question": "What is the Subnet ID (Network Address) for the host address 192.168.15.145 with a subnet mask of 255.255.255.240?",
+      "options": [
+        {
+          "id": "A",
+          "text": "192.168.15.159",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "192.168.15.128",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "192.168.15.144",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "192.168.15.145",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q097",
+      "number": 142,
+      "type": "single_choice",
+      "question": "Convert the following hexadecimal number 0XBAD into its decimal equivalent.",
+      "options": [
+        {
+          "id": "A",
+          "text": "2989",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "2985",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "2817",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "2925",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q098",
+      "number": 143,
+      "type": "multiple_choice",
+      "question": "Which two are common causes of a Physical Layer network connectivity problem? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "An Ethernet cable plugged into a wrong port (e.g., a WAN port instead of a LAN port).",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "A firewall blocking a specific application port.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A faulty Ethernet cable (e.g., a broken connector or cut wire).",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "An incorrect IP address configuration on a host.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q099",
+      "number": 144,
+      "type": "single_choice",
+      "question": "A student is uploading files from a phone to a server on another network. Which layer of the TCP/IP model is responsible for providing an addressing scheme to transmit the data between the different devices and networks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Application",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Network Access",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Internet",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Transport",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q100",
+      "number": 145,
+      "type": "single_choice",
+      "question": "What is an inherent security vulnerability of Service Set Identifier (SSID) broadcasting?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It forces the use of the weak WEP encryption protocol.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It prevents the implementation of MAC address filtering.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It disables the router's internal firewall.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It broadcasts the identity of the network.",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q101",
+      "number": 146,
+      "type": "single_choice",
+      "question": "Which interface is the default Switched Virtual Interface (SVI) on a Cisco switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Interface GigabitEthernet 0/1",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Interface FastEthernet 0/1",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Vlan 1",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Interface Null0",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q102",
+      "number": 147,
+      "type": "single_choice",
+      "question": "A network administrator needs to keep the user name, password, and session contents private when establishing remote CLI connectivity with a switch to manage it. Which access method should be chosen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Telnet",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "HTTP",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "SSH",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Console Cable",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q103",
+      "number": 148,
+      "type": "multiple_choice",
+      "question": "A network administrator notices that some newly installed Ethernet cabling is carrying corrupt and distorted data signals. The new cabling was installed in the ceiling close to fluorescent lights and electrical equipment. Which two factors may interfere with the copper cabling and result in signal distortion and data corruption? (Choose two.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "RFI",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "EMI",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Crosswalk",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Attenuation",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q104",
+      "number": 149,
+      "type": "single_choice",
+      "question": "Convert the following hexadecimal number 0XA2F into its decimal equivalent.",
+      "options": [
+        {
+          "id": "A",
+          "text": "2560",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "2601",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "2607",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "2989",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q105",
+      "number": 150,
+      "type": "single_choice",
+      "question": "Which type of wireless communication is based on 802.11 standards?",
+      "options": [
+        {
+          "id": "A",
+          "text": "WiMAX",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "LTE",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Bluetooth",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "WIFI",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q106",
+      "number": 151,
+      "type": "single_choice",
+      "question": "Convert the following binary notation 1010101 into its decimal equivalent.",
+      "options": [
+        {
+          "id": "A",
+          "text": "64",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "101",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "128",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "85",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q107",
+      "number": 152,
+      "type": "single_choice",
+      "question": "You have a network with a custom subnet mask of 255.255.255.224. How many usable IP addresses are available within each subnet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "32",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "30",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "62",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "14",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q108",
+      "number": 153,
+      "type": "single_choice",
+      "question": "A router with a valid operating system contains a configuration file stored in NVRAM, the configuration file has an enabled secret password but no console password. When the router boots up, which mode will the user be in initially?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Interface Configuration mode",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "EXEC mode",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Global Configuration mode",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Setup mode",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q110",
+      "number": 154,
+      "type": "single_choice",
+      "question": "Which three commands are used to set up secure access to a router through a connection to the console interface? (Choose three)",
+      "options": [
+        {
+          "id": "A",
+          "text": "line aux 0, password cisco, login",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "interface con 0, enable secret cisco, login",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "line con 0, login, password cisco",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "console password cisco, enable secret, line con 0",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q111",
+      "number": 155,
+      "type": "single_choice",
+      "question": "You have a prefix length of /19. What is your custom subnet mask?",
+      "options": [
+        {
+          "id": "A",
+          "text": "255.255.224.0",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "255.255.252.0",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "255.255.0.0",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "255.255.240.0",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q112",
+      "number": 156,
+      "type": "single_choice",
+      "question": "Convert the following IPv6 address into the most compressed form: 0678:0DF5:0000:CB34:0034:0000:0000:02B0",
+      "options": [
+        {
+          "id": "A",
+          "text": "678:DF5::CB34:34::2B0",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "678:DF5:0:CB34:34:0:0:2B0",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "678:DF5:0:CB34:0034::2B0",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "678:DF5:0:CB34:34::2B0",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q114",
+      "number": 157,
+      "type": "single_choice",
+      "question": "What is indicated by the term throughput?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The number of packets dropped due to errors during transmission.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The delay experienced by a packet traveling from source to destination.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The maximum theoretical speed of the transmission medium.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The measure of the bits transferred across the media over a given period of time",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q115",
+      "number": 158,
+      "type": "single_choice",
+      "question": "What is the broadcast address of the network 192.168.100.200 \\ 255.255.255.248?",
+      "options": [
+        {
+          "id": "A",
+          "text": "198.168.100.207",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "198.168.100.200",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "198.168.100.255",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "198.168.100.206",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q116",
+      "number": 159,
+      "type": "single_choice",
+      "question": "What type of attack is the Ping of Death?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Man-in-the-Middle (MITM)",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Buffer Overflow (as the exploit type)",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Reconnaissance attack",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Denial of Service",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q117",
+      "number": 160,
+      "type": "single_choice",
+      "question": "Convert the following decimal number into hexadecimal: 593",
+      "options": [
+        {
+          "id": "A",
+          "text": "0x251",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "0x241",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "0x215",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "0x593",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q118",
+      "number": 161,
+      "type": "single_choice",
+      "question": "How does the service password-encryption command enhance password security on Cisco routers and switches?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It requires all remote connections to use SSH.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It applies a strong MD5 hash to the enable secret password.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It encrypts passwords that are stored in router or switch running configuration files",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "It prevents the configuration file from being copied or viewed by unauthorized users.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q119",
+      "number": 162,
+      "type": "single_choice",
+      "question": "Which IPv4/IPv6 coexistence method is described as 'A method of transporting an IPv6 packet over an IPv4 network. The IPv6 packet is encapsulated inside an IPv4 packet'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Translation (NAT64)",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Dual Stacking",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Fragmentation",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Tunneling",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q120",
+      "number": 163,
+      "type": "single_choice",
+      "question": "Which IPv4/IPv6 coexistence method is described as 'the devices run both IPv4 & IPv6 protocol stacks simultaneously'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tunneling",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Translation (NAT64)",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Aggregation",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Dual stacking",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q121",
+      "number": 164,
+      "type": "single_choice",
+      "question": "Which IPv4/IPv6 coexistence method is described as 'Network Address Translation (NAT64) allows IPv6-enabled devices to communicate with IPv4-enabled devices using a translation technique similar to NAT for IPv4'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Subnetting",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Translation",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Dual stacking",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Tunneling",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q122",
+      "number": 165,
+      "type": "single_choice",
+      "question": "Which network technology allows devices to communicate using both IPv4 and IPv6 addressing at the same time?",
+      "options": [
+        {
+          "id": "A",
+          "text": "tunneling",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "translation",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "dual stack",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "NAT44",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q123",
+      "number": 166,
+      "type": "single_choice",
+      "question": "What is the difference between the terms keyword and argument in the Cisco IOS command structure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A keyword is a user-defined parameter, while an argument is a predefined variable.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "A keyword is only used in EXEC mode, while an argument is only used in configuration mode.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "A keyword is a specific parameter. An argument is not a predefined variable.",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "A keyword is always a number, while an argument is always a word.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q124",
+      "number": 167,
+      "type": "single_choice",
+      "question": "You have a network with a custom subnet mask of 255.255.255.248. How many usable IP addresses are available?",
+      "options": [
+        {
+          "id": "A",
+          "text": "30",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "14",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "6",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "8",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q125",
+      "number": 168,
+      "type": "single_choice",
+      "question": "A technician adds a new PC to a LAN. After all connections are made and the OS loads, the technician can immediately access the internet. Why was the PC able to connect to the network without any additional configuration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The PC was pre configured using DHCP",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "The PC used an APIPA address to access the router.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The network automatically assigned a Layer 2 address to the PC.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The PC used a static IP address that the technician pre-configured.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q126",
+      "number": 169,
+      "type": "single_choice",
+      "question": "Convert the following hexadecimal number into decimal: 0x2Df",
+      "options": [
+        {
+          "id": "A",
+          "text": "719",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "735",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "975",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "512",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q127",
+      "number": 170,
+      "type": "single_choice",
+      "question": "Which three IP addresses are private addresses?",
+      "options": [
+        {
+          "id": "A",
+          "text": "169.254.1.1, 172.16.4.4, 192.168.5.5",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "192.170.5.5, 172.32.4.4, 10.1.1.1",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "10.10.10.10, 172.30.1.1, 169.254.1.1",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "192.168.5.5, 172.16.4.4, 10.1.1.1",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q128",
+      "number": 171,
+      "type": "single_choice",
+      "question": "Convert the following decimal number into hexadecimal: 620",
+      "options": [
+        {
+          "id": "A",
+          "text": "0x6C2",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "0x26C",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "0x2C6",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "0x620",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q129",
+      "number": 172,
+      "type": "single_choice",
+      "question": "A student is attempting to access an 802.11n wireless network. What method is used to manage contention-based access on this wireless network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Token Passing",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Time Division Multiplexing (TDM)",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "CSMA/CA",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "CSMA/CD",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q130",
+      "number": 173,
+      "type": "single_choice",
+      "question": "What is the subnet ID of the network 192.168.165.189 /26?",
+      "options": [
+        {
+          "id": "A",
+          "text": "192.168.165.0",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "192.168.165.128",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "192.168.165.189",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "192.168.165.192",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q131",
+      "number": 174,
+      "type": "single_choice",
+      "question": "You have a network with a custom subnet mask of 255.255.255.240. How many usable IP addresses are available?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "30",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "14",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "16",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q132",
+      "number": 175,
+      "type": "single_choice",
+      "question": "What are two benefits of using a layered network model (like the OSI model)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It requires all hardware vendors to use the same proprietary protocols.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "It guarantees faster network speeds and lower latency.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "It automatically assigns IP addresses and MAC addresses to all new devices.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "It prevents technology in one layer from affecting other layers and It assist on protocol design",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q133",
+      "number": 176,
+      "type": "single_choice",
+      "question": "A host needs to reach another host on a remote network, but the ARP cache has no mapping entries for the gateway. To what destination address does the host send an ARP request?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The host's own MAC address.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The broadcast MAC address",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "The MAC address of the gateway router.",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "The destination IP address's MAC address.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q135",
+      "number": 177,
+      "type": "single_choice",
+      "question": "Convert the following IPv6 address into the most compressed form: 0090:FEA0:00DA:F4A8:008A:0000:0000:0000",
+      "options": [
+        {
+          "id": "A",
+          "text": "90:FEA0:DA:F4A8:8A:0:0:0",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "0090:FEA0:00DA:F4A8:008A::",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "90:FEA0:DA:F4A8:8A",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "90:FEA0:DA:F4A8:8A::",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q136",
+      "number": 178,
+      "type": "single_choice",
+      "question": "What three additional configuration actions have to be performed to complete a basic SSH configuration (assuming login local and transport input ssh are configured)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "-Configure the console line, -Set the SSH version to 2, -Encrypt all configuration passwords",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "-Set a console password, -Configure an enable secret, -Change the default SSH port to 22",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "-Set the interface description, -Configure a DHCP pool, -Enable the interface with no shutdown",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "-Create a valid local username and password database, -Generate the asymmetric RSA keys, -Configure the correct Ip domain name",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q137",
+      "number": 179,
+      "type": "single_choice",
+      "question": "When a router is powered on, where will the router first search for a valid IOS image to load by default?",
+      "options": [
+        {
+          "id": "A",
+          "text": "flash memory",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "RAM",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "NVRAM",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "ROM",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q138",
+      "number": 180,
+      "type": "single_choice",
+      "question": "A client device has initiated a secure HTTP request to a web browser. Which well-known port address number is associated with the port number address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "port 80",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "port 22",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "port 443",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "port 23",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q139",
+      "number": 181,
+      "type": "single_choice",
+      "question": "How many bits are there in each hextet of an IPv6 address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "32 bits",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "4 bits",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "16 bits",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "8 bits",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q140",
+      "number": 182,
+      "type": "single_choice",
+      "question": "A data center hosts multiple operating systems on a single CPU. What network trend is this an example of?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Software-Defined Networking (SDN)",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Virtualization",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Bring Your Own Device (BYOD)",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Cloud computing",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q141",
+      "number": 183,
+      "type": "single_choice",
+      "question": "Which type of address does a switch use to build a MAC address table?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Source IP address",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Destination IP address",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Source MAC address",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Destination MAC address",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q142",
+      "number": 184,
+      "type": "single_choice",
+      "question": "Convert the following decimal number into hexadecimal: 2001",
+      "options": [
+        {
+          "id": "A",
+          "text": "0x7D1",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "0x2001",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "0x1D7",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "0x71D",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q144",
+      "number": 185,
+      "type": "single_choice",
+      "question": "What addressing information is recorded by a switch to build its MAC address table?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The port number and the IP address.",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "The source Layer 3 address of incoming packets.",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "The source layer 2 address of incoming frames",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "The destination Layer 2 address of incoming frames.",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q145",
+      "number": 186,
+      "type": "single_choice",
+      "question": "Which command is used in Cisco IOS to configure a name on the router?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Router (config)# hostname CL1",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Router (config)# name CL1",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Router (config-line)# line con 0",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Router # show version",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q146",
+      "number": 187,
+      "type": "single_choice",
+      "question": "Which command provides security on the console interface of a Cisco device?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Router (config-line)# password class",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Router (config-if)# security password",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Router (config)# enable secret class",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Router (config)# line vty 0 4",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q147",
+      "number": 188,
+      "type": "single_choice",
+      "question": "Which command is used in Cisco IOS to display a message when the router is accessed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Router (config)# description Welcome",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Router (config)# login banner #",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Router (config)# banner motd #",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Router (config)# message-of-the-day #",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q148",
+      "number": 189,
+      "type": "single_choice",
+      "question": "Which DHCP message is the server confirming that the address lease has been accepted?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCP Offer",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "DHCP Request",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "DHCP ACK",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "DHCP Discover",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q149",
+      "number": 190,
+      "type": "single_choice",
+      "question": "Which DHCP message is the client initiating a message to find a DHCP server?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCP Offer",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "DHCP Acknowledge (ACK)",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "DHCP Request",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "DHCP Discover",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q150",
+      "number": 191,
+      "type": "single_choice",
+      "question": "Which DHCP message is a DHCP server responding to the initial request by a client?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCP Acknowledge (ACK)",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "DHCP Request",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "DHCP Discover",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "DHCP Offer",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q151",
+      "number": 192,
+      "type": "single_choice",
+      "question": "Which DHCP message is the client accepting the IP address provided by the DHCP server?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCP Discover",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "DHCP Request",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "DHCP Acknowledge (ACK)",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "DHCP Offer",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q154",
+      "number": 193,
+      "type": "single_choice",
+      "question": "___________ contains a list of all active ports and the host MAC addresses that are assigned to the LAN.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mac address table",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Ethernet table",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Layer 2 table",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Data Link Table",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q156",
+      "number": 194,
+      "type": "single_choice",
+      "question": "True or False. Routers forward broadcast traffic out of all ports, accept the incoming port",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q158",
+      "number": 195,
+      "type": "single_choice",
+      "question": "_____________ is the process used to convert private addresses to internet-routable addresses?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHCP",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Telnet",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "NAT",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "ARP Request",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q160",
+      "number": 196,
+      "type": "single_choice",
+      "question": "Routers make forwarding decisions based on which address ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MAC address",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Physical Address",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Layer 2 Address",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "IP address",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q161",
+      "number": 197,
+      "type": "single_choice",
+      "question": "What is the port number for the DNS protocol?",
+      "options": [
+        {
+          "id": "A",
+          "text": "443",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "22",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "80",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "53",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q162",
+      "number": 198,
+      "type": "single_choice",
+      "question": "Which of the following is NOT one of the four basic characteristics that network architects must address to meet user expectations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Security",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "QOS",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Manageability",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "Fault Tolerance",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "orig-q163",
+      "number": 199,
+      "type": "single_choice",
+      "question": "True of False. The hexadecimal numbering system a base 16 numbering system.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q164",
+      "number": 200,
+      "type": "single_choice",
+      "question": "Which two layers of the OSI model do the Ethernet standards specify protocols?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data Link Layer, Physical Layer",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Data Link Layer, Session Layer",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Presentation Layer, Physical Layer",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Application Layer, Data Link Layer",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q165",
+      "number": 201,
+      "type": "single_choice",
+      "question": "Which layer of the OSI model provides services to allow end devices to exchange data across networks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Layer 1",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Layer 2",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Layer 7",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Layer 3",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q168",
+      "number": 202,
+      "type": "single_choice",
+      "question": "What does the acronym SSID stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Super Set Idea",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Service Set Indicator",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Special Set Identification",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Service Set Identifier",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "orig-q169",
+      "number": 203,
+      "type": "single_choice",
+      "question": "RFCs for internet standards are published and managed by what organization?",
+      "options": [
+        {
+          "id": "A",
+          "text": "IANA",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "IETF",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "ICANN",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "EEE",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "orig-q174",
+      "number": 204,
+      "type": "single_choice",
+      "question": "________________ management allows us to remotely connect to devices to perform administrative task.",
+      "options": [
+        {
+          "id": "A",
+          "text": "In-Band",
+          "isCorrect": true
+        },
+        {
+          "id": "B",
+          "text": "Out-of-Band",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "With-the-Band",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "Making-the Band",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "orig-q176",
+      "number": 205,
+      "type": "single_choice",
+      "question": "Which cable standard is shown here:",
+      "options": [
+        {
+          "id": "A",
+          "text": "T568A",
+          "isCorrect": false
+        },
+        {
+          "id": "B",
+          "text": "Fiber-A",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
+          "text": "Fiber-B",
+          "isCorrect": false
+        },
+        {
+          "id": "D",
+          "text": "T568B",
+          "isCorrect": true
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.blooket.com/image/upload/c_limit,f_auto,h_250,fl_lossy,q_auto:low/v1770237798/lwohn6uoggbwdzmuuc8s.png"
+        }
+      ]
+    }
+  ]
+}

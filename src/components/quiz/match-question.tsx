@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { ArrowRight, CheckCircle2, Link2, XCircle } from "lucide-react";
 
 import { formatQuizText } from "@/lib/format-text";
@@ -24,12 +24,21 @@ function shufflePairs(pairs: MatchPair[], seed: string): MatchPair[] {
   return items;
 }
 
+function indexBadgeLabel(index: number): string {
+  return String.fromCharCode(65 + index);
+}
+
 interface MatchQuestionProps {
   question: Question;
   matchAnswer: Record<string, string>;
   disabled: boolean;
   showFeedback: boolean;
   onChange: (leftId: string, rightId: string | null) => void;
+  /** Controlled pending left (keyboard + click share this). */
+  pendingLeftId: string | null;
+  onPendingLeftIdChange: (leftId: string | null) => void;
+  /** Notify parent of display-ordered right ids after shuffle (for keyboard index). */
+  onRightOrderChange?: (rightIds: string[]) => void;
 }
 
 export function MatchQuestion({
@@ -38,17 +47,23 @@ export function MatchQuestion({
   disabled,
   showFeedback,
   onChange,
+  pendingLeftId,
+  onPendingLeftIdChange,
+  onRightOrderChange,
 }: MatchQuestionProps) {
   const pairs = useMemo(
     () => question.matchPairs ?? [],
     [question.matchPairs]
   );
-  const [selectedLeftId, setSelectedLeftId] = useState<string | null>(null);
 
   const shuffledRight = useMemo(
     () => shufflePairs(pairs, question.id),
     [pairs, question.id]
   );
+
+  useEffect(() => {
+    onRightOrderChange?.(shuffledRight.map((pair) => pair.id));
+  }, [shuffledRight, onRightOrderChange]);
 
   const rightById = useMemo(
     () => new Map(pairs.map((pair) => [pair.id, pair])),
@@ -59,26 +74,26 @@ export function MatchQuestion({
 
   const handleLeftClick = (leftId: string) => {
     if (disabled) return;
-    setSelectedLeftId((current) => (current === leftId ? null : leftId));
+    onPendingLeftIdChange(pendingLeftId === leftId ? null : leftId);
   };
 
   const handleRightClick = (rightId: string) => {
-    if (disabled || !selectedLeftId) return;
+    if (disabled || !pendingLeftId) return;
 
     for (const [leftId, matchedRightId] of Object.entries(matchAnswer)) {
-      if (matchedRightId === rightId && leftId !== selectedLeftId) {
+      if (matchedRightId === rightId && leftId !== pendingLeftId) {
         onChange(leftId, null);
       }
     }
 
-    onChange(selectedLeftId, rightId);
-    setSelectedLeftId(null);
+    onChange(pendingLeftId, rightId);
+    onPendingLeftIdChange(null);
   };
 
   const clearMatch = (leftId: string) => {
     if (disabled) return;
     onChange(leftId, null);
-    setSelectedLeftId(null);
+    onPendingLeftIdChange(null);
   };
 
   const getLeftState = (leftId: string) => {
@@ -101,8 +116,7 @@ export function MatchQuestion({
   return (
     <div className="flex flex-col gap-4">
       <p className="text-sm text-muted-foreground">
-        Select an item on the left, then click its matching description on the
-        right.
+        Select a left item, then its match on the right. Keys: left, then right.
       </p>
 
       <div className="grid gap-4 md:grid-cols-2">
@@ -110,13 +124,13 @@ export function MatchQuestion({
           <p className="font-mono text-xs text-muted-foreground">
             Items
           </p>
-          {pairs.map((pair) => {
+          {pairs.map((pair, index) => {
             const matchedRightId = matchAnswer[pair.id];
             const matchedRight = matchedRightId
               ? rightById.get(matchedRightId)
               : undefined;
             const state = getLeftState(pair.id);
-            const isSelected = selectedLeftId === pair.id;
+            const isSelected = pendingLeftId === pair.id;
 
             return (
               <div
@@ -143,9 +157,21 @@ export function MatchQuestion({
                 )}
               >
                 <div className="flex items-center justify-between gap-2">
-                  <span className="text-base font-semibold">
-                    {pair.left}
-                  </span>
+                  <div className="flex items-center gap-3">
+                    <span
+                      className={cn(
+                        "flex size-8 shrink-0 items-center justify-center rounded-md border font-mono text-sm font-medium",
+                        isSelected
+                          ? "border-primary bg-primary/10 text-primary"
+                          : "border-border bg-[var(--canvas-soft)] text-muted-foreground"
+                      )}
+                    >
+                      {indexBadgeLabel(index)}
+                    </span>
+                    <span className="text-base font-semibold">
+                      {pair.left}
+                    </span>
+                  </div>
                   {state === "correct" && (
                     <CheckCircle2 className="size-4 shrink-0 text-green-500" />
                   )}
@@ -189,10 +215,10 @@ export function MatchQuestion({
           <p className="font-mono text-xs text-muted-foreground">
             Descriptions
           </p>
-          {shuffledRight.map((pair) => {
+          {shuffledRight.map((pair, index) => {
             const isUsed = usedRightIds.has(pair.id);
             const isSelectedTarget =
-              selectedLeftId !== null && !isUsed && !disabled;
+              pendingLeftId !== null && !isUsed && !disabled;
             const state = getRightState(pair.id);
 
             return (
@@ -214,11 +240,21 @@ export function MatchQuestion({
                     "border-destructive/50 bg-destructive/10"
                 )}
               >
-                <div className="flex items-start gap-2">
-                  {isUsed && !showFeedback && (
-                    <ArrowRight className="mt-0.5 size-4 shrink-0 text-primary" />
-                  )}
-                  <span>{formatQuizText(pair.right)}</span>
+                <div className="flex items-start gap-3">
+                  <span
+                    className={cn(
+                      "flex size-8 shrink-0 items-center justify-center rounded-md border font-mono text-sm font-medium",
+                      "border-border bg-[var(--canvas-soft)] text-muted-foreground"
+                    )}
+                  >
+                    {indexBadgeLabel(index)}
+                  </span>
+                  <div className="flex min-w-0 flex-1 items-start gap-2">
+                    {isUsed && !showFeedback && (
+                      <ArrowRight className="mt-0.5 size-4 shrink-0 text-primary" />
+                    )}
+                    <span>{formatQuizText(pair.right)}</span>
+                  </div>
                 </div>
               </button>
             );

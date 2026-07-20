@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -412,6 +412,21 @@ function QuizAppView({
     [currentQuestion]
   );
 
+  const matchLeftIds = useMemo(
+    () => currentQuestion?.matchPairs?.map((p) => p.id) ?? [],
+    [currentQuestion]
+  );
+
+  const [pendingMatchLeftId, setPendingMatchLeftId] = useState<string | null>(
+    null
+  );
+  const [matchRightIds, setMatchRightIds] = useState<string[]>([]);
+
+  useEffect(() => {
+    setPendingMatchLeftId(null);
+    setMatchRightIds([]);
+  }, [currentQuestion?.id]);
+
   const isCurrentAnswered = currentQuestion
     ? isQuestionAnswered(
         currentQuestion,
@@ -427,6 +442,23 @@ function QuizAppView({
       toggleOption(currentQuestion, optionId);
     },
     [currentQuestion, toggleOption]
+  );
+
+  const onPairMatch = useCallback(
+    (leftId: string, rightId: string) => {
+      if (!currentQuestion) return;
+
+      // Mirror MatchQuestion right-click: clear other lefts using same rightId
+      for (const [otherLeft, matchedRight] of Object.entries(
+        currentMatchAnswer
+      )) {
+        if (matchedRight === rightId && otherLeft !== leftId) {
+          setMatchAnswer(currentQuestion.id, otherLeft, null);
+        }
+      }
+      setMatchAnswer(currentQuestion.id, leftId, rightId);
+    },
+    [currentQuestion, currentMatchAnswer, setMatchAnswer]
   );
 
   useQuizKeyboard({
@@ -445,6 +477,11 @@ function QuizAppView({
     onNext: goNext,
     onPrev: goPrev,
     onSubmitTest: submitTest,
+    matchLeftIds,
+    matchRightIds,
+    pendingMatchLeftId,
+    onSetPendingMatchLeft: setPendingMatchLeftId,
+    onPairMatch,
   });
 
   if (totalQuestions === 0 || questions.length === 0) {
@@ -611,6 +648,9 @@ function QuizAppView({
                 onChange={(leftId, rightId) =>
                   setMatchAnswer(currentQuestion.id, leftId, rightId)
                 }
+                pendingLeftId={pendingMatchLeftId}
+                onPendingLeftIdChange={setPendingMatchLeftId}
+                onRightOrderChange={setMatchRightIds}
               />
             ) : isMultipleChoice(currentQuestion) ? (
               <div className="flex flex-col gap-2.5">

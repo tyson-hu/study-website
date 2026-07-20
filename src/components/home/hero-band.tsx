@@ -7,7 +7,7 @@ export function HeroBand() {
       <div className="relative mx-auto w-full max-w-[1200px]">
         <p className="font-mono text-xs text-[var(--mute)]">IT networking study</p>
         <h1 className="mt-3 text-5xl font-semibold tracking-[-2.4px] text-foreground">
-          Study Web.
+          Tyson's notes.
         </h1>
         <p className="mt-4 max-w-2xl text-lg leading-7 text-muted-foreground">
           Study networking with focused quizzes.

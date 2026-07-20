@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Study Web — IT Networking Quiz",
+  title: "Tyson's notes — IT Networking Quiz",
   description:
     "Practice Networking Essentials and Network Fundamentals with interactive quiz questions across two study sets.",
 };

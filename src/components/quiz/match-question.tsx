@@ -39,7 +39,10 @@ export function MatchQuestion({
   showFeedback,
   onChange,
 }: MatchQuestionProps) {
-  const pairs = question.matchPairs ?? [];
+  const pairs = useMemo(
+    () => question.matchPairs ?? [],
+    [question.matchPairs]
+  );
   const [selectedLeftId, setSelectedLeftId] = useState<string | null>(null);
 
   const shuffledRight = useMemo(

@@ -117,20 +117,34 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
   );
 
   const stats = useMemo(() => scoreResults(results), [results]);
-  const answeredCount = questions.filter((q) =>
-    isQuestionAnswered(
-      q,
-      selections[q.id] ?? [],
-      textFieldAnswers[q.id],
-      matchAnswers[q.id]
-    )
-  ).length;
+  const answeredCount = useMemo(
+    () =>
+      questions.filter((q) =>
+        isQuestionAnswered(
+          q,
+          selections[q.id] ?? [],
+          textFieldAnswers[q.id],
+          matchAnswers[q.id]
+        )
+      ).length,
+    [questions, selections, textFieldAnswers, matchAnswers]
+  );
   const progressValue =
     totalQuestions > 0 ? ((currentIndex + 1) / totalQuestions) * 100 : 0;
 
-  const currentSelection = selections[currentQuestion?.id ?? ""] ?? [];
-  const currentTextFieldAnswers = textFieldAnswers[currentQuestion?.id ?? ""] ?? {};
-  const currentMatchAnswer = matchAnswers[currentQuestion?.id ?? ""] ?? {};
+  const currentQuestionId = currentQuestion?.id ?? "";
+  const currentSelection = useMemo(
+    () => selections[currentQuestionId] ?? [],
+    [selections, currentQuestionId]
+  );
+  const currentTextFieldAnswers = useMemo(
+    () => textFieldAnswers[currentQuestionId] ?? {},
+    [textFieldAnswers, currentQuestionId]
+  );
+  const currentMatchAnswer = useMemo(
+    () => matchAnswers[currentQuestionId] ?? {},
+    [matchAnswers, currentQuestionId]
+  );
   const currentTextFields = currentQuestion
     ? getTextFields(currentQuestion)
     : [];

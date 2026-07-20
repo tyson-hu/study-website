@@ -5,7 +5,7 @@ export function NotesHeroes() {
 
   return (
     <>
-      <section className="bg-[var(--canvas-soft)] px-6 py-16 md:py-24">
+      <section className="bg-card px-6 py-16 md:py-24">
         <div className="mx-auto w-full max-w-[1200px]">
           <h2 className="text-[32px] font-semibold tracking-[-1.28px] text-foreground">
             {lightSet.title} notes.

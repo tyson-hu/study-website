@@ -1,6 +1,9 @@
 import Link from "next/link"
 
-import { StudySetMedia } from "@/components/home/study-set-media"
+import {
+  StudySetMedia,
+  type StudySetMediaVariant,
+} from "@/components/home/study-set-media"
 import { buttonVariants } from "@/components/ui/button"
 import {
   Card,
@@ -13,9 +16,14 @@ import {
 import { listQuizSets } from "@/lib/question-sets"
 import { cn } from "@/lib/utils"
 
-const kineticLabels: Record<string, string> = {
+const mediaLabels: Record<string, string> = {
   essentials: "Essentials",
   fundamentals: "Fundamentals",
+}
+
+const mediaVariants: Record<string, StudySetMediaVariant> = {
+  essentials: "retro",
+  fundamentals: "glyph",
 }
 
 export function StudySetCards() {
@@ -33,7 +41,10 @@ export function StudySetCards() {
               key={set.id}
               className="shadow-elevation-3 border-border bg-card p-6 md:p-8"
             >
-              <StudySetMedia label={kineticLabels[set.id] ?? set.title} />
+              <StudySetMedia
+                label={mediaLabels[set.id] ?? set.title}
+                variant={mediaVariants[set.id] ?? "glyph"}
+              />
               <CardHeader className="mt-6 px-0">
                 <CardTitle className="text-2xl font-semibold tracking-[-0.96px] text-foreground">
                   {set.title}
@@ -51,7 +62,8 @@ export function StudySetCards() {
                 <Link
                   href={`/quiz/${set.id}/practice`}
                   className={cn(
-                    buttonVariants({ variant: "default", size: "pill" })
+                    buttonVariants({ variant: "default", size: "lg" }),
+                    "h-11 rounded-lg px-5 text-base"
                   )}
                 >
                   Practice
@@ -61,7 +73,8 @@ export function StudySetCards() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={cn(
-                    buttonVariants({ variant: "secondary", size: "pill" })
+                    buttonVariants({ variant: "secondary", size: "lg" }),
+                    "h-11 rounded-lg px-5 text-base"
                   )}
                 >
                   Notes

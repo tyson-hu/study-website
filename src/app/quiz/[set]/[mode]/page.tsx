@@ -1,6 +1,7 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 
-import { QuizApp } from "@/components/quiz/quiz-app";
+import { QuizShell } from "@/components/quiz/quiz-shell";
 import {
   getQuizSet,
   isQuizMode,
@@ -24,5 +25,10 @@ export default async function QuizPage({
   const { set, mode } = await params;
   if (!isQuizSetId(set) || !isQuizMode(mode)) notFound();
   const meta = getQuizSet(set);
-  return <QuizApp setId={set} questionSet={meta.questionSet} mode={mode} />;
+
+  return (
+    <Suspense fallback={null}>
+      <QuizShell setId={set} questionSet={meta.questionSet} mode={mode} />
+    </Suspense>
+  );
 }

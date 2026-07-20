@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useSyncExternalStore } from "react";
+import { useCallback, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -36,18 +36,16 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
-import { LightRays } from "@/components/ui/light-rays";
+import { SafeLightRays } from "@/components/quiz/safe-light-rays";
 import { Progress } from "@/components/ui/progress";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Separator } from "@/components/ui/separator";
 import {
-  createEmptyQuizProgress,
-  getQuizProgressSnapshot,
-  QUIZ_PROGRESS_VERSION,
-  saveQuizProgress,
-  subscribeToQuizProgress,
-  type QuizProgressState,
-} from "@/lib/quiz-persistence";
+  useCompatibleQuizProgress,
+  usePersistedQuizProgress,
+  type QuizProgressApi,
+  type QuizProgressMode,
+} from "@/hooks/use-quiz-progress";
 import type { QuizSetId } from "@/lib/question-sets";
 import {
   evaluateAnswer,
@@ -70,42 +68,102 @@ import type {
   TextFieldAnswerMap,
 } from "@/types/question";
 
-interface QuizAppProps {
+export interface QuizAppProps {
   setId: QuizSetId;
   questionSet: QuestionSet;
   mode: QuizMode;
+  /** In-memory mode when persistence or effects fail. */
+  progressMode?: QuizProgressMode;
 }
 
-export function QuizApp({ setId, questionSet, mode }: QuizAppProps) {
-  const { questions, title, totalQuestions, schemaVersion } = questionSet;
-  const quizMode = mode;
-  const isPractice = quizMode === "practice";
+export function QuizApp({
+  setId,
+  questionSet,
+  mode,
+  progressMode = "persisted",
+}: QuizAppProps) {
+  if (progressMode === "compatible") {
+    return (
+      <QuizAppCompatible
+        setId={setId}
+        questionSet={questionSet}
+        mode={mode}
+      />
+    );
+  }
 
+  return (
+    <QuizAppPersisted setId={setId} questionSet={questionSet} mode={mode} />
+  );
+}
+
+function QuizAppPersisted({
+  setId,
+  questionSet,
+  mode,
+}: Omit<QuizAppProps, "progressMode">) {
   const identity = useMemo(
     () => ({
       setId,
-      mode: quizMode,
-      schemaVersion,
-      totalQuestions,
+      mode,
+      schemaVersion: questionSet.schemaVersion,
+      totalQuestions: questionSet.totalQuestions,
     }),
-    [setId, quizMode, schemaVersion, totalQuestions]
+    [setId, mode, questionSet.schemaVersion, questionSet.totalQuestions]
   );
+  const api = usePersistedQuizProgress(identity);
 
-  const serverProgress = useMemo(
-    () => createEmptyQuizProgress(identity),
-    [identity]
+  return (
+    <QuizAppView
+      questionSet={questionSet}
+      mode={mode}
+      progressMode="persisted"
+      {...api}
+    />
   );
+}
 
-  const subscribe = useMemo(
-    () => subscribeToQuizProgress(setId, quizMode),
-    [setId, quizMode]
+function QuizAppCompatible({
+  setId,
+  questionSet,
+  mode,
+}: Omit<QuizAppProps, "progressMode">) {
+  const identity = useMemo(
+    () => ({
+      setId,
+      mode,
+      schemaVersion: questionSet.schemaVersion,
+      totalQuestions: questionSet.totalQuestions,
+    }),
+    [setId, mode, questionSet.schemaVersion, questionSet.totalQuestions]
   );
+  const api = useCompatibleQuizProgress(identity);
 
-  const progress = useSyncExternalStore(
-    subscribe,
-    () => getQuizProgressSnapshot(identity),
-    () => serverProgress
+  return (
+    <QuizAppView
+      questionSet={questionSet}
+      mode={mode}
+      progressMode="compatible"
+      {...api}
+    />
   );
+}
+
+function QuizAppView({
+  questionSet,
+  mode,
+  progressMode,
+  progress,
+  updateProgress,
+  restartQuiz,
+}: Omit<QuizAppProps, "setId"> &
+  QuizProgressApi & {
+    progressMode: QuizProgressMode;
+  }) {
+  const { questions, title, totalQuestions } = questionSet;
+  const quizMode = mode;
+  const isPractice = quizMode === "practice";
+  const isCompatible = progressMode === "compatible";
 
   const {
     currentIndex,
@@ -116,34 +174,6 @@ export function QuizApp({ setId, questionSet, mode }: QuizAppProps) {
     testSubmitted,
     showResults,
   } = progress;
-
-  const updateProgress = useCallback(
-    (
-      updater:
-        | Partial<QuizProgressState>
-        | ((prev: QuizProgressState) => QuizProgressState)
-    ) => {
-      const prev = getQuizProgressSnapshot(identity);
-      const next =
-        typeof updater === "function"
-          ? updater(prev)
-          : {
-              ...prev,
-              ...updater,
-            };
-
-      saveQuizProgress({
-        ...next,
-        version: QUIZ_PROGRESS_VERSION,
-        setId: identity.setId,
-        mode: identity.mode,
-        schemaVersion: identity.schemaVersion,
-        totalQuestions: identity.totalQuestions,
-        updatedAt: Date.now(),
-      });
-    },
-    [identity]
-  );
 
   const currentQuestion = questions[currentIndex];
 
@@ -223,10 +253,6 @@ export function QuizApp({ setId, questionSet, mode }: QuizAppProps) {
     : testSubmitted;
   const optionsLocked = isPractice ? isCurrentChecked : testSubmitted;
   const currentResult = results[currentIndex];
-
-  const restartQuiz = useCallback(() => {
-    saveQuizProgress(createEmptyQuizProgress(identity));
-  }, [identity]);
 
   const toggleOption = useCallback(
     (question: Question, optionId: string) => {
@@ -388,13 +414,16 @@ export function QuizApp({ setId, questionSet, mode }: QuizAppProps) {
           !isPractice && "bg-[var(--canvas-soft)]"
         )}
       >
-        {isPractice && (
+        {isPractice && !isCompatible && (
           <>
             <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
             <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-              <LightRays />
+              <SafeLightRays />
             </div>
           </>
+        )}
+        {(isCompatible || !isPractice) && (
+          <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
         )}
         <SiteHeader />
         <main className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
@@ -424,15 +453,30 @@ export function QuizApp({ setId, questionSet, mode }: QuizAppProps) {
         !isPractice && "bg-[var(--canvas-soft)]"
       )}
     >
-      {isPractice && (
+      {isPractice && !isCompatible && (
         <>
           <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            <LightRays />
+            <SafeLightRays />
           </div>
         </>
       )}
+      {(isCompatible || !isPractice) && (
+        <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
+      )}
       <SiteHeader />
+
+      {isCompatible && (
+        <div className="border-b border-border bg-[var(--canvas-soft)]">
+          <div className="mx-auto flex max-w-3xl flex-col gap-1 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-sm text-muted-foreground">
+              Compatible mode is on — answers stay for this session only (not
+              saved across refreshes).
+            </p>
+            <Badge variant="secondary">Compatible</Badge>
+          </div>
+        </div>
+      )}
 
       <header className="sticky top-16 z-20 border-b border-border bg-card/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-3xl flex-col gap-3 px-4 py-4">

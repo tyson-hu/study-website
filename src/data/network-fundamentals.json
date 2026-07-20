@@ -253,8 +253,8 @@
       ]
     },
     {
-      "id": "q012",
-      "number": 12,
+      "id": "q009",
+      "number": 9,
       "type": "multiple_choice",
       "question": "What 3 sources help provide troubleshooting expertise?",
       "options": [
@@ -286,8 +286,8 @@
       ]
     },
     {
-      "id": "q013",
-      "number": 13,
+      "id": "q010",
+      "number": 10,
       "type": "single_choice",
       "question": "What does OSPF stand for?",
       "options": [
@@ -317,8 +317,8 @@
       ]
     },
     {
-      "id": "q014",
-      "number": 14,
+      "id": "q011",
+      "number": 11,
       "type": "single_choice",
       "question": "Which DHCPv4 message client send to accept an IPv4 address that is offered by a DHCP server?",
       "options": [
@@ -348,8 +348,8 @@
       ]
     },
     {
-      "id": "q015",
-      "number": 15,
+      "id": "q012",
+      "number": 12,
       "type": "single_choice",
       "question": "The address pool of a DHCP server is configured with 172.23.143.0/26. The network administrator reserves 14 IP addresses for file servers. How many IP addresses are left in the pool to be assigned to other hosts?",
       "options": [
@@ -379,8 +379,8 @@
       ]
     },
     {
-      "id": "q016",
-      "number": 16,
+      "id": "q013",
+      "number": 13,
       "type": "single_choice",
       "question": "True or False. MMF has a greater dispersion than SMF.",
       "options": [
@@ -400,8 +400,8 @@
       ]
     },
     {
-      "id": "q018",
-      "number": 18,
+      "id": "q014",
+      "number": 14,
       "type": "single_choice",
       "question": "A company uses DHCP servers to dynamically assign IPv4 addresses to employee workstations. The address lease duration is set as 5 days. An employee returns to the office after an absence of one week. When the employee boots the workstation, it sends a message to obtain an IP address. Which Layer 2 and Layer 3 destination addresses will the message contain?",
       "options": [
@@ -431,8 +431,8 @@
       ]
     },
     {
-      "id": "q019",
-      "number": 19,
+      "id": "q015",
+      "number": 15,
       "type": "single_choice",
       "question": "What happens to a port that is associated with VLAN 10 when the administrator deletes VLAN 10 from the switch?",
       "options": [
@@ -462,8 +462,8 @@
       ]
     },
     {
-      "id": "q020",
-      "number": 20,
+      "id": "q016",
+      "number": 16,
       "type": "single_choice",
       "question": "What route would have the lowest administrative distance?",
       "options": [
@@ -493,8 +493,8 @@
       ]
     },
     {
-      "id": "q021",
-      "number": 21,
+      "id": "q017",
+      "number": 17,
       "type": "single_choice",
       "question": "Which of these is the name for the capacity of a medium to carry data?",
       "options": [
@@ -524,8 +524,8 @@
       ]
     },
     {
-      "id": "q022",
-      "number": 22,
+      "id": "q018",
+      "number": 18,
       "type": "single_choice",
       "question": "Which interface is the default SVI on a cisco switch?",
       "options": [
@@ -555,8 +555,8 @@
       ]
     },
     {
-      "id": "q023",
-      "number": 23,
+      "id": "q019",
+      "number": 19,
       "type": "single_choice",
       "question": "A network administrator is configuring port security on a Cisco switch. The company security policy specifies that when a violation occurs, packets with unknown source addresses should be dropped and no notification should be sent. Which violation mode should be configured on the interfaces?",
       "options": [
@@ -586,8 +586,8 @@
       ]
     },
     {
-      "id": "q024",
-      "number": 24,
+      "id": "q020",
+      "number": 20,
       "type": "single_choice",
       "question": "What type of route is indicated by the code C in an IPv4 routing table on a Cisco router?",
       "options": [
@@ -617,8 +617,8 @@
       ]
     },
     {
-      "id": "q025",
-      "number": 25,
+      "id": "q021",
+      "number": 21,
       "type": "single_choice",
       "question": "Which command could be used on a router to ensure that an OSPF adjacency is formed with another router?",
       "options": [
@@ -648,8 +648,8 @@
       ]
     },
     {
-      "id": "q026",
-      "number": 26,
+      "id": "q022",
+      "number": 22,
       "type": "single_choice",
       "question": "When a Cisco switch receives untagged frames on a 802.1Q trunk port, Which VLAN ID is the traffic switched to by default?",
       "options": [
@@ -679,8 +679,8 @@
       ]
     },
     {
-      "id": "q027",
-      "number": 27,
+      "id": "q023",
+      "number": 23,
       "type": "single_choice",
       "question": "True or False. Does Single-mode fiber uses leds for the light source?",
       "options": [
@@ -700,8 +700,8 @@
       ]
     },
     {
-      "id": "q028",
-      "number": 28,
+      "id": "q024",
+      "number": 24,
       "type": "single_choice",
       "question": "A host PC is attempting to lease an address through DHCP. What message is sent by the server to let the client know it is able to use the provided IP information?",
       "options": [
@@ -731,8 +731,8 @@
       ]
     },
     {
-      "id": "q029",
-      "number": 29,
+      "id": "q025",
+      "number": 25,
       "type": "single_choice",
       "question": "Which statement regarding the service password-encryption command is true?",
       "options": [
@@ -762,8 +762,8 @@
       ]
     },
     {
-      "id": "q030",
-      "number": 30,
+      "id": "q026",
+      "number": 26,
       "type": "single_choice",
       "question": "A Cisco switch currently allows traffic tagged with VLANs 10 and 20 across trunk port Fa0/5. What is the effect of issuing a switchport trunk allowed vlan 30 command on Fa0/5?",
       "options": [
@@ -793,8 +793,8 @@
       ]
     },
     {
-      "id": "q031",
-      "number": 31,
+      "id": "q027",
+      "number": 27,
       "type": "single_choice",
       "question": "Which value in a routing table represents trustworthiness and is used by the router to determine which route to install into the routing table when there are multiple routes towards the same destination?",
       "options": [
@@ -824,8 +824,8 @@
       ]
     },
     {
-      "id": "q032",
-      "number": 32,
+      "id": "q028",
+      "number": 28,
       "type": "single_choice",
       "question": "True or False. Single mode fiber was designed for long distances.",
       "options": [
@@ -845,8 +845,8 @@
       ]
     },
     {
-      "id": "q033",
-      "number": 33,
+      "id": "q029",
+      "number": 29,
       "type": "single_choice",
       "question": "Which command would be best to use on an unused switch port if a company adheres to the best practices as recommended by cisco?",
       "options": [
@@ -876,8 +876,8 @@
       ]
     },
     {
-      "id": "q034",
-      "number": 34,
+      "id": "q030",
+      "number": 30,
       "type": "single_choice",
       "question": "Which type of vlan is used to designate which traffic is untagged when crossing a trunk port?",
       "options": [
@@ -907,8 +907,8 @@
       ]
     },
     {
-      "id": "q035",
-      "number": 35,
+      "id": "q031",
+      "number": 31,
       "type": "single_choice",
       "question": "Which standards organization oversees development of wireless LAN standards?",
       "options": [
@@ -938,8 +938,8 @@
       ]
     },
     {
-      "id": "q036",
-      "number": 36,
+      "id": "q032",
+      "number": 32,
       "type": "single_choice",
       "question": "What is the current version of OSPF being used for IPv4?",
       "options": [
@@ -969,8 +969,8 @@
       ]
     },
     {
-      "id": "q037",
-      "number": 37,
+      "id": "q033",
+      "number": 33,
       "type": "single_choice",
       "question": "Which of the following is the most common network media?",
       "options": [
@@ -995,8 +995,8 @@
       ]
     },
     {
-      "id": "q038",
-      "number": 38,
+      "id": "q034",
+      "number": 34,
       "type": "single_choice",
       "question": "Which command is used to remove only vlan 20 from a switch?",
       "options": [
@@ -1026,8 +1026,8 @@
       ]
     },
     {
-      "id": "q039",
-      "number": 39,
+      "id": "q035",
+      "number": 35,
       "type": "single_choice",
       "question": "Which connector does the STP cable use?",
       "options": [
@@ -1057,8 +1057,8 @@
       ]
     },
     {
-      "id": "q040",
-      "number": 40,
+      "id": "q036",
+      "number": 36,
       "type": "single_choice",
       "question": "Which action will bring an error-disabled switch port back to an operational state?",
       "options": [
@@ -1088,8 +1088,8 @@
       ]
     },
     {
-      "id": "q041",
-      "number": 41,
+      "id": "q037",
+      "number": 37,
       "type": "single_choice",
       "question": "When configuring a router as part of a router-on-a-stick inter-vlan routing topology, where should the IP address be assigned?",
       "options": [
@@ -1119,8 +1119,8 @@
       ]
     },
     {
-      "id": "q042",
-      "number": 42,
+      "id": "q038",
+      "number": 38,
       "type": "single_choice",
       "question": "Which of the following fiber-optic cable types use light emitting diodes (LEDs) as a data light source transmitter?",
       "options": [
@@ -1140,8 +1140,8 @@
       ]
     },
     {
-      "id": "q043",
-      "number": 43,
+      "id": "q039",
+      "number": 39,
       "type": "single_choice",
       "question": "What is one indication that a Windows computer did not receive an IPv4 address from a DHCP server?",
       "options": [
@@ -1171,8 +1171,8 @@
       ]
     },
     {
-      "id": "q044",
-      "number": 44,
+      "id": "q040",
+      "number": 40,
       "type": "single_choice",
       "question": "Where are dynamically learned MAC addresses stored when sticky learning is enabled with the switchport port-security mac-address sticky command?",
       "options": [
@@ -1202,8 +1202,8 @@
       ]
     },
     {
-      "id": "q045",
-      "number": 45,
+      "id": "q041",
+      "number": 41,
       "type": "single_choice",
       "question": "What is a characteristic of a default static route?",
       "options": [
@@ -1233,8 +1233,8 @@
       ]
     },
     {
-      "id": "q046",
-      "number": 46,
+      "id": "q042",
+      "number": 42,
       "type": "single_choice",
       "question": "The following three networks are directly connected to an OSPF router; 192.168.0.0/24, 192.168.1.0/24, and 192.168.2.0/24. Which OSPF network command would advertise only the 192.168.1.0 network to neighbors?",
       "options": [
@@ -1264,8 +1264,8 @@
       ]
     },
     {
-      "id": "q047",
-      "number": 47,
+      "id": "q043",
+      "number": 43,
       "type": "single_choice",
       "question": "What command is used to verify the condition of the switch interfaces, including the status of the interfaces and a configured IP address?",
       "options": [
@@ -1295,8 +1295,8 @@
       ]
     },
     {
-      "id": "q048",
-      "number": 48,
+      "id": "q044",
+      "number": 44,
       "type": "single_choice",
       "question": "The address pool of a DHCP server is configured with 192.168.184.0/26. The network administrator reserves 18 IP addresses for access points. How many IP addresses are left in the pool to be assigned to other hosts?",
       "options": [
@@ -1326,8 +1326,8 @@
       ]
     },
     {
-      "id": "q049",
-      "number": 49,
+      "id": "q045",
+      "number": 45,
       "type": "single_choice",
       "question": "You are configuring Single-Area OSPF. how many areas will be used?",
       "options": [
@@ -1357,8 +1357,8 @@
       ]
     },
     {
-      "id": "q050",
-      "number": 50,
+      "id": "q046",
+      "number": 46,
       "type": "single_choice",
       "question": "What identifies the address of the remote network?",
       "options": [
@@ -1388,8 +1388,8 @@
       ]
     },
     {
-      "id": "q051",
-      "number": 51,
+      "id": "q047",
+      "number": 47,
       "type": "single_choice",
       "question": "What identifies how a route was learned?",
       "options": [
@@ -1419,8 +1419,8 @@
       ]
     },
     {
-      "id": "q052",
-      "number": 52,
+      "id": "q048",
+      "number": 48,
       "type": "single_choice",
       "question": "A technician is configuring a router to allow for all forms of management access. As part of each different type of access, the technician is trying to type the command login. Which configuration mode should be entered to do this task?",
       "options": [
@@ -1450,8 +1450,8 @@
       ]
     },
     {
-      "id": "q053",
-      "number": 53,
+      "id": "q049",
+      "number": 49,
       "type": "single_choice",
       "question": "Which media uses patterns of light to represent bits?",
       "options": [
@@ -1476,8 +1476,8 @@
       ]
     },
     {
-      "id": "q054",
-      "number": 54,
+      "id": "q050",
+      "number": 50,
       "type": "single_choice",
       "question": "A network administrator configures a router by the command ip route 0.0.0.0 0.0.0.0 209.165.200.226. What is the purpose of this command?",
       "options": [
@@ -1507,8 +1507,8 @@
       ]
     },
     {
-      "id": "q055",
-      "number": 55,
+      "id": "q051",
+      "number": 51,
       "type": "single_choice",
       "question": "Why would a Layer 2 switch need an IP address?",
       "options": [
@@ -1538,8 +1538,8 @@
       ]
     },
     {
-      "id": "q056",
-      "number": 56,
+      "id": "q052",
+      "number": 52,
       "type": "single_choice",
       "question": "The address pool of a DHCP server is configured with 172.18.93.0/25. The network administrator reserves 10 IP addresses for web servers. How many IP addresses are left in the pool to be assigned to other hosts?",
       "options": [
@@ -1569,8 +1569,8 @@
       ]
     },
     {
-      "id": "q057",
-      "number": 57,
+      "id": "q053",
+      "number": 53,
       "type": "multiple_choice",
       "question": "Which two statements are true regarding switch port security? (Choose two.)",
       "options": [
@@ -1601,8 +1601,8 @@
       ]
     },
     {
-      "id": "q058",
-      "number": 58,
+      "id": "q054",
+      "number": 54,
       "type": "single_choice",
       "question": "Allan contacts the ISP complaining of issues connecting to the internet. He is unsure of the problem. The ISP sends a new preconfigured modem to Allan in hopes that it solves the situation. Which structured troubleshooting method is the ISP using?",
       "options": [
@@ -1632,8 +1632,8 @@
       ]
     },
     {
-      "id": "q059",
-      "number": 59,
+      "id": "q055",
+      "number": 55,
       "type": "multiple_choice",
       "question": "What are three characteristics of an SVI? (Choose three.)",
       "options": [
@@ -1665,8 +1665,8 @@
       ]
     },
     {
-      "id": "q060",
-      "number": 60,
+      "id": "q056",
+      "number": 56,
       "type": "match",
       "question": "Match each DHCP message type with its description.",
       "options": [],
@@ -1695,8 +1695,8 @@
       ]
     },
     {
-      "id": "q064",
-      "number": 64,
+      "id": "q057",
+      "number": 57,
       "type": "single_choice",
       "question": "Which wildcard mask would be used to advertise the 192.168.5.96/27 network as part of an OSPF configuration?",
       "options": [
@@ -1726,8 +1726,8 @@
       ]
     },
     {
-      "id": "q065",
-      "number": 65,
+      "id": "q058",
+      "number": 58,
       "type": "single_choice",
       "question": "Which distinct type of VLAN is used by an administrator to access and configure a switch?",
       "options": [
@@ -1757,8 +1757,8 @@
       ]
     },
     {
-      "id": "q066",
-      "number": 66,
+      "id": "q059",
+      "number": 59,
       "type": "single_choice",
       "question": "Refer to the exhibit. A router-on-a-stick configuration was implemented for VLANS 15, 30, and 45, according to the show running-config command output. PCs on VLAN 45 that are using the 172.16.45.0 /24 network are having trouble connecting to PCs on VLAN 30 in the 172.16.30.0 /24 network. Which error is most likely causing this problem?",
       "options": [
@@ -1794,8 +1794,8 @@
       ]
     },
     {
-      "id": "q067",
-      "number": 67,
+      "id": "q060",
+      "number": 60,
       "type": "single_choice",
       "question": "True or False. This is the correct standard for the T568B pinout.",
       "options": [
@@ -1821,8 +1821,8 @@
       ]
     },
     {
-      "id": "q068",
-      "number": 68,
+      "id": "q061",
+      "number": 61,
       "type": "single_choice",
       "question": "A high school uses VLAN15 for the laboratory network and VLAN30 for the faculty network. What is required to enable communication between these two VLANs while using the router-on-a-stick approach?",
       "options": [
@@ -1852,8 +1852,8 @@
       ]
     },
     {
-      "id": "q069",
-      "number": 69,
+      "id": "q062",
+      "number": 62,
       "type": "single_choice",
       "question": "What is NOT considered a physical layer problem?",
       "options": [
@@ -1883,8 +1883,8 @@
       ]
     },
     {
-      "id": "q070",
-      "number": 70,
+      "id": "q063",
+      "number": 63,
       "type": "single_choice",
       "question": "True or False. Multi mode Fiber uses Lasers as the light source?",
       "options": [
@@ -1904,8 +1904,8 @@
       ]
     },
     {
-      "id": "q071",
-      "number": 71,
+      "id": "q064",
+      "number": 64,
       "type": "single_choice",
       "question": "Refer to the exhibit. The Fa0/2 interface on switch S1 has been configured with the switchport port-security mac-address 0023.189d.6456 command and a workstation has been connected. What could be the reason that the Fa0/2 interface is shutdown?",
       "options": [
@@ -1941,8 +1941,8 @@
       ]
     },
     {
-      "id": "q072",
-      "number": 72,
+      "id": "q065",
+      "number": 65,
       "type": "single_choice",
       "question": "What is the effect of using the switchport port- security command?",
       "options": [
@@ -1972,8 +1972,8 @@
       ]
     },
     {
-      "id": "q073",
-      "number": 73,
+      "id": "q066",
+      "number": 66,
       "type": "single_choice",
       "question": "An IT security specialist enables port security on a switch port of a Cisco switch. What is the default violation mode in use until the switch port is configured to use a different violation mode?",
       "options": [
@@ -2003,8 +2003,8 @@
       ]
     },
     {
-      "id": "q074",
-      "number": 74,
+      "id": "q067",
+      "number": 67,
       "type": "match",
       "question": "Match each network performance term with its description.",
       "options": [],
@@ -2028,8 +2028,8 @@
       ]
     },
     {
-      "id": "q077",
-      "number": 77,
+      "id": "q068",
+      "number": 68,
       "type": "multiple_choice",
       "question": "A network administrator is determining the best placement of VLAN trunk links. Which two types of point-to-point connections utilize VLAN trunking? (Choose two.)",
       "options": [
@@ -2060,8 +2060,8 @@
       ]
     },
     {
-      "id": "q078",
-      "number": 78,
+      "id": "q069",
+      "number": 69,
       "type": "single_choice",
       "question": "What command is used to advertise the default route via OSPFv2?",
       "options": [
@@ -2086,8 +2086,8 @@
       ]
     },
     {
-      "id": "q079",
-      "number": 79,
+      "id": "q070",
+      "number": 70,
       "type": "single_choice",
       "question": "When would it be more beneficial to use a dynamic routing protocol instead of static routing?",
       "options": [
@@ -2117,8 +2117,8 @@
       ]
     },
     {
-      "id": "q080",
-      "number": 80,
+      "id": "q071",
+      "number": 71,
       "type": "single_choice",
       "question": "When data is encoded as pulses of light, which media is being used to transmit the data?",
       "options": [
@@ -2143,8 +2143,8 @@
       ]
     },
     {
-      "id": "q081",
-      "number": 81,
+      "id": "q072",
+      "number": 72,
       "type": "single_choice",
       "question": "A technician configures a switch with these commands: SwitchA(config)# interface vlan 1 SwitchA(config-if)# ip address 192.168.1.1 255.255.255.0 SwitchA(config-if)# no shutdown What is the technician configuring?",
       "options": [
@@ -2174,8 +2174,8 @@
       ]
     },
     {
-      "id": "q082",
-      "number": 82,
+      "id": "q073",
+      "number": 73,
       "type": "single_choice",
       "question": "True or False. Single Mode Fiber has a larger core than Multi mode Fiber.",
       "options": [
@@ -2195,8 +2195,8 @@
       ]
     },
     {
-      "id": "q083",
-      "number": 83,
+      "id": "q074",
+      "number": 74,
       "type": "single_choice",
       "question": "What network address and subnet mask combination would be used to create a default static route that matches any IPv4 destination?",
       "options": [
@@ -2226,8 +2226,8 @@
       ]
     },
     {
-      "id": "q084",
-      "number": 84,
+      "id": "q075",
+      "number": 75,
       "type": "multiple_choice",
       "question": "What are two common types of static routes in routing tables? (Choose two)",
       "options": [
@@ -2258,8 +2258,8 @@
       ]
     },
     {
-      "id": "q085",
-      "number": 85,
+      "id": "q076",
+      "number": 76,
       "type": "single_choice",
       "question": "What is a result when the DHCP servers are not operational in a network?",
       "options": [
@@ -2289,8 +2289,8 @@
       ]
     },
     {
-      "id": "q086",
-      "number": 86,
+      "id": "q077",
+      "number": 77,
       "type": "single_choice",
       "question": "Port Fa0/11 on a switch is assigned to VLAN 30. If the command no switchport access vlan 30 is entered on the Fa0/11 interface, what will happen?",
       "options": [
@@ -2320,8 +2320,8 @@
       ]
     },
     {
-      "id": "q087",
-      "number": 87,
+      "id": "q078",
+      "number": 78,
       "type": "single_choice",
       "question": "What is the purpose of the startup configuration file on a Cisco router?",
       "options": [
@@ -2351,8 +2351,8 @@
       ]
     },
     {
-      "id": "q088",
-      "number": 88,
+      "id": "q079",
+      "number": 79,
       "type": "single_choice",
       "question": "Which message does an IPv4 host use to reply when it receives a DHCPOFFER message from a DHCP server?",
       "options": [
@@ -2382,8 +2382,8 @@
       ]
     },
     {
-      "id": "q089",
-      "number": 89,
+      "id": "q080",
+      "number": 80,
       "type": "single_choice",
       "question": "What is a disadvantage of using dynamic routing protocols?",
       "options": [
@@ -2413,8 +2413,8 @@
       ]
     },
     {
-      "id": "q090",
-      "number": 90,
+      "id": "q081",
+      "number": 81,
       "type": "single_choice",
       "question": "An administrator who is troubleshooting connectivity issues on a switch notices that a switch port configured for port security is in the err-disabled state. After verifying the cause of the violation, how should the administrator re-enable the port without disrupting network operation?",
       "options": [
@@ -2444,8 +2444,8 @@
       ]
     },
     {
-      "id": "q091",
-      "number": 91,
+      "id": "q082",
+      "number": 82,
       "type": "single_choice",
       "question": "Which of the following terminates with BNC, N type and F type connectors?",
       "options": [
@@ -2470,8 +2470,8 @@
       ]
     },
     {
-      "id": "q092",
-      "number": 92,
+      "id": "q083",
+      "number": 83,
       "type": "single_choice",
       "question": "What is the default administrative distance of OSPF?",
       "options": [
@@ -2501,8 +2501,8 @@
       ]
     },
     {
-      "id": "q093",
-      "number": 93,
+      "id": "q084",
+      "number": 84,
       "type": "single_choice",
       "question": "What is the Max Length of the Shielded twisted pair cable?",
       "options": [
@@ -2532,8 +2532,8 @@
       ]
     },
     {
-      "id": "q094",
-      "number": 94,
+      "id": "q085",
+      "number": 85,
       "type": "single_choice",
       "question": "Which characteristic describes crosstalk?",
       "options": [
@@ -2563,8 +2563,8 @@
       ]
     },
     {
-      "id": "q095",
-      "number": 95,
+      "id": "q086",
+      "number": 86,
       "type": "multiple_choice",
       "question": "Which two pieces of information are in the RAM of a Cisco router during normal operation? (Choose two.)",
       "options": [
@@ -2595,8 +2595,8 @@
       ]
     },
     {
-      "id": "q096",
-      "number": 96,
+      "id": "q087",
+      "number": 87,
       "type": "single_choice",
       "question": "Which of the following conjurations will shutdown multiple switchports at one time?",
       "options": [
@@ -2626,8 +2626,8 @@
       ]
     },
     {
-      "id": "q097",
-      "number": 97,
+      "id": "q088",
+      "number": 88,
       "type": "single_choice",
       "question": "A network administrator has just changed the router ID on a router that is working in an OSPFv2\nenvironment. What should the administrator do to reset the adjacencies and use the new router\nID?",
       "options": [
@@ -2657,8 +2657,8 @@
       ]
     },
     {
-      "id": "q098",
-      "number": 98,
+      "id": "q089",
+      "number": 89,
       "type": "single_choice",
       "question": "Which media uses electrical pulses to represent bits?",
       "options": [
@@ -2683,8 +2683,8 @@
       ]
     },
     {
-      "id": "q099",
-      "number": 99,
+      "id": "q090",
+      "number": 90,
       "type": "single_choice",
       "question": "Refer to the Exhibit.\nWhich Fiber-Optic Connector is this?",
       "options": [
@@ -2720,8 +2720,8 @@
       ]
     },
     {
-      "id": "q100",
-      "number": 100,
+      "id": "q091",
+      "number": 91,
       "type": "single_choice",
       "question": "Refer to the exhibit.\n\nWhat can be determined about port security from the information that is shown?",
       "options": [
@@ -2757,8 +2757,8 @@
       ]
     },
     {
-      "id": "q101",
-      "number": 101,
+      "id": "q092",
+      "number": 92,
       "type": "match",
       "question": "Match each statement with the example subnet and wildcard that it describes.",
       "options": [],
@@ -2792,8 +2792,8 @@
       ]
     },
     {
-      "id": "q102",
-      "number": 102,
+      "id": "q093",
+      "number": 93,
       "type": "single_choice",
       "question": "Which entry in the routing table identifies the trustworthiness of the route source?",
       "options": [
@@ -2823,8 +2823,8 @@
       ]
     },
     {
-      "id": "q103",
-      "number": 103,
+      "id": "q094",
+      "number": 94,
       "type": "multiple_choice",
       "question": "Which two of the following sources of help typically provide troubleshooting expertise? (Choose\ntwo.)",
       "options": [
@@ -2855,8 +2855,8 @@
       ]
     },
     {
-      "id": "q108",
-      "number": 108,
+      "id": "q095",
+      "number": 95,
       "type": "single_choice",
       "question": "Refer to the exhibit.\n\nA network administrator is configuring access control to switch SW1. If the administrator uses a console connection to connect to the switch, which password is needed to access user EXEC mode?",
       "options": [
@@ -2892,8 +2892,8 @@
       ]
     },
     {
-      "id": "q109",
-      "number": 109,
+      "id": "q096",
+      "number": 96,
       "type": "multiple_choice",
       "question": "Which four steps are needed to configure a voice VLAN on a switch port? (Choose four).",
       "options": [
@@ -2946,8 +2946,8 @@
       ]
     },
     {
-      "id": "q110",
-      "number": 110,
+      "id": "q097",
+      "number": 97,
       "type": "single_choice",
       "question": "Refer to the exhibit.\n\nWhat does the number 10 represent in the exhibit?",
       "options": [
@@ -2983,8 +2983,8 @@
       ]
     },
     {
-      "id": "q111",
-      "number": 111,
+      "id": "q098",
+      "number": 98,
       "type": "multiple_choice",
       "question": "Which two characteristics describe the native VLAN? (Choose two.)",
       "options": [
@@ -3015,8 +3015,8 @@
       ]
     },
     {
-      "id": "q112",
-      "number": 112,
+      "id": "q099",
+      "number": 99,
       "type": "single_choice",
       "question": "What is the meaning of the number 10 in the encapsulation dot1Q 10 native router subinterface\ncommand?",
       "options": [
@@ -3046,8 +3046,8 @@
       ]
     },
     {
-      "id": "q113",
-      "number": 113,
+      "id": "q100",
+      "number": 100,
       "type": "single_choice",
       "question": "Which of these criteria is the preferred method for a router to derive the router ID?",
       "options": [
@@ -3077,8 +3077,8 @@
       ]
     },
     {
-      "id": "q114",
-      "number": 114,
+      "id": "q101",
+      "number": 101,
       "type": "single_choice",
       "question": "True or false?\nAfter a problem is resolved, there is no further action you need to take.",
       "options": [
@@ -3098,8 +3098,8 @@
       ]
     },
     {
-      "id": "q115",
-      "number": 115,
+      "id": "q102",
+      "number": 102,
       "type": "single_choice",
       "question": "A network administrator configures the port security feature on a switch. The security policy\nspecifies that each access port should allow up to two MAC addresses. When the maximum\nnumber of MAC addresses is reached, a frame with the unknown source MAC address is dropped\nand a notification is sent to the syslog server. Which security violation mode should be configured\nfor each access port?",
       "options": [
@@ -3129,8 +3129,8 @@
       ]
     },
     {
-      "id": "q116",
-      "number": 116,
+      "id": "q103",
+      "number": 103,
       "type": "single_choice",
       "question": "Which of the following is a correct router ID in OSPF?",
       "options": [
@@ -3160,8 +3160,8 @@
       ]
     },
     {
-      "id": "q117",
-      "number": 117,
+      "id": "q104",
+      "number": 104,
       "type": "single_choice",
       "question": "Refer to the exhibit.\n\nA network administrator needs to configure router-on-a-stick for the networks that are shown. How many sub interfaces will have to be created on the router if each VLAN that is shown is to be routed and each VLAN has its own sub interface?",
       "options": [
@@ -3197,8 +3197,8 @@
       ]
     },
     {
-      "id": "q118",
-      "number": 118,
+      "id": "q105",
+      "number": 105,
       "type": "single_choice",
       "question": "What is required to perform router-on-a-stick inter-VLAN routing?",
       "options": [
@@ -3228,8 +3228,8 @@
       ]
     },
     {
-      "id": "q119",
-      "number": 119,
+      "id": "q106",
+      "number": 106,
       "type": "single_choice",
       "question": "With respect to physical media, STP cables stands for?",
       "options": [
@@ -3259,8 +3259,8 @@
       ]
     },
     {
-      "id": "q120",
-      "number": 120,
+      "id": "q107",
+      "number": 107,
       "type": "single_choice",
       "question": "Which of the following counters EMI and RFI by using shielding techniques and special\nconnectors?",
       "options": [
@@ -3285,8 +3285,8 @@
       ]
     },
     {
-      "id": "q121",
-      "number": 121,
+      "id": "q108",
+      "number": 108,
       "type": "single_choice",
       "question": "If a VLAN 10 is created with active ports then it needs to be deleted what must happen before the\ndeletion?",
       "options": [
@@ -3316,8 +3316,8 @@
       ]
     },
     {
-      "id": "q122",
-      "number": 122,
+      "id": "q109",
+      "number": 109,
       "type": "single_choice",
       "question": "A network administrator issues the show vlan brief command while troubleshooting a user\nsupport ticket. What output will be displayed?",
       "options": [
@@ -3347,8 +3347,8 @@
       ]
     },
     {
-      "id": "q123",
-      "number": 123,
+      "id": "q110",
+      "number": 110,
       "type": "single_choice",
       "question": "Match the routing table entry to the corresponding function. (Not all options are used.)\nadministrative distance",
       "options": [
@@ -3378,8 +3378,8 @@
       ]
     },
     {
-      "id": "q124",
-      "number": 124,
+      "id": "q111",
+      "number": 111,
       "type": "single_choice",
       "question": "What is the purpose of Cisco Discovery Protocol (CDP)?",
       "options": [
@@ -3409,8 +3409,8 @@
       ]
     },
     {
-      "id": "q125",
-      "number": 125,
+      "id": "q112",
+      "number": 112,
       "type": "multiple_choice",
       "question": "Which is true of VLAN 1? (Choose all that apply.)",
       "options": [
@@ -3442,8 +3442,8 @@
       ]
     },
     {
-      "id": "q126",
-      "number": 126,
+      "id": "q113",
+      "number": 113,
       "type": "single_choice",
       "question": "Match the routing table entry to the corresponding function. (Not all options are used.)\ndestination network",
       "options": [
@@ -3473,8 +3473,8 @@
       ]
     },
     {
-      "id": "q127",
-      "number": 127,
+      "id": "q114",
+      "number": 114,
       "type": "single_choice",
       "question": "Refer to the exhibit.\nPC1 is configured to obtain a dynamic IP address from the DHCP server. PC1 has been shut down\nfor two weeks. When PC1 boots and tries to request an available IP address, which destination IP\naddress will PC1 place in the IP header?",
       "options": [
@@ -3510,8 +3510,8 @@
       ]
     },
     {
-      "id": "q128",
-      "number": 128,
+      "id": "q115",
+      "number": 115,
       "type": "multiple_choice",
       "question": "What are two advantages of static routing over dynamic routing? (Choose two.)",
       "options": [
@@ -3542,8 +3542,8 @@
       ]
     },
     {
-      "id": "q129",
-      "number": 129,
+      "id": "q116",
+      "number": 116,
       "type": "single_choice",
       "question": "Refer to the Exhibit.\n\nWhich Fiber-Optic Connector is this?",
       "options": [
@@ -3579,8 +3579,8 @@
       ]
     },
     {
-      "id": "q130",
-      "number": 130,
+      "id": "q117",
+      "number": 117,
       "type": "single_choice",
       "question": "What command can you use to ask the DHCP server to refresh your IP addressing configuration?",
       "options": [
@@ -3610,8 +3610,8 @@
       ]
     },
     {
-      "id": "q131",
-      "number": 131,
+      "id": "q118",
+      "number": 118,
       "type": "single_choice",
       "question": "Match the routing table entry to the corresponding function. (Not all options are used.)\n\nroute source",
       "options": [
@@ -3641,8 +3641,8 @@
       ]
     },
     {
-      "id": "q132",
-      "number": 132,
+      "id": "q119",
+      "number": 119,
       "type": "single_choice",
       "question": "What is a disadvantage of using router-on-a-stick inter-VLAN routing?",
       "options": [
@@ -3672,8 +3672,8 @@
       ]
     },
     {
-      "id": "q133",
-      "number": 133,
+      "id": "q120",
+      "number": 120,
       "type": "single_choice",
       "question": "As part of the new security policy, all switches on the network are configured to automatically\nlearn MAC addresses for each port. All running configurations are saved at the start and close of\nevery business day. A severe thunderstorm causes an extended power outage several hours after\nthe close of business. When the switches are brought back online, the dynamically learned MAC\naddresses are retained. Which port security configuration enabled this?",
       "options": [
@@ -3703,8 +3703,8 @@
       ]
     },
     {
-      "id": "q134",
-      "number": 134,
+      "id": "q121",
+      "number": 121,
       "type": "single_choice",
       "question": "True or False.\nFiber Optic Cable can be effected by EMI and RFI.",
       "options": [
@@ -3724,8 +3724,8 @@
       ]
     },
     {
-      "id": "q135",
-      "number": 135,
+      "id": "q122",
+      "number": 122,
       "type": "multiple_choice",
       "question": "What are the three inter-VLAN routing options (Check all that apply)?",
       "options": [
@@ -3757,8 +3757,8 @@
       ]
     },
     {
-      "id": "q136",
-      "number": 136,
+      "id": "q123",
+      "number": 123,
       "type": "single_choice",
       "question": "What is the significance of the passive-inerface router configuration mode command?",
       "options": [
@@ -3788,8 +3788,8 @@
       ]
     },
     {
-      "id": "q137",
-      "number": 137,
+      "id": "q124",
+      "number": 124,
       "type": "single_choice",
       "question": "Match the routing table entry to the corresponding function. (Not all options are used.)\nmetric",
       "options": [
@@ -3819,8 +3819,8 @@
       ]
     },
     {
-      "id": "q138",
-      "number": 138,
+      "id": "q125",
+      "number": 125,
       "type": "single_choice",
       "question": "What is the correct wildcard mask for the Ip address of 192.168.1.10 255.255.255.252",
       "options": [
@@ -3850,8 +3850,8 @@
       ]
     },
     {
-      "id": "q139",
-      "number": 139,
+      "id": "q126",
+      "number": 126,
       "type": "single_choice",
       "question": "(True or False) Goodput is the capacity of a medium to carry",
       "options": [
@@ -3871,8 +3871,8 @@
       ]
     },
     {
-      "id": "q140",
-      "number": 140,
+      "id": "q127",
+      "number": 127,
       "type": "single_choice",
       "question": "A trunk interface in a switch:",
       "options": [
@@ -3902,8 +3902,8 @@
       ]
     },
     {
-      "id": "q141",
-      "number": 141,
+      "id": "q128",
+      "number": 128,
       "type": "single_choice",
       "question": "A type of routing where the admin sets up the route manually and it doesn't change unless the admin changes it is called:",
       "options": [
@@ -3933,8 +3933,8 @@
       ]
     },
     {
-      "id": "q142",
-      "number": 142,
+      "id": "q129",
+      "number": 129,
       "type": "single_choice",
       "question": "By default, a trunk port supports:",
       "options": [
@@ -3964,8 +3964,8 @@
       ]
     },
     {
-      "id": "q143",
-      "number": 143,
+      "id": "q130",
+      "number": 130,
       "type": "single_choice",
       "question": "(True or False) Cisco recommends you start with area 1 when implementing OSPF?",
       "options": [
@@ -3985,8 +3985,8 @@
       ]
     },
     {
-      "id": "q144",
-      "number": 144,
+      "id": "q131",
+      "number": 131,
       "type": "single_choice",
       "question": "When dealing with Port Security, if a port configuration is set to \"Dynamic\", what happens to its settings upon reboot?",
       "options": [
@@ -4016,8 +4016,8 @@
       ]
     },
     {
-      "id": "q145",
-      "number": 145,
+      "id": "q132",
+      "number": 132,
       "type": "single_choice",
       "question": "What is the maximum cable distance for Multimode Fiber (MMF)?",
       "options": [
@@ -4047,8 +4047,8 @@
       ]
     },
     {
-      "id": "q146",
-      "number": 146,
+      "id": "q133",
+      "number": 133,
       "type": "single_choice",
       "question": "(True or False) OSPF \"passive-interface\" command will block OSPF advertisements?",
       "options": [
@@ -4068,8 +4068,8 @@
       ]
     },
     {
-      "id": "q147",
-      "number": 147,
+      "id": "q134",
+      "number": 134,
       "type": "single_choice",
       "question": "The command \"Router OSPF 1\" in OSPF configuration represents:",
       "options": [
@@ -4099,8 +4099,8 @@
       ]
     },
     {
-      "id": "q148",
-      "number": 148,
+      "id": "q135",
+      "number": 135,
       "type": "single_choice",
       "question": "The command to configure sub-interfaces for VLANs on a router is:",
       "options": [
@@ -4130,8 +4130,8 @@
       ]
     },
     {
-      "id": "q149",
-      "number": 149,
+      "id": "q136",
+      "number": 136,
       "type": "single_choice",
       "question": "The IEEE 802.15 Wireless media standard is used for:",
       "options": [
@@ -4161,8 +4161,8 @@
       ]
     },
     {
-      "id": "q150",
-      "number": 150,
+      "id": "q137",
+      "number": 137,
       "type": "single_choice",
       "question": "The IP address 127.0.0.1 is used for:",
       "options": [
@@ -4192,8 +4192,8 @@
       ]
     },
     {
-      "id": "q151",
-      "number": 151,
+      "id": "q138",
+      "number": 138,
       "type": "single_choice",
       "question": "The primary function of a switch's MAC address table is to:",
       "options": [
@@ -4223,8 +4223,8 @@
       ]
     },
     {
-      "id": "q152",
-      "number": 152,
+      "id": "q139",
+      "number": 139,
       "type": "single_choice",
       "question": "To facilitate communication between two different VLANs, you require a:",
       "options": [
@@ -4254,8 +4254,8 @@
       ]
     },
     {
-      "id": "q153",
-      "number": 153,
+      "id": "q140",
+      "number": 140,
       "type": "single_choice",
       "question": "To use SSH/Telnet on a switch, which component is set up on the switch?",
       "options": [
@@ -4285,8 +4285,8 @@
       ]
     },
     {
-      "id": "q154",
-      "number": 154,
+      "id": "q141",
+      "number": 141,
       "type": "single_choice",
       "question": "What does the switch’s MAC address table store?",
       "options": [
@@ -4316,8 +4316,8 @@
       ]
     },
     {
-      "id": "q155",
-      "number": 155,
+      "id": "q142",
+      "number": 142,
       "type": "single_choice",
       "question": "What is the definition of a “Passphrase” on Cisco Routers?",
       "options": [
@@ -4347,8 +4347,8 @@
       ]
     },
     {
-      "id": "q156",
-      "number": 156,
+      "id": "q143",
+      "number": 143,
       "type": "single_choice",
       "question": "What is the main reason for subnetting a network?",
       "options": [
@@ -4378,8 +4378,8 @@
       ]
     },
     {
-      "id": "q157",
-      "number": 157,
+      "id": "q144",
+      "number": 144,
       "type": "single_choice",
       "question": "Where is the startup configuration saved on the router?",
       "options": [
@@ -4409,8 +4409,8 @@
       ]
     },
     {
-      "id": "q158",
-      "number": 158,
+      "id": "q145",
+      "number": 145,
       "type": "single_choice",
       "question": "Which of these is a benefit of implementing VLANs?",
       "options": [
@@ -4440,8 +4440,8 @@
       ]
     },
     {
-      "id": "q159",
-      "number": 159,
+      "id": "q146",
+      "number": 146,
       "type": "single_choice",
       "question": "What tool is used to terminate an RJ-45?",
       "options": [
@@ -4471,8 +4471,8 @@
       ]
     },
     {
-      "id": "q160",
-      "number": 160,
+      "id": "q147",
+      "number": 147,
       "type": "single_choice",
       "question": "When a PC wants to renew its IP lease, what message does it first send?",
       "options": [
@@ -4502,8 +4502,8 @@
       ]
     },
     {
-      "id": "q161",
-      "number": 161,
+      "id": "q148",
+      "number": 148,
       "type": "single_choice",
       "question": "In which memory location are the VLAN configurations of the normal range VLANs stored on a Catalyst switch?",
       "options": [
@@ -4533,8 +4533,8 @@
       ]
     },
     {
-      "id": "q162",
-      "number": 162,
+      "id": "q149",
+      "number": 149,
       "type": "single_choice",
       "question": "Cisco routers derive the router ID based on one of three criteria, which is NOT one \nof the criteria?",
       "options": [
@@ -4564,8 +4564,8 @@
       ]
     },
     {
-      "id": "q163",
-      "number": 163,
+      "id": "q150",
+      "number": 150,
       "type": "single_choice",
       "question": "What device is used to test a MMF connection?",
       "options": [
@@ -4590,8 +4590,8 @@
       ]
     },
     {
-      "id": "q164",
-      "number": 164,
+      "id": "q151",
+      "number": 151,
       "type": "single_choice",
       "question": "what are the source and destination ports for DHCP?",
       "options": [
@@ -4621,8 +4621,8 @@
       ]
     },
     {
-      "id": "q165",
-      "number": 165,
+      "id": "q152",
+      "number": 152,
       "type": "single_choice",
       "question": "A network technician is verifying his propagated default route by using the show ip route\ncommand. He received the below results showing the route source on R1 is O*E2. What information can\nthe technician gather from that route source output?\nR1# show ip route | begin Gateway\nGateway of last resort is 10.1.1.6 to network 0.0.0.0\nO*E2 0.0.0.0/0 [110/1] via 10.1.1.6, 00:11:08, GigabitEthernet0/0/0\n10.0.0.0/8 is variably subnetted, 9 subnets, 3 masks",
       "options": [
@@ -4652,8 +4652,8 @@
       ]
     },
     {
-      "id": "q166",
-      "number": 166,
+      "id": "q153",
+      "number": 153,
       "type": "single_choice",
       "question": "De-encapsulation starts at which layer of the OSI Model?",
       "options": [
@@ -4683,8 +4683,8 @@
       ]
     },
     {
-      "id": "q167",
-      "number": 167,
+      "id": "q154",
+      "number": 154,
       "type": "single_choice",
       "question": "Which IOS CLI Mode allows access to all commands and features?",
       "options": [
@@ -4714,8 +4714,8 @@
       ]
     },
     {
-      "id": "q168",
-      "number": 168,
+      "id": "q155",
+      "number": 155,
       "type": "single_choice",
       "question": "Which of these devices is used to test errors in MMF media?",
       "options": [
@@ -4745,8 +4745,8 @@
       ]
     },
     {
-      "id": "q169",
-      "number": 169,
+      "id": "q156",
+      "number": 156,
       "type": "single_choice",
       "question": "The vlan.dat file serves what purpose on a switch?",
       "options": [
@@ -4776,8 +4776,8 @@
       ]
     },
     {
-      "id": "q170",
-      "number": 170,
+      "id": "q157",
+      "number": 157,
       "type": "single_choice",
       "question": "What is the proper command for the DHCP relay?",
       "options": [
@@ -4807,8 +4807,8 @@
       ]
     },
     {
-      "id": "q171",
-      "number": 171,
+      "id": "q158",
+      "number": 158,
       "type": "single_choice",
       "question": "A network manager is configuring port security on a switch, what will happen when these\ncommands are entered?\nswitch(config-if)#switchport mode access\nswitch(config-if)#switchport access vlan 37\nswitch(config-if)# switchport port-security",
       "options": [
@@ -4838,8 +4838,8 @@
       ]
     },
     {
-      "id": "q172",
-      "number": 172,
+      "id": "q159",
+      "number": 159,
       "type": "single_choice",
       "question": "Match the correct description with the type of routing:\nAdministrator Intervention is required:",
       "options": [
@@ -4859,8 +4859,8 @@
       ]
     },
     {
-      "id": "q173",
-      "number": 173,
+      "id": "q160",
+      "number": 160,
       "type": "single_choice",
       "question": "Match the correct description with the type of routing:\nLess Secure:",
       "options": [
@@ -4880,8 +4880,8 @@
       ]
     },
     {
-      "id": "q174",
-      "number": 174,
+      "id": "q161",
+      "number": 161,
       "type": "single_choice",
       "question": "What is the minimum recommended modulus length for the generated RSA keys?",
       "options": [
@@ -4911,8 +4911,8 @@
       ]
     },
     {
-      "id": "q175",
-      "number": 175,
+      "id": "q162",
+      "number": 162,
       "type": "multiple_choice",
       "question": "Which two show commands will give you the operational status and protocol status of an\ninterface?",
       "options": [
@@ -4943,8 +4943,8 @@
       ]
     },
     {
-      "id": "q176",
-      "number": 176,
+      "id": "q163",
+      "number": 163,
       "type": "single_choice",
       "question": "True or False a router cannot be configured as a DHCP server?",
       "options": [
@@ -4964,8 +4964,8 @@
       ]
     },
     {
-      "id": "q177",
-      "number": 177,
+      "id": "q164",
+      "number": 164,
       "type": "single_choice",
       "question": "Which protocol data unit involves data delivery being guaranteed form source to destination?",
       "options": [
@@ -4995,8 +4995,8 @@
       ]
     },
     {
-      "id": "q178",
-      "number": 178,
+      "id": "q165",
+      "number": 165,
       "type": "single_choice",
       "question": "Which CLI command would be given to encrypt all plaintext passwords?",
       "options": [
@@ -5026,8 +5026,8 @@
       ]
     },
     {
-      "id": "q179",
-      "number": 179,
+      "id": "q166",
+      "number": 166,
       "type": "single_choice",
       "question": "Match the correct description with the type of routing:\nRoute to destination is always the same:",
       "options": [
@@ -5047,8 +5047,8 @@
       ]
     },
     {
-      "id": "q180",
-      "number": 180,
+      "id": "q167",
+      "number": 167,
       "type": "single_choice",
       "question": "When port security is activated on a switch port, what is the maximum number of MAC addresses\nit can learn by default?",
       "options": [
@@ -5078,8 +5078,8 @@
       ]
     },
     {
-      "id": "q181",
-      "number": 181,
+      "id": "q168",
+      "number": 168,
       "type": "single_choice",
       "question": "What keyword can be used to permit or deny any IP address?",
       "options": [
@@ -5109,8 +5109,8 @@
       ]
     },
     {
-      "id": "q182",
-      "number": 182,
+      "id": "q169",
+      "number": 169,
       "type": "multiple_choice",
       "question": "What are the two commands that are used to learn a MAC address dynamically?",
       "options": [
@@ -5141,8 +5141,8 @@
       ]
     },
     {
-      "id": "q183",
-      "number": 183,
+      "id": "q170",
+      "number": 170,
       "type": "single_choice",
       "question": "Which of these statement is true about Administrative Distance:",
       "options": [
@@ -5172,8 +5172,8 @@
       ]
     },
     {
-      "id": "q184",
-      "number": 184,
+      "id": "q171",
+      "number": 171,
       "type": "single_choice",
       "question": "Match the correct description with the type of routing:\nUses CPU, Memory, link bandwidth:",
       "options": [
@@ -5193,8 +5193,8 @@
       ]
     },
     {
-      "id": "q185",
-      "number": 185,
+      "id": "q172",
+      "number": 172,
       "type": "single_choice",
       "question": "What IOS CLI Prompt is identified by the \" > \" Symbol?",
       "options": [
@@ -5224,8 +5224,8 @@
       ]
     },
     {
-      "id": "q186",
-      "number": 186,
+      "id": "q173",
+      "number": 173,
       "type": "single_choice",
       "question": "A user unplugged his work laptop from switch port Fast Ethernet 0/5. The user then plugged his personal laptop into Fast Ethernet 0/5. The switch LEDs no longer light up for that switch port and the laptop cannot establish a connection with the internet. Why can't the laptop establish an internet connection?",
       "options": [
@@ -5255,8 +5255,8 @@
       ]
     },
     {
-      "id": "q187",
-      "number": 187,
+      "id": "q174",
+      "number": 174,
       "type": "single_choice",
       "question": "What is the correct wildcard mask for the Ip address of 192.168.1.10 255.255.255.252",
       "options": [
@@ -5286,8 +5286,8 @@
       ]
     },
     {
-      "id": "q188",
-      "number": 188,
+      "id": "q175",
+      "number": 175,
       "type": "single_choice",
       "question": "What kind of address is represented in dotted decimal notation?",
       "options": [
@@ -5317,8 +5317,8 @@
       ]
     },
     {
-      "id": "q189",
-      "number": 189,
+      "id": "q176",
+      "number": 176,
       "type": "single_choice",
       "question": "A data VLAN is a VLAN that is configured to carry what type of data?",
       "options": [
@@ -5348,8 +5348,8 @@
       ]
     },
     {
-      "id": "q190",
-      "number": 190,
+      "id": "q177",
+      "number": 177,
       "type": "single_choice",
       "question": "true or False The Dynamic Host Configuration Protocol (DHCP) for IPv4 automates the\nassignment of IPv4 addresses, subnet masks, gateways, and other parameters.",
       "options": [
@@ -5369,8 +5369,8 @@
       ]
     },
     {
-      "id": "q191",
-      "number": 191,
+      "id": "q178",
+      "number": 178,
       "type": "multiple_choice",
       "question": "What is the purpose of VLANs?",
       "options": [
@@ -5402,8 +5402,8 @@
       ]
     },
     {
-      "id": "q192",
-      "number": 192,
+      "id": "q179",
+      "number": 179,
       "type": "single_choice",
       "question": "Where is the default gateway address located?",
       "options": [
@@ -5433,8 +5433,8 @@
       ]
     },
     {
-      "id": "q193",
-      "number": 193,
+      "id": "q180",
+      "number": 180,
       "type": "single_choice",
       "question": "DHCP uses UDP",
       "options": [
@@ -5454,8 +5454,8 @@
       ]
     },
     {
-      "id": "q194",
-      "number": 194,
+      "id": "q181",
+      "number": 181,
       "type": "single_choice",
       "question": "What does DHCP stand for?",
       "options": [
@@ -5485,8 +5485,8 @@
       ]
     },
     {
-      "id": "q195",
-      "number": 195,
+      "id": "q182",
+      "number": 182,
       "type": "single_choice",
       "question": "An 802.1Q trunk port receives traffic that is untagged, by default what VLAN -ID will the traffic be\nforwarded to?",
       "options": [
@@ -5516,8 +5516,8 @@
       ]
     },
     {
-      "id": "q196",
-      "number": 196,
+      "id": "q183",
+      "number": 183,
       "type": "single_choice",
       "question": "What is displayed when a technician uses the \"Show Interfaces\" Command?",
       "options": [
@@ -5547,8 +5547,8 @@
       ]
     },
     {
-      "id": "q197",
-      "number": 197,
+      "id": "q184",
+      "number": 184,
       "type": "single_choice",
       "question": "A Layer 3 switch is also called?",
       "options": [
@@ -5578,8 +5578,8 @@
       ]
     },
     {
-      "id": "q198",
-      "number": 198,
+      "id": "q185",
+      "number": 185,
       "type": "single_choice",
       "question": "What operational mode should be used on a switch port to connect it to a router for router-on-a-stick inter-VLAN routing?",
       "options": [
@@ -5609,8 +5609,8 @@
       ]
     },
     {
-      "id": "q199",
-      "number": 199,
+      "id": "q186",
+      "number": 186,
       "type": "multiple_choice",
       "question": "Which two system files store device configuration information?",
       "options": [
@@ -5641,8 +5641,8 @@
       ]
     },
     {
-      "id": "q200",
-      "number": 200,
+      "id": "q187",
+      "number": 187,
       "type": "multiple_choice",
       "question": "What are some simple steps that are applied to improve the security of most Operating Systems? (Check all that apply)",
       "options": [
@@ -5674,8 +5674,8 @@
       ]
     },
     {
-      "id": "q201",
-      "number": 201,
+      "id": "q188",
+      "number": 188,
       "type": "single_choice",
       "question": "A small college uses VLAN 10 for the classroom network and VLAN 20 for the office network. What is needed to enable communication between these two VLANs while using legacy inter-VLAN routing?",
       "options": [
@@ -5705,8 +5705,8 @@
       ]
     },
     {
-      "id": "q202",
-      "number": 202,
+      "id": "q189",
+      "number": 189,
       "type": "single_choice",
       "question": "Which one of these Media types is used for high-speed internet connectivity, has high EMI/RFI immunity and uses LEDs to transmit data?",
       "options": [
@@ -5736,8 +5736,8 @@
       ]
     },
     {
-      "id": "q203",
-      "number": 203,
+      "id": "q190",
+      "number": 190,
       "type": "single_choice",
       "question": "(True or False) Shielded Twisted Pair media is the best media type to prevent EMI, RFI and CrossTalk.",
       "options": [
@@ -5757,8 +5757,8 @@
       ]
     },
     {
-      "id": "q204",
-      "number": 204,
+      "id": "q191",
+      "number": 191,
       "type": "single_choice",
       "question": "All reside on layer one of the OSI Model except:(Choose One)",
       "options": [
@@ -5788,8 +5788,8 @@
       ]
     },
     {
-      "id": "q205",
-      "number": 205,
+      "id": "q192",
+      "number": 192,
       "type": "single_choice",
       "question": "What information is not shown when using the \"Show cdp neighbors\" command?",
       "options": [
@@ -5819,8 +5819,8 @@
       ]
     },
     {
-      "id": "q206",
-      "number": 206,
+      "id": "q193",
+      "number": 193,
       "type": "single_choice",
       "question": "Which is the correct command to deter a brute-force password guessing attack for 2 minutes if 4 incorrect passwords have been entered within 1 minute?",
       "options": [
@@ -5850,8 +5850,8 @@
       ]
     },
     {
-      "id": "q207",
-      "number": 207,
+      "id": "q194",
+      "number": 194,
       "type": "single_choice",
       "question": "What show command displays the Router's Routing Table?",
       "options": [
@@ -5881,8 +5881,8 @@
       ]
     },
     {
-      "id": "q208",
-      "number": 208,
+      "id": "q195",
+      "number": 195,
       "type": "single_choice",
       "question": "Which CLI Command will \"reboot\" the network device when given?",
       "options": [
@@ -5912,8 +5912,8 @@
       ]
     },
     {
-      "id": "q209",
-      "number": 209,
+      "id": "q196",
+      "number": 196,
       "type": "multiple_choice",
       "question": "What are the switch port violation modes: (Mark all the correct answers)",
       "options": [
@@ -5945,8 +5945,8 @@
       ]
     },
     {
-      "id": "q210",
-      "number": 210,
+      "id": "q197",
+      "number": 197,
       "type": "single_choice",
       "question": "What was an old version of DHCP?",
       "options": [
@@ -5976,8 +5976,8 @@
       ]
     },
     {
-      "id": "q211",
-      "number": 211,
+      "id": "q198",
+      "number": 198,
       "type": "single_choice",
       "question": "Why is port security implemented on a switch?",
       "options": [
@@ -6007,8 +6007,8 @@
       ]
     },
     {
-      "id": "q212",
-      "number": 212,
+      "id": "q199",
+      "number": 199,
       "type": "single_choice",
       "question": "The network administrator put in the following commands on the switch port Fast Ethernet 0/10:\nswitch(config-if)# switchport port-security\nswitch(config-if)# switchport port-security maximum 3\nswitch(config-if)# switchport port-security mac-address AAAA.BBBB.CCCC\nswitch(config-if)# switchport port-security sticky\nswitch(config-if)# switchport port-security sticky CCCC.BBBB.AAAA\nWhat is the violation mode for Fast Ethernet 0/10?",
       "options": [
@@ -6038,8 +6038,8 @@
       ]
     },
     {
-      "id": "q213",
-      "number": 213,
+      "id": "q200",
+      "number": 200,
       "type": "single_choice",
       "question": "Both ends of the trunk link must be configured with different native VLANs. (true or false)",
       "options": [
@@ -6059,8 +6059,8 @@
       ]
     },
     {
-      "id": "q214",
-      "number": 214,
+      "id": "q201",
+      "number": 201,
       "type": "multiple_choice",
       "question": "Which two commands can be used to verify a trunk link configuration status on a Cisco switch? (Choose\ntwo)",
       "options": [
@@ -6091,8 +6091,8 @@
       ]
     },
     {
-      "id": "q215",
-      "number": 215,
+      "id": "q202",
+      "number": 202,
       "type": "single_choice",
       "question": "True or False DHCP-distributed addresses are leased for a set period of time, then returned to pool for reuse.",
       "options": [
@@ -6112,8 +6112,8 @@
       ]
     },
     {
-      "id": "q216",
-      "number": 216,
+      "id": "q203",
+      "number": 203,
       "type": "single_choice",
       "question": "VLANs are based on logical connections, instead of physical connections. (true or false)",
       "options": [
@@ -6133,8 +6133,8 @@
       ]
     },
     {
-      "id": "q217",
-      "number": 217,
+      "id": "q204",
+      "number": 204,
       "type": "single_choice",
       "question": "All statements are true about VLAN 1 except which one?",
       "options": [

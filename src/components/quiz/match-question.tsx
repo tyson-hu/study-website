@@ -140,7 +140,7 @@ export function MatchQuestion({
                 )}
               >
                 <div className="flex items-center justify-between gap-2">
-                  <span className="font-mono text-base font-semibold">
+                  <span className="text-base font-semibold">
                     {pair.left}
                   </span>
                   {state === "correct" && (

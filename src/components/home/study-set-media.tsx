@@ -30,6 +30,7 @@ export function StudySetMedia({ label }: StudySetMediaProps) {
       />
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <KineticText
+          as="span"
           text={label}
           className="pointer-events-auto text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-5xl [font-optical-sizing:auto]"
         />

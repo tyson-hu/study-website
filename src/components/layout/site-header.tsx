@@ -9,7 +9,7 @@ export function SiteHeader() {
         href="/"
         className="text-sm font-medium tracking-[-0.28px] text-foreground"
       >
-        Tyson's notes
+        {"Tyson's notes"}
       </Link>
       <ThemeToggle />
     </header>

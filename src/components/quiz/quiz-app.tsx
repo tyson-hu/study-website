@@ -294,7 +294,7 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
       <div className="flex min-h-full flex-1 flex-col bg-[var(--canvas-soft)]">
         <SiteHeader />
         <main className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
-          <Card className="w-full border-border">
+          <Card className="shadow-elevation-3 w-full border-border">
             <CardHeader>
               <CardTitle className="text-xl font-semibold tracking-[-0.4px]">
                 No questions available
@@ -350,9 +350,9 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
       </header>
 
       <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-4 py-8">
-        <Card className="overflow-hidden border-border bg-card">
+        <Card className="shadow-elevation-3 overflow-hidden border-border bg-card">
           <div className="border-b border-border bg-[var(--canvas-soft)] px-6 py-5">
-            <p className="mb-2 font-mono text-xs font-medium tracking-wide text-muted-foreground uppercase">
+            <p className="mb-2 font-mono text-xs text-muted-foreground">
               Question {currentQuestion.number}
             </p>
             <p className="text-lg leading-relaxed font-semibold tracking-[-0.4px] text-foreground sm:text-xl">
@@ -378,7 +378,7 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
 
           <CardContent className="flex flex-col gap-5 px-6 py-5">
             <div className="flex items-center justify-between gap-3">
-              <p className="font-mono text-xs font-medium tracking-wide text-muted-foreground uppercase">
+              <p className="font-mono text-xs text-muted-foreground">
                 {getAnswerPrompt(currentQuestion)}
               </p>
               <Badge variant="outline" className="text-xs">
@@ -764,7 +764,7 @@ function QuestionNavigator({
   onSelect: (index: number) => void;
 }) {
   return (
-    <div className="rounded-lg border border-border bg-card p-4">
+    <div className="shadow-elevation-2 rounded-lg border border-border bg-card p-4">
       <p className="mb-3 text-sm font-medium text-muted-foreground">
         Jump to question
       </p>
@@ -938,7 +938,7 @@ function ResultStat({
   }[tone];
 
   return (
-    <div className="rounded-lg border border-border bg-[var(--canvas-soft)] p-3">
+    <div className="shadow-elevation-2 rounded-lg border border-border bg-[var(--canvas-soft)] p-3">
       <p className={cn("text-2xl font-semibold tracking-[-0.4px]", toneClass)}>
         {value}
       </p>

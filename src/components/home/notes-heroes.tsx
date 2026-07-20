@@ -36,7 +36,7 @@ export function NotesHeroes() {
             href={darkSet.notesUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-block text-base text-link hover:underline"
+            className="mt-6 inline-block text-base text-link-on-dark"
           >
             Open notes →
           </a>

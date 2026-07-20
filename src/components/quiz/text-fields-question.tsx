@@ -47,7 +47,7 @@ export function TextFieldsQuestion({
               disabled={disabled}
               placeholder={getTextInputPlaceholder(field)}
               className={cn(
-                "bg-background font-mono text-base",
+                "bg-background text-base",
                 showFeedback &&
                   fieldCorrect === true &&
                   "border-green-500 ring-1 ring-green-500/30",

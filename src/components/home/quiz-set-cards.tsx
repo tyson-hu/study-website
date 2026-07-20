@@ -17,8 +17,7 @@ export function QuizSetCards() {
           {quizSets.map((set) => (
             <article
               key={set.id}
-              className="flex flex-col rounded-lg bg-card p-6 md:p-8"
-              style={{ boxShadow: "var(--shadow-level-3)" }}
+              className="shadow-elevation-3 flex flex-col rounded-lg bg-card p-6 md:p-8"
             >
               <h3 className="text-2xl font-semibold tracking-[-0.96px] text-foreground">
                 {set.title}

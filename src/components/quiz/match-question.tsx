@@ -104,7 +104,7 @@ export function MatchQuestion({
 
       <div className="grid gap-4 md:grid-cols-2">
         <div className="flex flex-col gap-2">
-          <p className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+          <p className="font-mono text-xs text-muted-foreground">
             Items
           </p>
           {pairs.map((pair) => {
@@ -183,7 +183,7 @@ export function MatchQuestion({
         </div>
 
         <div className="flex flex-col gap-2">
-          <p className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+          <p className="font-mono text-xs text-muted-foreground">
             Descriptions
           </p>
           {shuffledRight.map((pair) => {

@@ -638,6 +638,7 @@ function OptionRow({
           id={controlId}
           checked={checked}
           disabled={disabled}
+          tabIndex={-1}
           onCheckedChange={() => onSelect()}
           className="sr-only"
         />
@@ -646,12 +647,12 @@ function OptionRow({
           value={optionId}
           id={controlId}
           disabled={disabled}
+          tabIndex={-1}
           className="sr-only"
         />
       )}
 
       <Label
-        htmlFor={controlId}
         className="flex-1 cursor-pointer pt-0.5 text-sm leading-relaxed font-normal text-foreground sm:text-base"
       >
         {label}

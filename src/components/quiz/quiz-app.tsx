@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -421,15 +421,16 @@ function QuizAppView({
   const [pendingMatchLeftId, setPendingMatchLeftId] = useState<string | null>(
     null
   );
+  const [pendingMatchQuestionId, setPendingMatchQuestionId] = useState(
+    currentQuestion?.id
+  );
   const [matchRightIds, setMatchRightIds] = useState<string[]>([]);
 
-  // Only clear pending left on question change. Do not wipe matchRightIds —
-  // MatchQuestion's child effect runs first and calls onRightOrderChange; a
-  // parent wipe here would clear those ids permanently (child-before-parent
-  // effect order).
-  useEffect(() => {
+  // Clear pending left on question change; keep matchRightIds intact.
+  if (currentQuestion?.id !== pendingMatchQuestionId) {
+    setPendingMatchQuestionId(currentQuestion?.id);
     setPendingMatchLeftId(null);
-  }, [currentQuestion?.id]);
+  }
 
   const isCurrentAnswered = currentQuestion
     ? isQuestionAnswered(

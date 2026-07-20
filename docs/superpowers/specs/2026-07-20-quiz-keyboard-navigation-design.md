@@ -103,8 +103,8 @@ Current question, quiz mode, locked/checked flags, answer mutators (`toggleOptio
 |---------|------------|
 | Previous button | `<Kbd>←</Kbd>` |
 | Next / Finish button | `<Kbd>→</Kbd>` |
-| Check answer button | `<Kbd>Enter</Kbd>` |
-| Submit test button | `<Kbd>Enter</Kbd>` |
+| Check answer button | `<Kbd>Enter</Kbd>` when space allows; `<Kbd>⏎</Kbd>` on small/compact buttons |
+| Submit test button | same as Check (`Enter` or `⏎` by available space) |
 | Choice option rows | Existing letter badge is the primary hint; optional muted number `<Kbd>` beside it if space allows |
 | Match columns | Letter/number badges on left and right items; keep single prompt line (may tweak copy to “key left, then right” without a second instruction block) |
 | Text | No letter/number `Kbd`s; Check still shows Enter |
@@ -114,6 +114,7 @@ Current question, quiz mode, locked/checked flags, answer mutators (`toggleOptio
 - `Kbd` uses muted/secondary styling (chrome, not content)
 - Hide select-related hints when options are locked
 - Narrow screens: keep `Kbd` on footer actions; drop optional number twins if cramped
+- **Enter label:** prefer the word `Enter` when the control has room; use `⏎` when the full word would crowd a small button (e.g. icon-sized or dense footer on mobile). Same key either way.
 - No first-run modal, coach marks, or separate shortcuts page (out of scope)
 
 ## Out of scope

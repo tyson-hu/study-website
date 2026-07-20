@@ -799,7 +799,7 @@ function QuizAppView({
                 onClick={submitTest}
                 disabled={answeredCount === 0}
               >
-                Submit test
+                Submit
                 <Kbd className="ml-1">⏎</Kbd>
               </Button>
             )}

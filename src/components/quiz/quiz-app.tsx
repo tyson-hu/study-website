@@ -8,6 +8,7 @@ import {
   ArrowRight,
   CheckCircle2,
   CircleHelp,
+  CornerDownLeft,
   RotateCcw,
   XCircle,
 } from "lucide-react";
@@ -746,7 +747,10 @@ function QuizAppView({
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>
-                  Previous <Kbd>←</Kbd>
+                  Previous{" "}
+                  <Kbd>
+                    <ArrowLeft />
+                  </Kbd>
                 </TooltipContent>
               </Tooltip>
               <Tooltip>
@@ -782,25 +786,32 @@ function QuizAppView({
                   {isPractice && currentIndex === totalQuestions - 1
                     ? "Finish"
                     : "Next"}{" "}
-                  <Kbd>→</Kbd>
+                  <Kbd>
+                    <ArrowRight />
+                  </Kbd>
                 </TooltipContent>
               </Tooltip>
             </div>
 
             {isPractice && !isCurrentChecked && (
-              <Button onClick={checkCurrent}>
+              <Button className="gap-1.5" onClick={checkCurrent}>
                 Submit
-                <Kbd className="ml-1">⏎</Kbd>
+                <Kbd className="bg-primary-foreground/15 text-primary-foreground/70">
+                  <CornerDownLeft />
+                </Kbd>
               </Button>
             )}
 
             {!isPractice && !testSubmitted && (
               <Button
+                className="gap-1.5"
                 onClick={submitTest}
                 disabled={answeredCount === 0}
               >
                 Submit
-                <Kbd className="ml-1">⏎</Kbd>
+                <Kbd className="bg-primary-foreground/15 text-primary-foreground/70">
+                  <CornerDownLeft />
+                </Kbd>
               </Button>
             )}
           </CardFooter>

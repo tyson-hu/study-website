@@ -789,7 +789,7 @@ function QuizAppView({
 
             {isPractice && !isCurrentChecked && (
               <Button onClick={checkCurrent}>
-                Check
+                Submit
                 <Kbd className="ml-1">⏎</Kbd>
               </Button>
             )}

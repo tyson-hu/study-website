@@ -32,8 +32,28 @@ export interface QuizProgressIdentity {
 
 const PROGRESS_EVENT = "study-web:quiz-progress";
 
+/**
+ * useSyncExternalStore requires getSnapshot to return a referentially stable
+ * value when store data has not changed. Without this cache, load/empty
+ * helpers allocate a new object every call and React enters an infinite
+ * update loop (minified error #185).
+ */
+const snapshotCache = new Map<string, QuizProgressState>();
+
 export function getQuizProgressKey(setId: QuizSetId, mode: QuizMode): string {
   return `study-web:quiz-progress:v${QUIZ_PROGRESS_VERSION}:${setId}:${mode}`;
+}
+
+function matchesIdentity(
+  state: QuizProgressState,
+  identity: QuizProgressIdentity
+): boolean {
+  return (
+    state.setId === identity.setId &&
+    state.mode === identity.mode &&
+    state.schemaVersion === identity.schemaVersion &&
+    state.totalQuestions === identity.totalQuestions
+  );
 }
 
 export function createEmptyQuizProgress(
@@ -135,16 +155,16 @@ export function loadQuizProgress(
 }
 
 export function saveQuizProgress(state: QuizProgressState): void {
+  const key = getQuizProgressKey(state.setId, state.mode);
+  snapshotCache.set(key, state);
+
   if (typeof window === "undefined") return;
 
   try {
-    window.localStorage.setItem(
-      getQuizProgressKey(state.setId, state.mode),
-      JSON.stringify(state)
-    );
+    window.localStorage.setItem(key, JSON.stringify(state));
     window.dispatchEvent(
       new CustomEvent(PROGRESS_EVENT, {
-        detail: getQuizProgressKey(state.setId, state.mode),
+        detail: key,
       })
     );
   } catch {
@@ -153,10 +173,12 @@ export function saveQuizProgress(state: QuizProgressState): void {
 }
 
 export function clearQuizProgress(setId: QuizSetId, mode: QuizMode): void {
+  const key = getQuizProgressKey(setId, mode);
+  snapshotCache.delete(key);
+
   if (typeof window === "undefined") return;
 
   try {
-    const key = getQuizProgressKey(setId, mode);
     window.localStorage.removeItem(key);
     window.dispatchEvent(new CustomEvent(PROGRESS_EVENT, { detail: key }));
   } catch {
@@ -172,7 +194,10 @@ export function subscribeToQuizProgress(
 
   return (onStoreChange) => {
     const onStorage = (event: StorageEvent) => {
-      if (event.key === key) onStoreChange();
+      if (event.key !== key) return;
+      // Another tab changed storage — drop cache so the next snapshot reloads.
+      snapshotCache.delete(key);
+      onStoreChange();
     };
     const onCustom = (event: Event) => {
       const custom = event as CustomEvent<string>;
@@ -191,5 +216,19 @@ export function subscribeToQuizProgress(
 export function getQuizProgressSnapshot(
   identity: QuizProgressIdentity
 ): QuizProgressState {
-  return loadQuizProgress(identity) ?? createEmptyQuizProgress(identity);
+  const key = getQuizProgressKey(identity.setId, identity.mode);
+  const cached = snapshotCache.get(key);
+  if (cached && matchesIdentity(cached, identity)) {
+    return cached;
+  }
+
+  const loaded = loadQuizProgress(identity);
+  if (loaded) {
+    snapshotCache.set(key, loaded);
+    return loaded;
+  }
+
+  const empty = createEmptyQuizProgress(identity);
+  snapshotCache.set(key, empty);
+  return empty;
 }

@@ -101,6 +101,8 @@ Home and quiz route pages both consume this catalog (titles, counts, Notion URLs
 
 ## Visual redesign (`DESIGN.md`)
 
+**UI source of truth:** Every home, notes-hero, header, button, card, and token change MUST follow `/DESIGN.md` (colors, typography, spacing, elevation, shapes, hero mesh, do’s/don’ts). Do not invent alternate palettes, purple gradients, heavy shadows, or weight-700 display type.
+
 ### Tokens
 
 Restyle `src/app/globals.css` (and related theme plumbing) to DESIGN.md:

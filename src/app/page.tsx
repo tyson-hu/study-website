@@ -1,6 +1,5 @@
 import { HeroBand } from "@/components/home/hero-band"
-import { NotesHeroes } from "@/components/home/notes-heroes"
-import { QuizSetCards } from "@/components/home/quiz-set-cards"
+import { StudySetCards } from "@/components/home/study-set-cards"
 import { SiteHeader } from "@/components/layout/site-header"
 
 export default function Home() {
@@ -9,8 +8,7 @@ export default function Home() {
       <SiteHeader />
       <main>
         <HeroBand />
-        <QuizSetCards />
-        <NotesHeroes />
+        <StudySetCards />
       </main>
     </div>
   )

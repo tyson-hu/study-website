@@ -1,7 +1,7 @@
 {
   "title": "Network Fundamentals",
   "source": "Blooket — Network Fund. (Kurutta6821)",
-  "totalQuestions": 217,
+  "totalQuestions": 204,
   "schemaVersion": "1.0",
   "questions": [
     {
@@ -225,125 +225,31 @@
     {
       "id": "q008",
       "number": 8,
-      "type": "single_choice",
-      "question": "Match the following: Submarine Cable Networks",
-      "options": [
+      "type": "match",
+      "question": "Match each fiber network type with its description.",
+      "options": [],
+      "correctOptionIds": [],
+      "matchPairs": [
         {
-          "id": "A",
-          "text": "Used for backbone cabling applications and interconnecting infrastructure devices",
-          "isCorrect": false
+          "id": "submarine",
+          "left": "Submarine Cable Networks",
+          "right": "Used to provide reliable high-speed, high-capacity solutions capable of surviving in harsh undersea environments at up to transoceanic distances."
         },
         {
-          "id": "B",
-          "text": "Used to provide reliable high-speed, high-capacity solutions capable of surviving in harsh undersea environments at up to transoceanic distances.",
-          "isCorrect": true
+          "id": "long-haul",
+          "left": "Long-Haul Networks",
+          "right": "Used by service providers to connect countries and cities"
         },
         {
-          "id": "C",
-          "text": "Used by service providers to connect countries and cities",
-          "isCorrect": false
+          "id": "ftth",
+          "left": "Fiber-to-the-Home (FTTH)",
+          "right": "Used to provide always-on broadband services to homes and small businesses"
         },
         {
-          "id": "D",
-          "text": "Used to provide always-on broadband services to homes and small businesses",
-          "isCorrect": false
+          "id": "enterprise",
+          "left": "Enterprise Networks",
+          "right": "Used for backbone cabling applications and interconnecting infrastructure devices"
         }
-      ],
-      "correctOptionIds": [
-        "B"
-      ]
-    },
-    {
-      "id": "q009",
-      "number": 9,
-      "type": "single_choice",
-      "question": "Match the following: Long-Haul Networks",
-      "options": [
-        {
-          "id": "A",
-          "text": "Used for backbone cabling applications and interconnecting infrastructure devices",
-          "isCorrect": false
-        },
-        {
-          "id": "B",
-          "text": "Used to provide always-on broadband services to homes and small businesses",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "Used to provide reliable high-speed, high-capacity solutions capable of surviving in harsh\nundersea environments at up to transoceanic distances.",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "Used by service providers to connect countries and cities",
-          "isCorrect": true
-        }
-      ],
-      "correctOptionIds": [
-        "D"
-      ]
-    },
-    {
-      "id": "q010",
-      "number": 10,
-      "type": "single_choice",
-      "question": "Match the following: Fiber-to-the-Home (FTTH)",
-      "options": [
-        {
-          "id": "A",
-          "text": "Used to provide reliable high-speed, high-capacity solutions capable of surviving in harsh\nundersea environments at up to transoceanic distances.",
-          "isCorrect": false
-        },
-        {
-          "id": "B",
-          "text": "Used by service providers to connect countries and cities",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "Used for backbone cabling applications and interconnecting infrastructure devices",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "Used to provide always-on broadband services to homes and small businesses",
-          "isCorrect": true
-        }
-      ],
-      "correctOptionIds": [
-        "D"
-      ]
-    },
-    {
-      "id": "q011",
-      "number": 11,
-      "type": "single_choice",
-      "question": "Match the following: Enterprise Networks",
-      "options": [
-        {
-          "id": "A",
-          "text": "Used by service providers to connect countries and cities",
-          "isCorrect": false
-        },
-        {
-          "id": "B",
-          "text": "Used to provide always-on broadband services to homes and small businesses",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "Used to provide reliable high-speed, high-capacity solutions capable of surviving in harsh\nundersea environments at up to transoceanic distances.",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "Used for backbone cabling applications and interconnecting infrastructure devices",
-          "isCorrect": true
-        }
-      ],
-      "correctOptionIds": [
-        "D"
       ]
     },
     {
@@ -491,37 +397,6 @@
       ],
       "correctOptionIds": [
         "B"
-      ]
-    },
-    {
-      "id": "q017",
-      "number": 17,
-      "type": "single_choice",
-      "question": "What is the administrative distance of OSPF?",
-      "options": [
-        {
-          "id": "A",
-          "text": "100",
-          "isCorrect": false
-        },
-        {
-          "id": "B",
-          "text": "120",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "110",
-          "isCorrect": true
-        },
-        {
-          "id": "D",
-          "text": "90",
-          "isCorrect": false
-        }
-      ],
-      "correctOptionIds": [
-        "C"
       ]
     },
     {
@@ -1792,125 +1667,31 @@
     {
       "id": "q060",
       "number": 60,
-      "type": "single_choice",
-      "question": "Match each DHCP message type with its description. DHCP DISCOVER",
-      "options": [
+      "type": "match",
+      "question": "Match each DHCP message type with its description.",
+      "options": [],
+      "correctOptionIds": [],
+      "matchPairs": [
         {
-          "id": "A",
-          "text": "A client initiating a message to find a DHCP server",
-          "isCorrect": true
+          "id": "discover",
+          "left": "DHCPDISCOVER",
+          "right": "A client initiating a message to find a DHCP server"
         },
         {
-          "id": "B",
-          "text": "A DHCP server responding to the initial request by a client",
-          "isCorrect": false
+          "id": "request",
+          "left": "DHCPREQUEST",
+          "right": "The client accepting the IP address provided by the DHCP server"
         },
         {
-          "id": "C",
-          "text": "The DHCP server confirming that the address lease has been accepted",
-          "isCorrect": false
+          "id": "ack",
+          "left": "DHCPACK",
+          "right": "The DHCP server confirming that the address lease has been accepted"
         },
         {
-          "id": "D",
-          "text": "The client accepting the IP address provided by the DHCP server",
-          "isCorrect": false
+          "id": "offer",
+          "left": "DHCPOFFER",
+          "right": "A DHCP server responding to the initial request by a client"
         }
-      ],
-      "correctOptionIds": [
-        "A"
-      ]
-    },
-    {
-      "id": "q061",
-      "number": 61,
-      "type": "single_choice",
-      "question": "Match each DHCP message type with its description. DHCP REQUEST",
-      "options": [
-        {
-          "id": "A",
-          "text": "The client accepting the IP address provided by the DHCP server",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
-          "text": "A client initiating a message to find a DHCP server",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "A DHCP server responding to the initial request by a client",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "The DHCP server confirming that the address lease has been accepted",
-          "isCorrect": false
-        }
-      ],
-      "correctOptionIds": [
-        "A"
-      ]
-    },
-    {
-      "id": "q062",
-      "number": 62,
-      "type": "single_choice",
-      "question": "Match each DHCP message type with its description. DHCP ACK",
-      "options": [
-        {
-          "id": "A",
-          "text": "The client accepting the IP address provided by the DHCP server",
-          "isCorrect": false
-        },
-        {
-          "id": "B",
-          "text": "The DHCP server confirming that the address lease has been accepted",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
-          "text": "A client initiating a message to find a DHCP server",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "A DHCP server responding to the initial request by a client",
-          "isCorrect": false
-        }
-      ],
-      "correctOptionIds": [
-        "B"
-      ]
-    },
-    {
-      "id": "q063",
-      "number": 63,
-      "type": "single_choice",
-      "question": "Match each DHCP message type with its description. DHCP OFFER",
-      "options": [
-        {
-          "id": "A",
-          "text": "The DHCP server confirming that the address lease has been accepted",
-          "isCorrect": false
-        },
-        {
-          "id": "B",
-          "text": "A client initiating a message to find a DHCP server",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "The client accepting the IP address provided by the DHCP server",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "A DHCP server responding to the initial request by a client",
-          "isCorrect": true
-        }
-      ],
-      "correctOptionIds": [
-        "D"
       ]
     },
     {
@@ -2016,7 +1797,7 @@
       "id": "q067",
       "number": 67,
       "type": "single_choice",
-      "question": "Ture or False. This is the correct standard for the T568B pinout.",
+      "question": "True or False. This is the correct standard for the T568B pinout.",
       "options": [
         {
           "id": "A",
@@ -2031,6 +1812,12 @@
       ],
       "correctOptionIds": [
         "B"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://www.cobtel.com/uploads/36855/info/p2024122015511892ad5.jpg?size=1080x0"
+        }
       ]
     },
     {
@@ -2218,79 +2005,26 @@
     {
       "id": "q074",
       "number": 74,
-      "type": "single_choice",
-      "question": "Match the following: Goodput",
-      "options": [
+      "type": "match",
+      "question": "Match each network performance term with its description.",
+      "options": [],
+      "correctOptionIds": [],
+      "matchPairs": [
         {
-          "id": "A",
-          "text": "Amount of time, including delays, for data to travel from one given point to another",
-          "isCorrect": false
+          "id": "goodput",
+          "left": "Goodput",
+          "right": "The measure of usable data transferred over a given period of time"
         },
         {
-          "id": "B",
-          "text": "The measure of the transfer of bits across the media over a given period of time",
-          "isCorrect": false
+          "id": "throughput",
+          "left": "Throughput",
+          "right": "The measure of the transfer of bits across the media over a given period of time"
         },
         {
-          "id": "C",
-          "text": "The measure of usable data transferred over a given period of time",
-          "isCorrect": true
+          "id": "latency",
+          "left": "Latency",
+          "right": "Amount of time, including delays, for data to travel from one given point to another"
         }
-      ],
-      "correctOptionIds": [
-        "C"
-      ]
-    },
-    {
-      "id": "q075",
-      "number": 75,
-      "type": "single_choice",
-      "question": "Match the following: Throughput",
-      "options": [
-        {
-          "id": "A",
-          "text": "The measure of the transfer of bits across the media over a given period of time",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
-          "text": "Amount of time, including delays, for data to travel from one given point to another",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "The measure of usable data transferred over a given period of time",
-          "isCorrect": false
-        }
-      ],
-      "correctOptionIds": [
-        "A"
-      ]
-    },
-    {
-      "id": "q076",
-      "number": 76,
-      "type": "single_choice",
-      "question": "Match the following: Latency",
-      "options": [
-        {
-          "id": "A",
-          "text": "The measure of the transfer of bits across the media over a given period of time",
-          "isCorrect": false
-        },
-        {
-          "id": "B",
-          "text": "Amount of time, including delays, for data to travel from one given point to another",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
-          "text": "The measure of usable data transferred over a given period of time",
-          "isCorrect": false
-        }
-      ],
-      "correctOptionIds": [
-        "B"
       ]
     },
     {
@@ -3025,39 +2759,43 @@
     {
       "id": "q101",
       "number": 101,
-      "type": "single_choice",
-      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are\nused.)\nall IP address bits must match exactly",
-      "options": [
+      "type": "match",
+      "question": "Match each statement with the example subnet and wildcard that it describes.",
+      "options": [],
+      "correctOptionIds": [],
+      "matchPairs": [
         {
-          "id": "A",
-          "text": "host 192.168.15.2",
-          "isCorrect": true
+          "id": "exact-host",
+          "left": "all IP address bits must match exactly",
+          "right": "host 192.168.15.2"
         },
         {
-          "id": "B",
-          "text": "192.168.3.64 0.0.0.7",
-          "isCorrect": false
+          "id": "first-host",
+          "left": "the first valid host address in a subnet",
+          "right": "192.168.15.65 255.255.255.240"
         },
         {
-          "id": "C",
-          "text": "192.168.15.65 255.255.255.240",
-          "isCorrect": false
+          "id": "subnet-14-hosts",
+          "left": "subnetwork address of a subnet with 14 valid host addresses",
+          "right": "192.168.15.144 0.0.0.15"
         },
         {
-          "id": "D",
-          "text": "192.168.5.0 0.0.3.255",
-          "isCorrect": false
+          "id": "mask-248",
+          "left": "address with a subnet mask of 255.255.255.248",
+          "right": "192.168.3.64 0.0.0.7"
+        },
+        {
+          "id": "mask-252",
+          "left": "hosts in a subnet with the subnet mask 255.255.252.0",
+          "right": "192.168.5.0 0.0.3.255"
         }
-      ],
-      "correctOptionIds": [
-        "A"
       ]
     },
     {
       "id": "q102",
       "number": 102,
       "type": "single_choice",
-      "question": "Which entry in the roung table identifies the trustworthiness of the route source?",
+      "question": "Which entry in the routing table identifies the trustworthiness of the route source?",
       "options": [
         {
           "id": "A",
@@ -3114,130 +2852,6 @@
       "correctOptionIds": [
         "B",
         "C"
-      ]
-    },
-    {
-      "id": "q104",
-      "number": 104,
-      "type": "single_choice",
-      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are\nused.)\nthe first valid host address in a subnet",
-      "options": [
-        {
-          "id": "A",
-          "text": "192.168.15.65 255.255.255.240",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
-          "text": "192.168.5.0 0.0.3.255",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "192.168.3.64 0.0.0.7",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "192.168.15.144 0.0.0.15",
-          "isCorrect": false
-        }
-      ],
-      "correctOptionIds": [
-        "A"
-      ]
-    },
-    {
-      "id": "q105",
-      "number": 105,
-      "type": "single_choice",
-      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are used.)\n\nsubnetwork address of a subnet with 14 valid host addresses",
-      "options": [
-        {
-          "id": "A",
-          "text": "192.168.15.144 0.0.0.15",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
-          "text": "192.168.3.64 0.0.0.7",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "192.168.5.0 0.0.3.255",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "192.168.15.65 255.255.255.240",
-          "isCorrect": false
-        }
-      ],
-      "correctOptionIds": [
-        "A"
-      ]
-    },
-    {
-      "id": "q106",
-      "number": 106,
-      "type": "single_choice",
-      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are used.)\n\naddress with a subnet 255.255.255.248",
-      "options": [
-        {
-          "id": "A",
-          "text": "192.168.3.64 0.0.0.7",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
-          "text": "host 192.168.15.2",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "192.168.5.0 0.0.3.255",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "192.168.15.144 0.0.0.15",
-          "isCorrect": false
-        }
-      ],
-      "correctOptionIds": [
-        "A"
-      ]
-    },
-    {
-      "id": "q107",
-      "number": 107,
-      "type": "single_choice",
-      "question": "Match each statement with the example subnet and wildcard that it describes. (Not all options are used.)\n\nhosts in a subnet with SM 255.255.252.0",
-      "options": [
-        {
-          "id": "A",
-          "text": "192.168.5.0 0.0.3.255",
-          "isCorrect": true
-        },
-        {
-          "id": "B",
-          "text": "host 192.168.15.2",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
-          "text": "192.168.15.144 0.0.0.15",
-          "isCorrect": false
-        },
-        {
-          "id": "D",
-          "text": "192.168.3.64 0.0.0.7",
-          "isCorrect": false
-        }
-      ],
-      "correctOptionIds": [
-        "A"
       ]
     },
     {

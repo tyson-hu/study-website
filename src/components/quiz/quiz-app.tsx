@@ -40,6 +40,7 @@ import { SafeLightRays } from "@/components/quiz/safe-light-rays";
 import { Progress } from "@/components/ui/progress";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Separator } from "@/components/ui/separator";
+import { useQuizKeyboard } from "@/hooks/use-quiz-keyboard";
 import {
   useCompatibleQuizProgress,
   usePersistedQuizProgress,
@@ -405,6 +406,46 @@ function QuizAppView({
       updateProgress({ currentIndex: currentIndex - 1 });
     }
   }, [currentIndex, updateProgress]);
+
+  const choiceOptionIds = useMemo(
+    () => currentQuestion?.options.map((o) => o.id) ?? [],
+    [currentQuestion]
+  );
+
+  const isCurrentAnswered = currentQuestion
+    ? isQuestionAnswered(
+        currentQuestion,
+        currentSelection,
+        currentTextFieldAnswers,
+        currentMatchAnswer
+      )
+    : false;
+
+  const onToggleChoice = useCallback(
+    (optionId: string) => {
+      if (!currentQuestion) return;
+      toggleOption(currentQuestion, optionId);
+    },
+    [currentQuestion, toggleOption]
+  );
+
+  useQuizKeyboard({
+    enabled: Boolean(currentQuestion) && !showResults,
+    quizMode,
+    optionsLocked,
+    isCurrentChecked,
+    isCurrentAnswered,
+    isLastQuestion: currentIndex === totalQuestions - 1,
+    answeredCount,
+    showResults,
+    questionType: currentQuestion?.type,
+    choiceOptionIds,
+    onToggleChoice,
+    onCheck: checkCurrent,
+    onNext: goNext,
+    onPrev: goPrev,
+    onSubmitTest: submitTest,
+  });
 
   if (totalQuestions === 0 || questions.length === 0) {
     return (

@@ -36,6 +36,11 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Kbd } from "@/components/ui/kbd";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { Label } from "@/components/ui/label";
 import { SafeLightRays } from "@/components/quiz/safe-light-rays";
 import { Progress } from "@/components/ui/progress";
@@ -659,11 +664,10 @@ function QuizAppView({
               />
             ) : isMultipleChoice(currentQuestion) ? (
               <div className="flex flex-col gap-2.5">
-                {currentQuestion.options.map((option, index) => (
+                {currentQuestion.options.map((option) => (
                   <OptionRow
                     key={option.id}
                     optionId={option.id}
-                    optionIndex={index}
                     label={formatQuizText(option.text)}
                     checked={currentSelection.includes(option.id)}
                     disabled={optionsLocked}
@@ -689,11 +693,10 @@ function QuizAppView({
                 disabled={optionsLocked}
                 className="flex flex-col gap-2.5"
               >
-                {currentQuestion.options.map((option, index) => (
+                {currentQuestion.options.map((option) => (
                   <OptionRow
                     key={option.id}
                     optionId={option.id}
-                    optionIndex={index}
                     label={formatQuizText(option.text)}
                     checked={currentSelection.includes(option.id)}
                     disabled={optionsLocked}
@@ -722,37 +725,72 @@ function QuizAppView({
 
           <CardFooter className="flex flex-col gap-3 sm:flex-row sm:justify-between">
             <div className="flex gap-2">
-              <Button
-                variant="outline"
-                onClick={goPrev}
-                disabled={currentIndex === 0}
-              >
-                <ArrowLeft data-icon="inline-start" />
-                Previous
-                <Kbd className="ml-1">←</Kbd>
-              </Button>
-              <Button
-                variant="outline"
-                onClick={goNext}
-                disabled={
-                  !isPractice &&
-                  !testSubmitted &&
-                  currentIndex === totalQuestions - 1
-                }
-              >
-                {isPractice && currentIndex === totalQuestions - 1
-                  ? "Finish"
-                  : "Next"}
-                <ArrowRight data-icon="inline-end" />
-                <Kbd>→</Kbd>
-              </Button>
+              <Tooltip>
+                <TooltipTrigger
+                  render={
+                    <span
+                      className={cn(
+                        "inline-flex",
+                        currentIndex === 0 && "cursor-not-allowed"
+                      )}
+                    />
+                  }
+                >
+                  <Button
+                    variant="outline"
+                    onClick={goPrev}
+                    disabled={currentIndex === 0}
+                  >
+                    <ArrowLeft data-icon="inline-start" />
+                    Previous
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  Previous <Kbd>←</Kbd>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger
+                  render={
+                    <span
+                      className={cn(
+                        "inline-flex",
+                        !isPractice &&
+                          !testSubmitted &&
+                          currentIndex === totalQuestions - 1 &&
+                          "cursor-not-allowed"
+                      )}
+                    />
+                  }
+                >
+                  <Button
+                    variant="outline"
+                    onClick={goNext}
+                    disabled={
+                      !isPractice &&
+                      !testSubmitted &&
+                      currentIndex === totalQuestions - 1
+                    }
+                  >
+                    {isPractice && currentIndex === totalQuestions - 1
+                      ? "Finish"
+                      : "Next"}
+                    <ArrowRight data-icon="inline-end" />
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  {isPractice && currentIndex === totalQuestions - 1
+                    ? "Finish"
+                    : "Next"}{" "}
+                  <Kbd>→</Kbd>
+                </TooltipContent>
+              </Tooltip>
             </div>
 
             {isPractice && !isCurrentChecked && (
               <Button onClick={checkCurrent}>
                 Check answer
-                <Kbd className="ml-1 hidden sm:inline-flex">Enter</Kbd>
-                <Kbd className="ml-1 inline-flex sm:hidden">⏎</Kbd>
+                <Kbd className="ml-1">⏎</Kbd>
               </Button>
             )}
 
@@ -762,8 +800,7 @@ function QuizAppView({
                 disabled={answeredCount === 0}
               >
                 Submit test
-                <Kbd className="ml-1 hidden sm:inline-flex">Enter</Kbd>
-                <Kbd className="ml-1 inline-flex sm:hidden">⏎</Kbd>
+                <Kbd className="ml-1">⏎</Kbd>
               </Button>
             )}
           </CardFooter>
@@ -837,7 +874,6 @@ function getOptionState(
 
 function OptionRow({
   optionId,
-  optionIndex,
   label,
   checked,
   disabled,
@@ -846,7 +882,6 @@ function OptionRow({
   onSelect,
 }: {
   optionId: string;
-  optionIndex: number;
   label: string;
   checked: boolean;
   disabled: boolean;
@@ -881,21 +916,16 @@ function OptionRow({
       role="button"
       tabIndex={disabled ? -1 : 0}
     >
-      <div className="flex shrink-0 items-center gap-1.5">
-        <span
-          className={cn(
-            "flex size-8 shrink-0 items-center justify-center rounded-md border font-mono text-sm font-medium",
-            state === "default" && checked
-              ? "border-foreground bg-foreground text-background"
-              : "border-border bg-[var(--canvas-soft)] text-muted-foreground"
-          )}
-        >
-          {optionId}
-        </span>
-        {!disabled && (
-          <Kbd className="hidden sm:inline-flex">{optionIndex + 1}</Kbd>
+      <span
+        className={cn(
+          "flex size-8 shrink-0 items-center justify-center rounded-md border font-mono text-sm font-medium",
+          state === "default" && checked
+            ? "border-foreground bg-foreground text-background"
+            : "border-border bg-[var(--canvas-soft)] text-muted-foreground"
         )}
-      </div>
+      >
+        {optionId}
+      </span>
 
       {mode === "checkbox" ? (
         <Checkbox

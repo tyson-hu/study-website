@@ -35,6 +35,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { Kbd } from "@/components/ui/kbd";
 import { Label } from "@/components/ui/label";
 import { SafeLightRays } from "@/components/quiz/safe-light-rays";
 import { Progress } from "@/components/ui/progress";
@@ -657,10 +658,11 @@ function QuizAppView({
               />
             ) : isMultipleChoice(currentQuestion) ? (
               <div className="flex flex-col gap-2.5">
-                {currentQuestion.options.map((option) => (
+                {currentQuestion.options.map((option, index) => (
                   <OptionRow
                     key={option.id}
                     optionId={option.id}
+                    optionIndex={index}
                     label={formatQuizText(option.text)}
                     checked={currentSelection.includes(option.id)}
                     disabled={optionsLocked}
@@ -686,10 +688,11 @@ function QuizAppView({
                 disabled={optionsLocked}
                 className="flex flex-col gap-2.5"
               >
-                {currentQuestion.options.map((option) => (
+                {currentQuestion.options.map((option, index) => (
                   <OptionRow
                     key={option.id}
                     optionId={option.id}
+                    optionIndex={index}
                     label={formatQuizText(option.text)}
                     checked={currentSelection.includes(option.id)}
                     disabled={optionsLocked}
@@ -725,6 +728,7 @@ function QuizAppView({
               >
                 <ArrowLeft data-icon="inline-start" />
                 Previous
+                <Kbd className="ml-1">←</Kbd>
               </Button>
               <Button
                 variant="outline"
@@ -739,11 +743,16 @@ function QuizAppView({
                   ? "Finish"
                   : "Next"}
                 <ArrowRight data-icon="inline-end" />
+                <Kbd>→</Kbd>
               </Button>
             </div>
 
             {isPractice && !isCurrentChecked && (
-              <Button onClick={checkCurrent}>Check answer</Button>
+              <Button onClick={checkCurrent}>
+                Check answer
+                <Kbd className="ml-1 hidden sm:inline-flex">Enter</Kbd>
+                <Kbd className="ml-1 inline-flex sm:hidden">⏎</Kbd>
+              </Button>
             )}
 
             {!isPractice && !testSubmitted && (
@@ -752,6 +761,8 @@ function QuizAppView({
                 disabled={answeredCount === 0}
               >
                 Submit test
+                <Kbd className="ml-1 hidden sm:inline-flex">Enter</Kbd>
+                <Kbd className="ml-1 inline-flex sm:hidden">⏎</Kbd>
               </Button>
             )}
           </CardFooter>
@@ -825,6 +836,7 @@ function getOptionState(
 
 function OptionRow({
   optionId,
+  optionIndex,
   label,
   checked,
   disabled,
@@ -833,6 +845,7 @@ function OptionRow({
   onSelect,
 }: {
   optionId: string;
+  optionIndex: number;
   label: string;
   checked: boolean;
   disabled: boolean;
@@ -867,16 +880,21 @@ function OptionRow({
       role="button"
       tabIndex={disabled ? -1 : 0}
     >
-      <span
-        className={cn(
-          "flex size-8 shrink-0 items-center justify-center rounded-md border font-mono text-sm font-medium",
-          state === "default" && checked
-            ? "border-foreground bg-foreground text-background"
-            : "border-border bg-[var(--canvas-soft)] text-muted-foreground"
+      <div className="flex shrink-0 items-center gap-1.5">
+        <span
+          className={cn(
+            "flex size-8 shrink-0 items-center justify-center rounded-md border font-mono text-sm font-medium",
+            state === "default" && checked
+              ? "border-foreground bg-foreground text-background"
+              : "border-border bg-[var(--canvas-soft)] text-muted-foreground"
+          )}
+        >
+          {optionId}
+        </span>
+        {!disabled && (
+          <Kbd className="hidden sm:inline-flex">{optionIndex + 1}</Kbd>
         )}
-      >
-        {optionId}
-      </span>
+      </div>
 
       {mode === "checkbox" ? (
         <Checkbox

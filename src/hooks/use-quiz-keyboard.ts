@@ -98,7 +98,7 @@ export function useQuizKeyboard(options: UseQuizKeyboardOptions): void {
           onNext();
           return;
         }
-        if (answeredCount >= 1) onSubmitTest();
+        if (!isCurrentChecked && answeredCount >= 1) onSubmitTest();
         return;
       }
 

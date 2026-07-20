@@ -15,6 +15,8 @@ export function parseOptionIndex(key: string): number | null {
 }
 
 export function isTypingTarget(target: EventTarget | null): boolean {
+  if (target == null) return false;
+  if (typeof HTMLElement === "undefined") return false;
   if (!(target instanceof HTMLElement)) return false;
   const tag = target.tagName;
   if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return true;

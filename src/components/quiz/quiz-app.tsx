@@ -422,9 +422,12 @@ function QuizAppView({
   );
   const [matchRightIds, setMatchRightIds] = useState<string[]>([]);
 
+  // Only clear pending left on question change. Do not wipe matchRightIds —
+  // MatchQuestion's child effect runs first and calls onRightOrderChange; a
+  // parent wipe here would clear those ids permanently (child-before-parent
+  // effect order).
   useEffect(() => {
     setPendingMatchLeftId(null);
-    setMatchRightIds([]);
   }, [currentQuestion?.id]);
 
   const isCurrentAnswered = currentQuestion

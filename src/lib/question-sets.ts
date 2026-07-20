@@ -23,7 +23,7 @@ const catalog: Record<QuizSetId, QuizSetMeta> = {
     description: "IPv6, addressing, and essentials practice exam questions.",
     questionSet: essentials,
     notesUrl:
-      "https://app.notion.com/p/Networking-Essentials-3755f826b2fc80e1bf6fcc7ce710233f?source=copy_link",
+      "https://branched-fern-1b9.notion.site/Networking-Essentials-3755f826b2fc80e1bf6fcc7ce710233f?source=copy_link",
     notesLabel: "Networking Essentials notes",
   },
   fundamentals: {
@@ -32,7 +32,7 @@ const catalog: Record<QuizSetId, QuizSetMeta> = {
     description: "Routing, switching, and core networking fundamentals.",
     questionSet: fundamentals,
     notesUrl:
-      "https://app.notion.com/p/Network-Fundamental-3955f826b2fc80538519d4592037c110?source=copy_link",
+      "https://branched-fern-1b9.notion.site/Network-Fundamental-3955f826b2fc80538519d4592037c110?source=copy_link",
     notesLabel: "Network Fundamentals notes",
   },
 };

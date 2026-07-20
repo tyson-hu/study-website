@@ -1,10 +1,11 @@
 "use client";
 
-import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useSyncExternalStore } from "react";
 
-import { Button } from "@/components/ui/button";
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const emptySubscribe = () => () => {};
 const getClientSnapshot = () => true;
@@ -20,18 +21,21 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <Button variant="ghost" size="icon-sm" aria-label="Toggle theme" disabled />
+      <span
+        className={cn(
+          buttonVariants({ variant: "ghost", size: "icon-sm" }),
+          "pointer-events-none"
+        )}
+        aria-hidden
+      />
     );
   }
 
   return (
-    <Button
-      variant="ghost"
-      size="icon-sm"
-      aria-label="Toggle theme"
-      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-    >
-      {resolvedTheme === "dark" ? <Sun /> : <Moon />}
-    </Button>
+    <AnimatedThemeToggler
+      theme={resolvedTheme === "dark" ? "dark" : "light"}
+      onThemeChange={setTheme}
+      className={cn(buttonVariants({ variant: "ghost", size: "icon-sm" }))}
+    />
   );
 }

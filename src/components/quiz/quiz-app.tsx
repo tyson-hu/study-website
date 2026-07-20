@@ -36,6 +36,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
+import { LightRays } from "@/components/ui/light-rays";
 import { Progress } from "@/components/ui/progress";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Separator } from "@/components/ui/separator";
@@ -305,7 +306,20 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
 
   if (totalQuestions === 0 || questions.length === 0) {
     return (
-      <div className="flex min-h-full flex-1 flex-col bg-[var(--canvas-soft)]">
+      <div
+        className={cn(
+          "relative flex min-h-full flex-1 flex-col",
+          !isPractice && "bg-[var(--canvas-soft)]"
+        )}
+      >
+        {isPractice && (
+          <>
+            <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
+            <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+              <LightRays />
+            </div>
+          </>
+        )}
         <SiteHeader />
         <main className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
           <Card className="shadow-elevation-3 w-full border-border">
@@ -328,7 +342,20 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
   }
 
   return (
-    <div className="flex min-h-full flex-1 flex-col bg-[var(--canvas-soft)]">
+    <div
+      className={cn(
+        "relative flex min-h-full flex-1 flex-col",
+        !isPractice && "bg-[var(--canvas-soft)]"
+      )}
+    >
+      {isPractice && (
+        <>
+          <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
+          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+            <LightRays />
+          </div>
+        </>
+      )}
       <SiteHeader />
 
       <header className="sticky top-16 z-20 border-b border-border bg-card/95 backdrop-blur-sm">
@@ -365,7 +392,7 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
 
       <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-4 py-8">
         <Card className="shadow-elevation-3 overflow-hidden border-border bg-card">
-          <div className="border-b border-border bg-[var(--canvas-soft)] px-6 py-5">
+          <div className="border-b border-border bg-card px-6 py-5">
             <p className="mb-2 font-mono text-xs text-muted-foreground">
               Question {currentQuestion.number}
             </p>

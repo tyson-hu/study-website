@@ -2,7 +2,7 @@
   "title": "Network Fundamentals",
   "source": "Blooket — Network Fund. (Kurutta6821)",
   "totalQuestions": 204,
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "questions": [
     {
       "id": "q001",
@@ -2899,30 +2899,50 @@
       "options": [
         {
           "id": "A",
-          "text": "Assign the voice VLAN to the switch port. (1)",
-          "isCorrect": true
+          "text": "Configure the interface as an IEEE 802.1Q trunk.",
+          "isCorrect": false
         },
         {
           "id": "B",
-          "text": "Ensure that voice traffic is trusted and tagged with a CoS priority value. (2)",
+          "text": "Assign the voice VLAN to the switch port.",
           "isCorrect": true
         },
         {
           "id": "C",
-          "text": "Add a voice VLAN. (3)",
-          "isCorrect": true
+          "text": "Activate spanning-tree PortFast on the interface.",
+          "isCorrect": false
         },
         {
           "id": "D",
-          "text": "Configure the switch port in access mode. (4)",
+          "text": "Ensure that voice traffic is trusted and tagged with a CoS priority value.",
+          "isCorrect": true
+        },
+        {
+          "id": "E",
+          "text": "Add a voice VLAN.",
+          "isCorrect": true
+        },
+        {
+          "id": "F",
+          "text": "Configure the switch port interface with subinterfaces.",
+          "isCorrect": false
+        },
+        {
+          "id": "G",
+          "text": "Assign a data VLAN to the switch port.",
+          "isCorrect": false
+        },
+        {
+          "id": "H",
+          "text": "Configure the switch port in access mode.",
           "isCorrect": true
         }
       ],
       "correctOptionIds": [
-        "A",
         "B",
-        "C",
-        "D"
+        "D",
+        "E",
+        "H"
       ]
     },
     {

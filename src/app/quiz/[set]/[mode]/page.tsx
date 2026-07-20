@@ -24,5 +24,5 @@ export default async function QuizPage({
   const { set, mode } = await params;
   if (!isQuizSetId(set) || !isQuizMode(mode)) notFound();
   const meta = getQuizSet(set);
-  return <QuizApp questionSet={meta.questionSet} mode={mode} />;
+  return <QuizApp setId={set} questionSet={meta.questionSet} mode={mode} />;
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useSyncExternalStore } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -41,6 +41,15 @@ import { Progress } from "@/components/ui/progress";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Separator } from "@/components/ui/separator";
 import {
+  createEmptyQuizProgress,
+  getQuizProgressSnapshot,
+  QUIZ_PROGRESS_VERSION,
+  saveQuizProgress,
+  subscribeToQuizProgress,
+  type QuizProgressState,
+} from "@/lib/quiz-persistence";
+import type { QuizSetId } from "@/lib/question-sets";
+import {
   evaluateAnswer,
   getTextFieldResults,
   getTextFields,
@@ -62,26 +71,79 @@ import type {
 } from "@/types/question";
 
 interface QuizAppProps {
+  setId: QuizSetId;
   questionSet: QuestionSet;
   mode: QuizMode;
 }
 
-export function QuizApp({ questionSet, mode }: QuizAppProps) {
-  const { questions, title, totalQuestions } = questionSet;
+export function QuizApp({ setId, questionSet, mode }: QuizAppProps) {
+  const { questions, title, totalQuestions, schemaVersion } = questionSet;
   const quizMode = mode;
   const isPractice = quizMode === "practice";
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [selections, setSelections] = useState<Record<string, string[]>>({});
-  const [textFieldAnswers, setTextFieldAnswers] = useState<
-    Record<string, TextFieldAnswerMap>
-  >({});
-  const [matchAnswers, setMatchAnswers] = useState<
-    Record<string, MatchAnswerMap>
-  >({});
-  const [checked, setChecked] = useState<Record<string, boolean>>({});
-  const [testSubmitted, setTestSubmitted] = useState(false);
-  const [showResults, setShowResults] = useState(false);
+  const identity = useMemo(
+    () => ({
+      setId,
+      mode: quizMode,
+      schemaVersion,
+      totalQuestions,
+    }),
+    [setId, quizMode, schemaVersion, totalQuestions]
+  );
+
+  const serverProgress = useMemo(
+    () => createEmptyQuizProgress(identity),
+    [identity]
+  );
+
+  const subscribe = useMemo(
+    () => subscribeToQuizProgress(setId, quizMode),
+    [setId, quizMode]
+  );
+
+  const progress = useSyncExternalStore(
+    subscribe,
+    () => getQuizProgressSnapshot(identity),
+    () => serverProgress
+  );
+
+  const {
+    currentIndex,
+    selections,
+    textFieldAnswers,
+    matchAnswers,
+    checked,
+    testSubmitted,
+    showResults,
+  } = progress;
+
+  const updateProgress = useCallback(
+    (
+      updater:
+        | Partial<QuizProgressState>
+        | ((prev: QuizProgressState) => QuizProgressState)
+    ) => {
+      const prev = getQuizProgressSnapshot(identity);
+      const next =
+        typeof updater === "function"
+          ? updater(prev)
+          : {
+              ...prev,
+              ...updater,
+            };
+
+      saveQuizProgress({
+        ...next,
+        version: QUIZ_PROGRESS_VERSION,
+        setId: identity.setId,
+        mode: identity.mode,
+        schemaVersion: identity.schemaVersion,
+        totalQuestions: identity.totalQuestions,
+        updatedAt: Date.now(),
+      });
+    },
+    [identity]
+  );
 
   const currentQuestion = questions[currentIndex];
 
@@ -163,34 +225,34 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
   const currentResult = results[currentIndex];
 
   const restartQuiz = useCallback(() => {
-    setCurrentIndex(0);
-    setSelections({});
-    setTextFieldAnswers({});
-    setMatchAnswers({});
-    setChecked({});
-    setTestSubmitted(false);
-    setShowResults(false);
-  }, []);
+    saveQuizProgress(createEmptyQuizProgress(identity));
+  }, [identity]);
 
   const toggleOption = useCallback(
     (question: Question, optionId: string) => {
       if (optionsLocked) return;
       if (isPractice && checked[question.id]) return;
 
-      setSelections((prev) => {
-        const existing = prev[question.id] ?? [];
+      updateProgress((prev) => {
+        const existing = prev.selections[question.id] ?? [];
 
         if (isMultipleChoice(question)) {
           const next = existing.includes(optionId)
             ? existing.filter((id) => id !== optionId)
             : [...existing, optionId];
-          return { ...prev, [question.id]: next };
+          return {
+            ...prev,
+            selections: { ...prev.selections, [question.id]: next },
+          };
         }
 
-        return { ...prev, [question.id]: [optionId] };
+        return {
+          ...prev,
+          selections: { ...prev.selections, [question.id]: [optionId] },
+        };
       });
     },
-    [checked, isPractice, optionsLocked]
+    [checked, isPractice, optionsLocked, updateProgress]
   );
 
   const setTextFieldAnswer = useCallback(
@@ -198,15 +260,18 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
       if (optionsLocked) return;
       if (isPractice && checked[questionId]) return;
 
-      setTextFieldAnswers((prev) => ({
+      updateProgress((prev) => ({
         ...prev,
-        [questionId]: {
-          ...(prev[questionId] ?? {}),
-          [fieldId]: value,
+        textFieldAnswers: {
+          ...prev.textFieldAnswers,
+          [questionId]: {
+            ...(prev.textFieldAnswers[questionId] ?? {}),
+            [fieldId]: value,
+          },
         },
       }));
     },
-    [checked, isPractice, optionsLocked]
+    [checked, isPractice, optionsLocked, updateProgress]
   );
 
   const setMatchAnswer = useCallback(
@@ -214,8 +279,8 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
       if (optionsLocked) return;
       if (isPractice && checked[questionId]) return;
 
-      setMatchAnswers((prev) => {
-        const current = { ...(prev[questionId] ?? {}) };
+      updateProgress((prev) => {
+        const current = { ...(prev.matchAnswers[questionId] ?? {}) };
 
         if (rightId === null) {
           delete current[leftId];
@@ -223,10 +288,13 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
           current[leftId] = rightId;
         }
 
-        return { ...prev, [questionId]: current };
+        return {
+          ...prev,
+          matchAnswers: { ...prev.matchAnswers, [questionId]: current },
+        };
       });
     },
-    [checked, isPractice, optionsLocked]
+    [checked, isPractice, optionsLocked, updateProgress]
   );
 
   const checkCurrent = useCallback(() => {
@@ -244,7 +312,10 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
       return;
     }
 
-    setChecked((prev) => ({ ...prev, [currentQuestion.id]: true }));
+    updateProgress((prev) => ({
+      ...prev,
+      checked: { ...prev.checked, [currentQuestion.id]: true },
+    }));
 
     const state = evaluateAnswer(
       currentQuestion,
@@ -265,6 +336,7 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
     currentTextFieldAnswers,
     currentMatchAnswer,
     isPractice,
+    updateProgress,
   ]);
 
   const submitTest = useCallback(() => {
@@ -284,25 +356,29 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
       );
     }
 
-    setTestSubmitted(true);
-    setShowResults(true);
+    updateProgress({
+      testSubmitted: true,
+      showResults: true,
+    });
     toast.success("Test submitted!");
-  }, [questions, selections, textFieldAnswers, matchAnswers]);
+  }, [questions, selections, textFieldAnswers, matchAnswers, updateProgress]);
 
   const goNext = useCallback(() => {
     if (currentIndex < totalQuestions - 1) {
-      setCurrentIndex((i) => i + 1);
+      updateProgress({ currentIndex: currentIndex + 1 });
       return;
     }
 
     if (isPractice) {
-      setShowResults(true);
+      updateProgress({ showResults: true });
     }
-  }, [currentIndex, totalQuestions, isPractice]);
+  }, [currentIndex, totalQuestions, isPractice, updateProgress]);
 
   const goPrev = useCallback(() => {
-    if (currentIndex > 0) setCurrentIndex((i) => i - 1);
-  }, [currentIndex]);
+    if (currentIndex > 0) {
+      updateProgress({ currentIndex: currentIndex - 1 });
+    }
+  }, [currentIndex, updateProgress]);
 
   if (totalQuestions === 0 || questions.length === 0) {
     return (
@@ -563,17 +639,17 @@ export function QuizApp({ questionSet, mode }: QuizAppProps) {
           testSubmitted={testSubmitted}
           quizMode={quizMode}
           currentIndex={currentIndex}
-          onSelect={setCurrentIndex}
+          onSelect={(index) => updateProgress({ currentIndex: index })}
         />
       </main>
 
       <ResultsDialog
         open={showResults}
-        onOpenChange={setShowResults}
+        onOpenChange={(open) => updateProgress({ showResults: open })}
         stats={stats}
         total={totalQuestions}
         mode={quizMode}
-        onReview={() => setShowResults(false)}
+        onReview={() => updateProgress({ showResults: false })}
         onRestart={restartQuiz}
       />
     </div>

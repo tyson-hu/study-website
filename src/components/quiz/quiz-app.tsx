@@ -714,6 +714,22 @@ function QuizAppView({
                   onExpire={handleTimerExpire}
                 />
               )}
+              {/* Early finish stays available but quiet — primary Submit lives on the last question. */}
+              {answeredCount > 0 &&
+                !isLastQuestion &&
+                (isPractice || !testSubmitted) && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="gap-1.5 text-muted-foreground"
+                    onClick={
+                      isPractice ? submitPractice : () => submitTest()
+                    }
+                  >
+                    Submit
+                    <Kbd>s</Kbd>
+                  </Button>
+                )}
               <Button variant="ghost" size="sm" onClick={restartQuiz}>
                 <RotateCcw data-icon="inline-start" />
                 Restart
@@ -860,15 +876,6 @@ function QuizAppView({
                 <Kbd>←</Kbd>
                 Previous
               </Button>
-              <Button
-                variant="outline"
-                onClick={goNext}
-                disabled={isLastQuestion}
-                className="gap-1.5"
-              >
-                Next
-                <Kbd>→</Kbd>
-              </Button>
             </div>
 
             <div className="flex flex-wrap gap-2">
@@ -883,7 +890,18 @@ function QuizAppView({
                 </Button>
               )}
 
-              {isPractice && (
+              {/* Mid-quiz: Next is the primary action. Submit is demoted to the header. */}
+              {!isLastQuestion && (
+                <Button className="gap-1.5" onClick={goNext}>
+                  Next
+                  <Kbd className="bg-primary-foreground/15 text-primary-foreground/70">
+                    →
+                  </Kbd>
+                </Button>
+              )}
+
+              {/* Last question: Submit becomes the primary finish action. */}
+              {isLastQuestion && isPractice && (
                 <Button className="gap-1.5" onClick={submitPractice}>
                   Submit
                   <Kbd className="bg-primary-foreground/15 text-primary-foreground/70">
@@ -892,7 +910,7 @@ function QuizAppView({
                 </Button>
               )}
 
-              {!isPractice && !testSubmitted && (
+              {isLastQuestion && !isPractice && !testSubmitted && (
                 <Button
                   className="gap-1.5"
                   onClick={() => submitTest()}

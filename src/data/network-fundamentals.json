@@ -4097,7 +4097,8 @@
       ],
       "correctOptionIds": [
         "D"
-      ]
+      ],
+      "explanation": "IEEE 802.15 is the **Wireless Personal Area Networks (WPAN)** working group of the IEEE, which develops standards for short-range, low-power wireless communication between devices within a personal area, such as Bluetooth, Zigbee, and Thread."
     },
     {
       "id": "q137",

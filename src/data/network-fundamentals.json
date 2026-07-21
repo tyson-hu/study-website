@@ -4530,7 +4530,8 @@
       ],
       "correctOptionIds": [
         "A"
-      ]
+      ],
+      "explanation": "The device used to test a multimode fiber (MMF) connection is an **Optical Time Domain Reflectometer (OTDR)**."
     },
     {
       "id": "q151",

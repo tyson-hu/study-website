@@ -3637,7 +3637,8 @@
       ],
       "correctOptionIds": [
         "A"
-      ]
+      ],
+      "explanation": "Router-on-a-stick inter-VLAN routing does not scale beyond 50 VLANs.\n\nThe router can receive VLAN-tagged packets and send VLAN-tagged packets to a destination. Router-on-a-stick inter-VLAN routing can utilize a single router interface as a trunk link to receive and forward VLAN traffic and does not require multiple interfaces."
     },
     {
       "id": "q120",

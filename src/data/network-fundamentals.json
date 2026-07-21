@@ -4471,7 +4471,8 @@
       ],
       "correctOptionIds": [
         "C"
-      ]
+      ],
+      "explanation": "Normal range VLAN configurations on a Cisco Catalyst switch are stored in the `vlan.dat` file located in the switch's **flash memory**."
     },
     {
       "id": "q149",

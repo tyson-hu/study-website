@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
+  BookOpen,
   CheckCircle2,
   CircleHelp,
   RotateCcw,
@@ -1139,6 +1140,17 @@ function FeedbackBanner({
   result: QuestionResult;
   question: Question;
 }) {
+  const explanation = question.explanation?.trim();
+  if (explanation) {
+    return (
+      <Alert>
+        <BookOpen />
+        <AlertTitle>Explanation</AlertTitle>
+        <AlertDescription>{explanation}</AlertDescription>
+      </Alert>
+    );
+  }
+
   const correctTexts = isTextInput(question)
     ? getTextFields(question).map(
         (field) =>

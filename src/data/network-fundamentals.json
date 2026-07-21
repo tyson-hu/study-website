@@ -1199,7 +1199,8 @@
       ],
       "correctOptionIds": [
         "C"
-      ]
+      ],
+      "explanation": "When MAC addresses are automatically learned by using the sticky command option, the learned MAC addresses are added to the running configuration, which is stored in RAM."
     },
     {
       "id": "q041",

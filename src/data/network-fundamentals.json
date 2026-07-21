@@ -3920,7 +3920,8 @@
       ],
       "correctOptionIds": [
         "B"
-      ]
+      ],
+      "explanation": "In OSPF, Area 0 is the backbone area, which is mandatory for all multi-area OSPF networks. All other areas must connect to Area 0 via Area Border Routers (ABRs). Area 1 is simply another area ID you can use, but it is not a default or recommended starting point."
     },
     {
       "id": "q131",

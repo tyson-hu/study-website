@@ -4503,7 +4503,8 @@
       ],
       "correctOptionIds": [
         "D"
-      ]
+      ],
+      "explanation": "How a Cisco router determines its OSPF Router ID (ordered from highest priority to lowest):\n\n- **Manual Configuration**: The manually assigned IP address under the router-id command.\n\n- **Highest Loopback**: The highest IPv4 address configured on any active virtual loopback interface.\n\n- **Highest Physical**: The highest active IPv4 address configured on any up/up physical interface."
     },
     {
       "id": "q150",

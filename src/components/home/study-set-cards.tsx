@@ -82,7 +82,7 @@ export function StudySetCards() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={cn(
-                    buttonVariants({ variant: "secondary", size: "lg" }),
+                    buttonVariants({ variant: "outline", size: "lg" }),
                     "h-11 rounded-lg px-5 text-base"
                   )}
                 >

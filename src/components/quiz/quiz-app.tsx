@@ -1146,7 +1146,9 @@ function FeedbackBanner({
       <Alert>
         <BookOpen />
         <AlertTitle>Explanation</AlertTitle>
-        <AlertDescription>{explanation}</AlertDescription>
+        <AlertDescription className="whitespace-pre-line">
+          {explanation}
+        </AlertDescription>
       </Alert>
     );
   }

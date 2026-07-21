@@ -1641,8 +1641,8 @@
       "options": [
         {
           "id": "A",
-          "text": "It provides a means to remotely manage a switch.",
-          "isCorrect": true
+          "text": "It is designed as a security protocol to protect switch ports.",
+          "isCorrect": false
         },
         {
           "id": "B",
@@ -1656,15 +1656,26 @@
         },
         {
           "id": "D",
+          "text": "It is required to allow connectivity by any device at any location.",
+          "isCorrect": false
+        },
+        {
+          "id": "E",
+          "text": "It provides a means to remotely manage a switch.",
+          "isCorrect": true
+        },
+        {
+          "id": "F",
           "text": "It is associated with VLAN1 by default.",
           "isCorrect": true
         }
       ],
       "correctOptionIds": [
-        "A",
         "B",
-        "D"
-      ]
+        "E",
+        "F"
+      ],
+      "explanation": "Switches have one or more switch virtual interfaces (SVIs). SVIs are created in software since there is no physical hardware associated with them. Virtual interfaces provide a means to remotely manage a switch over a network that is using IP. Each switch comes with one SVI appearing in the default configuration “out-of-the-box.” The default SVI interface is VLAN1."
     },
     {
       "id": "q056",

@@ -2847,7 +2847,8 @@
       ],
       "correctOptionIds": [
         "B"
-      ]
+      ],
+      "explanation": "Administrative distance is a value assigned to each route that indicates how reliable or trustworthy the source of that route is. Routers use AD to decide which route to install in the routing table when multiple routes exist to the same destination. **A lower AD value means the route is considered more trustworthy.**"
     },
     {
       "id": "q094",

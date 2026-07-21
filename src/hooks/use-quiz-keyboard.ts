@@ -24,6 +24,7 @@ export type UseQuizKeyboardOptions = {
   onCheck: () => void;
   onNext: () => void;
   onPrev: () => void;
+  onSubmitPractice: () => void;
   onSubmitTest: () => void;
   matchLeftIds?: string[];
   matchRightIds?: string[];
@@ -48,6 +49,7 @@ export function useQuizKeyboard(options: UseQuizKeyboardOptions): void {
     onCheck,
     onNext,
     onPrev,
+    onSubmitPractice,
     onSubmitTest,
     matchLeftIds,
     matchRightIds,
@@ -79,8 +81,32 @@ export function useQuizKeyboard(options: UseQuizKeyboardOptions): void {
         return;
       }
 
+      // Practice Check (`c`) — takes priority over option letter C.
+      if (
+        quizMode === "practice" &&
+        !isCurrentChecked &&
+        (key === "c" || key === "C")
+      ) {
+        if (typing) return;
+        event.preventDefault();
+        onCheck();
+        return;
+      }
+
+      // Submit / finish (`s`)
+      if (key === "s" || key === "S") {
+        if (typing) return;
+        event.preventDefault();
+        if (quizMode === "practice") {
+          onSubmitPractice();
+          return;
+        }
+        if (!isCurrentChecked && answeredCount >= 1) onSubmitTest();
+        return;
+      }
+
       if (key === "Enter") {
-        // Always allow Enter for Check/Next even while typing in text fields.
+        // Allow Enter for Check/Next even while typing in text fields.
         event.preventDefault();
         event.stopPropagation();
 
@@ -89,7 +115,7 @@ export function useQuizKeyboard(options: UseQuizKeyboardOptions): void {
             if (isCurrentAnswered) onCheck();
             return;
           }
-          onNext();
+          if (!isLastQuestion) onNext();
           return;
         }
 
@@ -106,7 +132,7 @@ export function useQuizKeyboard(options: UseQuizKeyboardOptions): void {
         if (typing) return; // caret movement
         event.preventDefault();
         if (key === "ArrowLeft") onPrev();
-        else onNext();
+        else if (!isLastQuestion) onNext();
         return;
       }
 
@@ -127,7 +153,6 @@ export function useQuizKeyboard(options: UseQuizKeyboardOptions): void {
         return;
       }
 
-      // Match handled in Task 4 — keep branch ready:
       if (questionType === "match") {
         const leftIds = matchLeftIds ?? [];
         const rightIds = matchRightIds ?? [];
@@ -166,6 +191,7 @@ export function useQuizKeyboard(options: UseQuizKeyboardOptions): void {
     onCheck,
     onNext,
     onPrev,
+    onSubmitPractice,
     onSubmitTest,
     matchLeftIds,
     matchRightIds,

@@ -2211,7 +2211,8 @@
       ],
       "correctOptionIds": [
         "B"
-      ]
+      ],
+      "explanation": "Single-Mode Fiber (SMF) has a much smaller core (typically 8 to 10 microns in diameter) compared to Multi-Mode Fiber (MMF), which has a larger core (typically 50 to 62.5 microns in diameter)."
     },
     {
       "id": "q074",

@@ -8,6 +8,7 @@ import {
   CheckCircle2,
   CircleHelp,
   RotateCcw,
+  Send,
   XCircle,
 } from "lucide-react";
 import { toast } from "sonner";
@@ -723,13 +724,12 @@ function QuizAppView({
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="gap-1.5 text-muted-foreground"
                     onClick={
                       isPractice ? submitPractice : () => submitTest()
                     }
                   >
+                    <Send data-icon="inline-start" />
                     Submit
-                    <Kbd>s</Kbd>
                   </Button>
                 )}
               <Button variant="ghost" size="sm" onClick={restartQuiz}>
@@ -743,8 +743,8 @@ function QuizAppView({
       </header>
 
       <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-4 py-8">
-        <Card className="shadow-elevation-3 overflow-hidden border-border bg-card">
-          <div className="border-b border-border bg-card px-6 py-5">
+        <Card className="shadow-elevation-3 gap-0 overflow-hidden border-border bg-card py-0">
+          <div className="rounded-t-xl border-b border-border px-6 py-5">
             <p className="mb-2 font-mono text-xs text-muted-foreground">
               Question {currentQuestion.number}
             </p>
@@ -888,7 +888,7 @@ function QuizAppView({
                   onClick={checkCurrent}
                 >
                   Check
-                  <Kbd>c</Kbd>
+                  <Kbd>⏎</Kbd>
                 </Button>
               )}
 

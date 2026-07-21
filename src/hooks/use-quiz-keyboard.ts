@@ -81,18 +81,6 @@ export function useQuizKeyboard(options: UseQuizKeyboardOptions): void {
         return;
       }
 
-      // Practice Check (`c`) — takes priority over option letter C.
-      if (
-        quizMode === "practice" &&
-        !isCurrentChecked &&
-        (key === "c" || key === "C")
-      ) {
-        if (typing) return;
-        event.preventDefault();
-        onCheck();
-        return;
-      }
-
       // Submit / finish (`s`)
       if (key === "s" || key === "S") {
         if (typing) return;

@@ -4831,7 +4831,8 @@
       ],
       "correctOptionIds": [
         "A"
-      ]
+      ],
+      "explanation": "The current industry standard for the minimum recommended RSA modulus length is **2048 bits**, which provides 112-bit security strength and is generally considered acceptable through 2030."
     },
     {
       "id": "q162",
@@ -4915,7 +4916,8 @@
       ],
       "correctOptionIds": [
         "C"
-      ]
+      ],
+      "explanation": "**Packets** are the network-layer PDU used to route data from the source host to the destination host across networks.\n\nHowever, the word **“guaranteed”** is misleading: reliable delivery is actually provided by TCP using **segments**, while IP packets themselves are best-effort."
     },
     {
       "id": "q165",
@@ -5273,7 +5275,7 @@
       "id": "q178",
       "number": 173,
       "type": "multiple_choice",
-      "question": "What is the purpose of VLANs?",
+      "question": "What is the purpose of VLANs? (Choose three.)",
       "options": [
         {
           "id": "A",
@@ -5583,7 +5585,7 @@
         {
           "id": "A",
           "text": "A router with at least two LAN interfaces should be used",
-          "isCorrect": false
+          "isCorrect": true
         },
         {
           "id": "B",
@@ -5598,12 +5600,13 @@
         {
           "id": "D",
           "text": "A switch with a port that is configured as trunk is needed to connect to a router",
-          "isCorrect": true
+          "isCorrect": false
         }
       ],
       "correctOptionIds": [
-        "D"
-      ]
+        "A"
+      ],
+      "explanation": "For **legacy inter-VLAN routing**, the correct answer should be **A**.\n\nA router needs a **separate physical LAN interface for each VLAN**:\n\n* One router interface connects to an access port in VLAN 10.\n* Another router interface connects to an access port in VLAN 20.\n\n**D describes router-on-a-stick**, where one router interface connects through a trunk and uses subinterfaces. That is not legacy inter-VLAN routing, so the quiz’s marked answer appears incorrect."
     },
     {
       "id": "q189",
@@ -5686,7 +5689,8 @@
       ],
       "correctOptionIds": [
         "A"
-      ]
+      ],
+      "explanation": "**Switch** is the exception because a standard network switch operates mainly at **OSI Layer 2**, using MAC addresses to forward frames.\n\nHubs, fiber-optic cables, and wireless radio signals are associated with **Layer 1**, the Physical layer."
     },
     {
       "id": "q192",
@@ -5874,7 +5878,8 @@
       ],
       "correctOptionIds": [
         "A"
-      ]
+      ],
+      "explanation": "**BOOTP (Bootstrap Protocol)** was the predecessor to DHCP. It could assign IP configuration to devices, but it relied more on static mappings and lacked DHCP’s flexible address leasing and automatic renewal."
     },
     {
       "id": "q198",

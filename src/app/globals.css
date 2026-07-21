@@ -76,8 +76,9 @@
   --gradient-develop: linear-gradient(90deg, #007cf0, #00dfd8);
   --gradient-preview: linear-gradient(90deg, #7928ca, #ff0080);
   --gradient-ship: linear-gradient(90deg, #ff4d4d, #f9cb28);
-  --shadow-level-2: 0px 1px 1px #00000005, 0px 2px 2px #0000000a, inset 0 0 0 1px #00000014;
-  --shadow-level-3: 0px 2px 2px #0000000a, 0px 8px 8px -8px #0000000a, inset 0 0 0 1px #00000014;
+  /* Outset hairline so full-bleed children don't cover rounded borders. */
+  --shadow-level-2: 0px 1px 1px #00000005, 0px 2px 2px #0000000a, 0 0 0 1px #00000014;
+  --shadow-level-3: 0px 2px 2px #0000000a, 0px 8px 8px -8px #0000000a, 0 0 0 1px #00000014;
   --radius: 0.5rem;
   --chart-1: #0070f3;
   --chart-2: #007cf0;

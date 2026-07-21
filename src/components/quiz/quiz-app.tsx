@@ -1,14 +1,11 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowLeft,
-  ArrowRight,
   CheckCircle2,
   CircleHelp,
-  CornerDownLeft,
   RotateCcw,
   XCircle,
 } from "lucide-react";
@@ -37,11 +34,6 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Kbd } from "@/components/ui/kbd";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { Label } from "@/components/ui/label";
 import { SafeLightRays } from "@/components/quiz/safe-light-rays";
 import { Progress } from "@/components/ui/progress";
@@ -57,13 +49,17 @@ import {
 import type { QuizSetId } from "@/lib/question-sets";
 import {
   evaluateAnswer,
+  formatDuration,
   getTextFieldResults,
   getTextFields,
   isMatchQuestion,
   isMultipleChoice,
   isQuestionAnswered,
   isTextInput,
+  sampleQuestions,
   scoreResults,
+  TEST_DURATION_MS,
+  TEST_QUESTION_COUNT,
 } from "@/lib/quiz";
 import { formatQuizText } from "@/lib/format-text";
 import { cn } from "@/lib/utils";
@@ -105,6 +101,16 @@ export function QuizApp({
   );
 }
 
+function getQuizIdentityTotal(
+  mode: QuizMode,
+  questionSet: QuestionSet
+): number {
+  if (mode === "test") {
+    return Math.min(TEST_QUESTION_COUNT, questionSet.totalQuestions);
+  }
+  return questionSet.totalQuestions;
+}
+
 function QuizAppPersisted({
   setId,
   questionSet,
@@ -115,9 +121,9 @@ function QuizAppPersisted({
       setId,
       mode,
       schemaVersion: questionSet.schemaVersion,
-      totalQuestions: questionSet.totalQuestions,
+      totalQuestions: getQuizIdentityTotal(mode, questionSet),
     }),
-    [setId, mode, questionSet.schemaVersion, questionSet.totalQuestions]
+    [setId, mode, questionSet]
   );
   const api = usePersistedQuizProgress(identity);
 
@@ -141,9 +147,9 @@ function QuizAppCompatible({
       setId,
       mode,
       schemaVersion: questionSet.schemaVersion,
-      totalQuestions: questionSet.totalQuestions,
+      totalQuestions: getQuizIdentityTotal(mode, questionSet),
     }),
-    [setId, mode, questionSet.schemaVersion, questionSet.totalQuestions]
+    [setId, mode, questionSet]
   );
   const api = useCompatibleQuizProgress(identity);
 
@@ -168,10 +174,11 @@ function QuizAppView({
   QuizProgressApi & {
     progressMode: QuizProgressMode;
   }) {
-  const { questions, title, totalQuestions } = questionSet;
   const quizMode = mode;
   const isPractice = quizMode === "practice";
   const isCompatible = progressMode === "compatible";
+  const title = questionSet.title;
+  const totalQuestions = progress.totalQuestions;
 
   const {
     currentIndex,
@@ -181,7 +188,55 @@ function QuizAppView({
     checked,
     testSubmitted,
     showResults,
+    testQuestionIds,
+    testStartedAt,
   } = progress;
+
+  // Seed a timed 50-question test session once per run / restart.
+  useEffect(() => {
+    if (isPractice) return;
+    if (
+      testQuestionIds.length === totalQuestions &&
+      testStartedAt != null
+    ) {
+      return;
+    }
+
+    const sampled = sampleQuestions(questionSet.questions, totalQuestions);
+    updateProgress({
+      testQuestionIds: sampled.map((q) => q.id),
+      testStartedAt: Date.now(),
+      currentIndex: 0,
+      selections: {},
+      textFieldAnswers: {},
+      matchAnswers: {},
+      checked: {},
+      testSubmitted: false,
+      showResults: false,
+    });
+  }, [
+    isPractice,
+    testQuestionIds.length,
+    testStartedAt,
+    totalQuestions,
+    questionSet.questions,
+    updateProgress,
+  ]);
+
+  const questions = useMemo(() => {
+    if (isPractice) return questionSet.questions;
+
+    if (testQuestionIds.length === 0) return [];
+
+    const byId = new Map(questionSet.questions.map((q) => [q.id, q]));
+    return testQuestionIds
+      .map((id, index) => {
+        const question = byId.get(id);
+        if (!question) return null;
+        return { ...question, number: index + 1 };
+      })
+      .filter((question): question is Question => question != null);
+  }, [isPractice, questionSet.questions, testQuestionIds]);
 
   const currentQuestion = questions[currentIndex];
 
@@ -261,6 +316,7 @@ function QuizAppView({
     : testSubmitted;
   const optionsLocked = isPractice ? isCurrentChecked : testSubmitted;
   const currentResult = results[currentIndex];
+  const isLastQuestion = currentIndex >= totalQuestions - 1;
 
   const toggleOption = useCallback(
     (question: Question, optionId: string) => {
@@ -333,6 +389,7 @@ function QuizAppView({
 
   const checkCurrent = useCallback(() => {
     if (!currentQuestion || !isPractice) return;
+    if (checked[currentQuestion.id]) return;
 
     const hasAnswer = isQuestionAnswered(
       currentQuestion,
@@ -369,44 +426,82 @@ function QuizAppView({
     currentSelection,
     currentTextFieldAnswers,
     currentMatchAnswer,
+    checked,
     isPractice,
     updateProgress,
   ]);
 
-  const submitTest = useCallback(() => {
-    const unanswered = questions.filter(
-      (q) =>
-        !isQuestionAnswered(
+  const submitPractice = useCallback(() => {
+    if (!isPractice) return;
+
+    updateProgress((prev) => {
+      const nextChecked = { ...prev.checked };
+
+      for (const q of questions) {
+        if (nextChecked[q.id]) continue;
+        const answered = isQuestionAnswered(
           q,
-          selections[q.id] ?? [],
-          textFieldAnswers[q.id],
-          matchAnswers[q.id]
-        )
-    );
+          prev.selections[q.id] ?? [],
+          prev.textFieldAnswers[q.id],
+          prev.matchAnswers[q.id]
+        );
+        if (answered) {
+          nextChecked[q.id] = true;
+        }
+      }
 
-    if (unanswered.length > 0) {
-      toast.warning(
-        `${unanswered.length} question${unanswered.length === 1 ? "" : "s"} unanswered — they will count as incorrect.`
-      );
-    }
-
-    updateProgress({
-      testSubmitted: true,
-      showResults: true,
+      return {
+        ...prev,
+        checked: nextChecked,
+        showResults: true,
+      };
     });
-    toast.success("Test submitted!");
-  }, [questions, selections, textFieldAnswers, matchAnswers, updateProgress]);
+    toast.success("Practice submitted!");
+  }, [isPractice, questions, updateProgress]);
+
+  const submitTest = useCallback(
+    (options?: { timedOut?: boolean }) => {
+      if (testSubmitted) return;
+
+      const unanswered = questions.filter(
+        (q) =>
+          !isQuestionAnswered(
+            q,
+            selections[q.id] ?? [],
+            textFieldAnswers[q.id],
+            matchAnswers[q.id]
+          )
+      );
+
+      if (!options?.timedOut && unanswered.length > 0) {
+        toast.warning(
+          `${unanswered.length} question${unanswered.length === 1 ? "" : "s"} unanswered — they will count as incorrect.`
+        );
+      }
+
+      updateProgress({
+        testSubmitted: true,
+        showResults: true,
+      });
+      toast.success(
+        options?.timedOut ? "Time is up — test submitted!" : "Test submitted!"
+      );
+    },
+    [
+      questions,
+      selections,
+      textFieldAnswers,
+      matchAnswers,
+      testSubmitted,
+      updateProgress,
+    ]
+  );
 
   const goNext = useCallback(() => {
     if (currentIndex < totalQuestions - 1) {
       updateProgress({ currentIndex: currentIndex + 1 });
-      return;
     }
-
-    if (isPractice) {
-      updateProgress({ showResults: true });
-    }
-  }, [currentIndex, totalQuestions, isPractice, updateProgress]);
+  }, [currentIndex, totalQuestions, updateProgress]);
 
   const goPrev = useCallback(() => {
     if (currentIndex > 0) {
@@ -472,13 +567,22 @@ function QuizAppView({
     [currentQuestion, currentMatchAnswer, setMatchAnswer]
   );
 
+  const submitTestRef = useRef(submitTest);
+  useEffect(() => {
+    submitTestRef.current = submitTest;
+  }, [submitTest]);
+
+  const handleTimerExpire = useCallback(() => {
+    submitTestRef.current({ timedOut: true });
+  }, []);
+
   useQuizKeyboard({
     enabled: Boolean(currentQuestion) && !showResults,
     quizMode,
     optionsLocked,
     isCurrentChecked,
     isCurrentAnswered,
-    isLastQuestion: currentIndex === totalQuestions - 1,
+    isLastQuestion,
     answeredCount,
     showResults,
     questionType: currentQuestion?.type,
@@ -487,13 +591,25 @@ function QuizAppView({
     onCheck: checkCurrent,
     onNext: goNext,
     onPrev: goPrev,
-    onSubmitTest: submitTest,
+    onSubmitPractice: submitPractice,
+    onSubmitTest: () => submitTest(),
     matchLeftIds,
     matchRightIds,
     pendingMatchLeftId,
     onSetPendingMatchLeft: setPendingMatchLeftId,
     onPairMatch,
   });
+
+  if (!isPractice && questions.length === 0) {
+    return (
+      <div className="relative flex min-h-full flex-1 flex-col bg-[var(--canvas-soft)]">
+        <SiteHeader />
+        <main className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
+          <p className="text-sm text-muted-foreground">Preparing your test…</p>
+        </main>
+      </div>
+    );
+  }
 
   if (totalQuestions === 0 || questions.length === 0) {
     return (
@@ -590,10 +706,19 @@ function QuizAppView({
                 )}
               </div>
             </div>
-            <Button variant="ghost" size="sm" onClick={restartQuiz}>
-              <RotateCcw data-icon="inline-start" />
-              Restart
-            </Button>
+            <div className="flex items-center gap-3">
+              {!isPractice && testStartedAt != null && !testSubmitted && (
+                <TestTimer
+                  startedAt={testStartedAt}
+                  durationMs={TEST_DURATION_MS}
+                  onExpire={handleTimerExpire}
+                />
+              )}
+              <Button variant="ghost" size="sm" onClick={restartQuiz}>
+                <RotateCcw data-icon="inline-start" />
+                Restart
+              </Button>
+            </div>
           </div>
           <Progress value={progressValue} className="h-1.5" />
         </div>
@@ -726,94 +851,60 @@ function QuizAppView({
 
           <CardFooter className="flex flex-col gap-3 sm:flex-row sm:justify-between">
             <div className="flex gap-2">
-              <Tooltip>
-                <TooltipTrigger
-                  render={
-                    <span
-                      className={cn(
-                        "inline-flex",
-                        currentIndex === 0 && "cursor-not-allowed"
-                      )}
-                    />
-                  }
-                >
-                  <Button
-                    variant="outline"
-                    onClick={goPrev}
-                    disabled={currentIndex === 0}
-                  >
-                    <ArrowLeft data-icon="inline-start" />
-                    Previous
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  Previous{" "}
-                  <Kbd>
-                    <ArrowLeft />
-                  </Kbd>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <TooltipTrigger
-                  render={
-                    <span
-                      className={cn(
-                        "inline-flex",
-                        !isPractice &&
-                          !testSubmitted &&
-                          currentIndex === totalQuestions - 1 &&
-                          "cursor-not-allowed"
-                      )}
-                    />
-                  }
-                >
-                  <Button
-                    variant="outline"
-                    onClick={goNext}
-                    disabled={
-                      !isPractice &&
-                      !testSubmitted &&
-                      currentIndex === totalQuestions - 1
-                    }
-                  >
-                    {isPractice && currentIndex === totalQuestions - 1
-                      ? "Finish"
-                      : "Next"}
-                    <ArrowRight data-icon="inline-end" />
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  {isPractice && currentIndex === totalQuestions - 1
-                    ? "Finish"
-                    : "Next"}{" "}
-                  <Kbd>
-                    <ArrowRight />
-                  </Kbd>
-                </TooltipContent>
-              </Tooltip>
+              <Button
+                variant="outline"
+                onClick={goPrev}
+                disabled={currentIndex === 0}
+                className="gap-1.5"
+              >
+                <Kbd>←</Kbd>
+                Previous
+              </Button>
+              <Button
+                variant="outline"
+                onClick={goNext}
+                disabled={isLastQuestion}
+                className="gap-1.5"
+              >
+                Next
+                <Kbd>→</Kbd>
+              </Button>
             </div>
 
-            {isPractice && !isCurrentChecked && (
-              <Button className="gap-1.5" onClick={checkCurrent}>
-                Submit
-                <Kbd className="bg-primary-foreground/15 text-primary-foreground/70">
-                  <CornerDownLeft />
-                </Kbd>
-              </Button>
-            )}
+            <div className="flex flex-wrap gap-2">
+              {isPractice && !isCurrentChecked && (
+                <Button
+                  variant="secondary"
+                  className="gap-1.5"
+                  onClick={checkCurrent}
+                >
+                  Check
+                  <Kbd>c</Kbd>
+                </Button>
+              )}
 
-            {!isPractice && !testSubmitted && (
-              <Button
-                className="gap-1.5"
-                onClick={submitTest}
-                disabled={answeredCount === 0}
-              >
-                Submit
-                <Kbd className="bg-primary-foreground/15 text-primary-foreground/70">
-                  <CornerDownLeft />
-                </Kbd>
-              </Button>
-            )}
+              {isPractice && (
+                <Button className="gap-1.5" onClick={submitPractice}>
+                  Submit
+                  <Kbd className="bg-primary-foreground/15 text-primary-foreground/70">
+                    s
+                  </Kbd>
+                </Button>
+              )}
+
+              {!isPractice && !testSubmitted && (
+                <Button
+                  className="gap-1.5"
+                  onClick={() => submitTest()}
+                  disabled={answeredCount === 0}
+                >
+                  Submit
+                  <Kbd className="bg-primary-foreground/15 text-primary-foreground/70">
+                    s
+                  </Kbd>
+                </Button>
+              )}
+            </div>
           </CardFooter>
         </Card>
 
@@ -840,6 +931,53 @@ function QuizAppView({
         onReview={() => updateProgress({ showResults: false })}
         onRestart={restartQuiz}
       />
+    </div>
+  );
+}
+
+function TestTimer({
+  startedAt,
+  durationMs,
+  onExpire,
+}: {
+  startedAt: number;
+  durationMs: number;
+  onExpire: () => void;
+}) {
+  const expiredRef = useRef(false);
+  const [remainingMs, setRemainingMs] = useState(() =>
+    Math.max(0, startedAt + durationMs - Date.now())
+  );
+
+  useEffect(() => {
+    expiredRef.current = false;
+
+    const tick = () => {
+      const next = Math.max(0, startedAt + durationMs - Date.now());
+      setRemainingMs(next);
+      if (next === 0 && !expiredRef.current) {
+        expiredRef.current = true;
+        onExpire();
+      }
+    };
+
+    tick();
+    const id = window.setInterval(tick, 250);
+    return () => window.clearInterval(id);
+  }, [startedAt, durationMs, onExpire]);
+
+  const urgent = remainingMs <= 5 * 60 * 1000;
+
+  return (
+    <div
+      className={cn(
+        "font-mono text-sm tabular-nums",
+        urgent ? "text-destructive" : "text-foreground"
+      )}
+      aria-live="polite"
+      aria-label="Time remaining"
+    >
+      {formatDuration(remainingMs)}
     </div>
   );
 }

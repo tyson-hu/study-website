@@ -68,6 +68,15 @@ export function StudySetCards() {
                 >
                   Practice
                 </Link>
+                <Link
+                  href={`/quiz/${set.id}/test`}
+                  className={cn(
+                    buttonVariants({ variant: "secondary", size: "lg" }),
+                    "h-11 rounded-lg px-5 text-base"
+                  )}
+                >
+                  Test
+                </Link>
                 <a
                   href={set.notesUrl}
                   target="_blank"

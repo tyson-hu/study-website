@@ -229,3 +229,33 @@ export function getTextInputPlaceholder(field: TextFieldConfig): string {
       return `Enter ${field.label.toLowerCase()}`;
   }
 }
+
+/** Number of questions drawn for a timed test session. */
+export const TEST_QUESTION_COUNT = 50;
+
+/** Test session length: 2 hours. */
+export const TEST_DURATION_MS = 2 * 60 * 60 * 1000;
+
+/** Fisher–Yates sample of up to `count` items (does not mutate input). */
+export function sampleQuestions<T>(items: T[], count: number): T[] {
+  const n = Math.min(Math.max(count, 0), items.length);
+  if (n === 0) return [];
+  if (n === items.length) return [...items];
+
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const tmp = copy[i];
+    copy[i] = copy[j]!;
+    copy[j] = tmp!;
+  }
+  return copy.slice(0, n);
+}
+
+export function formatDuration(ms: number): string {
+  const totalSeconds = Math.max(0, Math.floor(ms / 1000));
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}

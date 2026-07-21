@@ -5,7 +5,7 @@ import type {
 } from "@/types/question";
 import type { QuizSetId } from "@/lib/question-sets";
 
-export const QUIZ_PROGRESS_VERSION = 1 as const;
+export const QUIZ_PROGRESS_VERSION = 2 as const;
 
 export interface QuizProgressState {
   version: typeof QUIZ_PROGRESS_VERSION;
@@ -20,6 +20,10 @@ export interface QuizProgressState {
   checked: Record<string, boolean>;
   testSubmitted: boolean;
   showResults: boolean;
+  /** Fixed random sample for test mode; empty in practice. */
+  testQuestionIds: string[];
+  /** Epoch ms when the test timer started; null outside an active test. */
+  testStartedAt: number | null;
   updatedAt: number;
 }
 
@@ -72,6 +76,8 @@ export function createEmptyQuizProgress(
     checked: {},
     testSubmitted: false,
     showResults: false,
+    testQuestionIds: [],
+    testStartedAt: null,
     updatedAt: Date.now(),
   };
 }
@@ -103,6 +109,12 @@ function isBooleanRecord(value: unknown): value is Record<string, boolean> {
   return Object.values(value).every((entry) => typeof entry === "boolean");
 }
 
+function isStringArray(value: unknown): value is string[] {
+  return (
+    Array.isArray(value) && value.every((item) => typeof item === "string")
+  );
+}
+
 export function isValidQuizProgress(
   value: unknown,
   expected: QuizProgressIdentity
@@ -125,6 +137,8 @@ export function isValidQuizProgress(
     isBooleanRecord(value.checked) &&
     typeof value.testSubmitted === "boolean" &&
     typeof value.showResults === "boolean" &&
+    isStringArray(value.testQuestionIds) &&
+    (value.testStartedAt === null || typeof value.testStartedAt === "number") &&
     typeof value.updatedAt === "number"
   );
 }

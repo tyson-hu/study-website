@@ -3042,7 +3042,8 @@
       "correctOptionIds": [
         "A",
         "B"
-      ]
+      ],
+      "explanation": "The native VLAN is assigned to 802.1Q trunks to provide a common identifier to both ends of the trunk link. Whatever VLAN native number is assigned to a port, or if the port is the default VLAN of 1, the port does not tag any frame in that VLAN as the traffic travels across the trunk.\n\nAt the other end of the link, the receiving device that sees no tag knows the specific VLAN number because the receiving device must have the exact native VLAN number.\n\nThe native VLAN should be an unused VLAN that is distinct from VLAN1, the default VLAN, as well as other VLANs.\n\nData VLANs, also known as user VLANs, are configured to carry user-generated traffic, with the exception of high priority traffic, such as VoIP.\n\nVoice VLANs are configured for VoIP traffic.\n\nThe management VLAN is configured to provide access to the management capabilities of a switch."
     },
     {
       "id": "q099",

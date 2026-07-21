@@ -2053,24 +2053,30 @@
         },
         {
           "id": "B",
-          "text": "between two switches that share a common VLAN",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
           "text": "between a switch and a client PC",
           "isCorrect": false
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "between a switch and a server that has an 802.1Q NIC",
           "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "between a switch and a network printer",
+          "isCorrect": false
+        },
+        {
+          "id": "E",
+          "text": "between two switches that share a common VLAN",
+          "isCorrect": false
         }
       ],
       "correctOptionIds": [
         "A",
-        "D"
-      ]
+        "C"
+      ],
+      "explanation": "VLAN trunk links are used to allow all VLAN traffic to propagate between devices such as the link between a switch and a server that has an 802.1Q-capable NIC. Switches can also utilize trunk links to routers, servers, and to other switches."
     },
     {
       "id": "q069",

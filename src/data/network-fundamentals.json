@@ -2972,7 +2972,8 @@
         "D",
         "E",
         "H"
-      ]
+      ],
+      "explanation": "To add an IP phone, the following commands should be added to the switch port:\n\n```\nSW3(config-vlan)# vlan 150\nSW3(config-vlan)# name voice\nSW3(config-vlan)# int fa0/20\nSW3(config-if)# switchport mode access\nSW3(config-if)# mls qos trust cos\nSW3(config-if)# switchport access vlan 150\n```"
     },
     {
       "id": "q097",

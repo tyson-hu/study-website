@@ -4222,7 +4222,8 @@
       ],
       "correctOptionIds": [
         "B"
-      ]
+      ],
+      "explanation": "While an IP address is the first step, the **default gateway** is the crucial component that allows the switch to communicate back to anyone trying to manage it from outside its local subnet.\n\n**Why the Other Answers Are Incorrect**\n\n- **MAC address**: A switch has MAC addresses for its ports and its own base MAC address from the factory. While essential for Layer 2 communication, a MAC address alone does not allow for routing traffic between different IP networks.\n\n- **Default VLAN**: The switch has a default VLAN (VLAN 1) out of the box. While the management IP address is often configured on the SVI for this VLAN, the VLAN itself doesn't provide a route to external networks. You still need to configure the gateway.\n\n- **Port number**: Port numbers (like TCP 22 for SSH and 23 for Telnet) identify the service being requested. The switch already knows what these ports are for. You don't \"set up\" the port number to enable communication; you configure an IP address and a default gateway so that traffic to that port number can be properly returned."
     },
     {
       "id": "q141",

@@ -2815,7 +2815,8 @@
           "left": "hosts in a subnet with the subnet mask 255.255.252.0",
           "right": "192.168.5.0 0.0.3.255"
         }
-      ]
+      ],
+      "explanation": "Converting the wildcard mask 0.0.3.255 to binary and subtracting it from 255.255.255.255 yields a subnet mask of 255.255.252.0.\n\nUsing the host parameter in a wildcard mask requires that all bits match the given address.\n\n192.168.15.65 is the first valid host address in a subnetwork beginning with the subnetwork address 192.168.15.64. The subnet mask contains 4 host bits, yielding subnets with 16 addresses.\n\n192.168.15.144 is a valid subnetwork address in a similar subnetwork. Change the wildcard mask 0.0.0.15 to binary and subtract it from 255.255.255.255, and the resulting subnet mask is 255.255.255.240.\n\n192.168.3.64 is a subnetwork address in a subnet with 8 addresses. Convert 0.0.0.7 to binary and subtract it from 255.255.255.255, and the resulting subnet mask is 255.255.255.248. That mask contains 3 host bits, and yields 8 addresses."
     },
     {
       "id": "q093",

@@ -45,7 +45,7 @@ export interface Question {
   acceptedAnswers?: string[];
   textMatchMode?: TextMatchMode;
   media?: QuestionMedia[];
-  /** Optional teaching note shown after answer feedback is revealed. */
+  /** Optional markdown teaching note shown after answer feedback is revealed. */
   explanation?: string;
 }
 

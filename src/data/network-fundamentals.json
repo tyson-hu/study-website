@@ -1418,7 +1418,7 @@
       "correctOptionIds": [
         "C"
       ],
-      "explanation": "A route source identifies how a route was learned because it acts as a \"provenance tag\" that tells the router the route's origin (Local/Connected, Static, or Dynamic).\n\nThis origin tag is critical because it allows the router to:\n\n- Determine Trustworthiness (AD): Compare different sources (e.g., OSPF vs. RIP) to choose the most reliable path.\n\n- Manage the Route's Lifecycle: Know whether to track the route manually (Static), delete it if a cable is unplugged (Connected), or time it out if a neighbor stops communicating (Dynamic)."
+      "explanation": "A route source identifies how a route was learned because it acts as a \"provenance tag\" that tells the router the route's origin (Local/Connected, Static, or Dynamic).\n\nThis origin tag is critical because it allows the router to:\n\n- **Determine Trustworthiness (AD):** Compare different sources (e.g., OSPF vs. RIP) to choose the most reliable path.\n- **Manage the Route's Lifecycle:** Know whether to track the route manually (Static), delete it if a cable is unplugged (Connected), or time it out if a neighbor stops communicating (Dynamic)."
     },
     {
       "id": "q048",

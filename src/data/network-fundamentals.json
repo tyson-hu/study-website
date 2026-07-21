@@ -2880,7 +2880,8 @@
       "correctOptionIds": [
         "B",
         "C"
-      ]
+      ],
+      "explanation": "- **Colleagues** provide direct, real-time troubleshooting expertise, tribal knowledge of your specific network environment, and historical context on past issues.\n\n- **Internet searches** allow you to access vast global troubleshooting databases (such as vendor forums, StackOverflow, and Cisco Community) to find highly specific error codes and resolved cases that match your exact issue.\n\n*Why not the others?* **Documentation** and **FAQs** are excellent references for installation, specifications, and general knowledge, but they are static and rarely provide the dynamic, interactive troubleshooting diagnostics needed for complex, real-time issues. **Family members** typically do not possess professional enterprise troubleshooting expertise."
     },
     {
       "id": "q095",

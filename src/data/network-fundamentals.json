@@ -2258,24 +2258,30 @@
         },
         {
           "id": "B",
+          "text": "a built-in static route by IOS",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
           "text": "a static route to a specific network",
           "isCorrect": true
         },
         {
-          "id": "C",
+          "id": "D",
           "text": "a static route shared between two neighboring routers",
           "isCorrect": false
         },
         {
-          "id": "D",
+          "id": "E",
           "text": "a static route converted from a route that is learned through a dynamic routing protocol",
           "isCorrect": false
         }
       ],
       "correctOptionIds": [
         "A",
-        "B"
-      ]
+        "C"
+      ],
+      "explanation": "There are two common types of static routes in a routing table, namely, a static route to a specific network and a default static route. A static route configured on a router can be distributed by the router to other neighboring routers. However, the distributed static route will be a little different in the routing table on neighboring routers."
     },
     {
       "id": "q076",

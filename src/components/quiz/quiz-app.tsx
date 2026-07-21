@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
+  BookOpen,
   CheckCircle2,
   CircleHelp,
   RotateCcw,
@@ -11,6 +12,7 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
+import { ExplanationMarkdown } from "@/components/quiz/explanation-markdown";
 import { MatchQuestion } from "@/components/quiz/match-question";
 import { TextFieldsQuestion } from "@/components/quiz/text-fields-question";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -1139,6 +1141,19 @@ function FeedbackBanner({
   result: QuestionResult;
   question: Question;
 }) {
+  const explanation = question.explanation?.trim();
+  if (explanation) {
+    return (
+      <Alert>
+        <BookOpen />
+        <AlertTitle>Explanation</AlertTitle>
+        <AlertDescription>
+          <ExplanationMarkdown>{explanation}</ExplanationMarkdown>
+        </AlertDescription>
+      </Alert>
+    );
+  }
+
   const correctTexts = isTextInput(question)
     ? getTextFields(question).map(
         (field) =>

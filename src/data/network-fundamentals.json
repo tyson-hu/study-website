@@ -1199,7 +1199,8 @@
       ],
       "correctOptionIds": [
         "C"
-      ]
+      ],
+      "explanation": "When MAC addresses are automatically learned by using the sticky command option, the learned MAC addresses are added to the running configuration, which is stored in RAM."
     },
     {
       "id": "q041",
@@ -1416,7 +1417,8 @@
       ],
       "correctOptionIds": [
         "C"
-      ]
+      ],
+      "explanation": "A route source identifies how a route was learned because it acts as a \"provenance tag\" that tells the router the route's origin (Local/Connected, Static, or Dynamic).\n\nThis origin tag is critical because it allows the router to:\n\n- **Determine Trustworthiness (AD):** Compare different sources (e.g., OSPF vs. RIP) to choose the most reliable path.\n- **Manage the Route's Lifecycle:** Know whether to track the route manually (Static), delete it if a cable is unplugged (Connected), or time it out if a neighbor stops communicating (Dynamic)."
     },
     {
       "id": "q048",
@@ -1639,8 +1641,8 @@
       "options": [
         {
           "id": "A",
-          "text": "It provides a means to remotely manage a switch.",
-          "isCorrect": true
+          "text": "It is designed as a security protocol to protect switch ports.",
+          "isCorrect": false
         },
         {
           "id": "B",
@@ -1654,15 +1656,26 @@
         },
         {
           "id": "D",
+          "text": "It is required to allow connectivity by any device at any location.",
+          "isCorrect": false
+        },
+        {
+          "id": "E",
+          "text": "It provides a means to remotely manage a switch.",
+          "isCorrect": true
+        },
+        {
+          "id": "F",
           "text": "It is associated with VLAN1 by default.",
           "isCorrect": true
         }
       ],
       "correctOptionIds": [
-        "A",
         "B",
-        "D"
-      ]
+        "E",
+        "F"
+      ],
+      "explanation": "Switches have one or more switch virtual interfaces (SVIs). SVIs are created in software since there is no physical hardware associated with them. Virtual interfaces provide a means to remotely manage a switch over a network that is using IP. Each switch comes with one SVI appearing in the default configuration “out-of-the-box.” The default SVI interface is VLAN1."
     },
     {
       "id": "q056",
@@ -2040,24 +2053,30 @@
         },
         {
           "id": "B",
-          "text": "between two switches that share a common VLAN",
-          "isCorrect": false
-        },
-        {
-          "id": "C",
           "text": "between a switch and a client PC",
           "isCorrect": false
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "between a switch and a server that has an 802.1Q NIC",
           "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "between a switch and a network printer",
+          "isCorrect": false
+        },
+        {
+          "id": "E",
+          "text": "between two switches that share a common VLAN",
+          "isCorrect": false
         }
       ],
       "correctOptionIds": [
         "A",
-        "D"
-      ]
+        "C"
+      ],
+      "explanation": "VLAN trunk links are used to allow all VLAN traffic to propagate between devices such as the link between a switch and a server that has an 802.1Q-capable NIC. Switches can also utilize trunk links to routers, servers, and to other switches."
     },
     {
       "id": "q069",
@@ -2192,7 +2211,8 @@
       ],
       "correctOptionIds": [
         "B"
-      ]
+      ],
+      "explanation": "Single-Mode Fiber (SMF) has a much smaller core (typically 8 to 10 microns in diameter) compared to Multi-Mode Fiber (MMF), which has a larger core (typically 50 to 62.5 microns in diameter)."
     },
     {
       "id": "q074",
@@ -2238,24 +2258,30 @@
         },
         {
           "id": "B",
+          "text": "a built-in static route by IOS",
+          "isCorrect": false
+        },
+        {
+          "id": "C",
           "text": "a static route to a specific network",
           "isCorrect": true
         },
         {
-          "id": "C",
+          "id": "D",
           "text": "a static route shared between two neighboring routers",
           "isCorrect": false
         },
         {
-          "id": "D",
+          "id": "E",
           "text": "a static route converted from a route that is learned through a dynamic routing protocol",
           "isCorrect": false
         }
       ],
       "correctOptionIds": [
         "A",
-        "B"
-      ]
+        "C"
+      ],
+      "explanation": "There are two common types of static routes in a routing table, namely, a static route to a specific network and a default static route. A static route configured on a router can be distributed by the router to other neighboring routers. However, the distributed static route will be a little different in the routing table on neighboring routers."
     },
     {
       "id": "q076",
@@ -2789,7 +2815,8 @@
           "left": "hosts in a subnet with the subnet mask 255.255.252.0",
           "right": "192.168.5.0 0.0.3.255"
         }
-      ]
+      ],
+      "explanation": "Converting the wildcard mask 0.0.3.255 to binary and subtracting it from 255.255.255.255 yields a subnet mask of 255.255.252.0.\n\nUsing the host parameter in a wildcard mask requires that all bits match the given address.\n\n192.168.15.65 is the first valid host address in a subnetwork beginning with the subnetwork address 192.168.15.64. The subnet mask contains 4 host bits, yielding subnets with 16 addresses.\n\n192.168.15.144 is a valid subnetwork address in a similar subnetwork. Change the wildcard mask 0.0.0.15 to binary and subtract it from 255.255.255.255, and the resulting subnet mask is 255.255.255.240.\n\n192.168.3.64 is a subnetwork address in a subnet with 8 addresses. Convert 0.0.0.7 to binary and subtract it from 255.255.255.255, and the resulting subnet mask is 255.255.255.248. That mask contains 3 host bits, and yields 8 addresses."
     },
     {
       "id": "q093",
@@ -2820,7 +2847,8 @@
       ],
       "correctOptionIds": [
         "B"
-      ]
+      ],
+      "explanation": "Administrative distance is a value assigned to each route that indicates how reliable or trustworthy the source of that route is. Routers use AD to decide which route to install in the routing table when multiple routes exist to the same destination. **A lower AD value means the route is considered more trustworthy.**"
     },
     {
       "id": "q094",
@@ -2852,7 +2880,8 @@
       "correctOptionIds": [
         "B",
         "C"
-      ]
+      ],
+      "explanation": "- **Colleagues** provide direct, real-time troubleshooting expertise, tribal knowledge of your specific network environment, and historical context on past issues.\n\n- **Internet searches** allow you to access vast global troubleshooting databases (such as vendor forums, StackOverflow, and Cisco Community) to find highly specific error codes and resolved cases that match your exact issue.\n\n*Why not the others?* **Documentation** and **FAQs** are excellent references for installation, specifications, and general knowledge, but they are static and rarely provide the dynamic, interactive troubleshooting diagnostics needed for complex, real-time issues. **Family members** typically do not possess professional enterprise troubleshooting expertise."
     },
     {
       "id": "q095",
@@ -2943,7 +2972,8 @@
         "D",
         "E",
         "H"
-      ]
+      ],
+      "explanation": "To add an IP phone, the following commands should be added to the switch port:\n\n```\nSW3(config-vlan)# vlan 150\nSW3(config-vlan)# name voice\nSW3(config-vlan)# int fa0/20\nSW3(config-if)# switchport mode access\nSW3(config-if)# mls qos trust cos\nSW3(config-if)# switchport access vlan 150\n```"
     },
     {
       "id": "q097",
@@ -3012,7 +3042,8 @@
       "correctOptionIds": [
         "A",
         "B"
-      ]
+      ],
+      "explanation": "The native VLAN is assigned to 802.1Q trunks to provide a common identifier to both ends of the trunk link. Whatever VLAN native number is assigned to a port, or if the port is the default VLAN of 1, the port does not tag any frame in that VLAN as the traffic travels across the trunk.\n\nAt the other end of the link, the receiving device that sees no tag knows the specific VLAN number because the receiving device must have the exact native VLAN number.\n\nThe native VLAN should be an unused VLAN that is distinct from VLAN1, the default VLAN, as well as other VLANs.\n\nData VLANs, also known as user VLANs, are configured to carry user-generated traffic, with the exception of high priority traffic, such as VoIP.\n\nVoice VLANs are configured for VoIP traffic.\n\nThe management VLAN is configured to provide access to the management capabilities of a switch."
     },
     {
       "id": "q099",
@@ -3606,7 +3637,8 @@
       ],
       "correctOptionIds": [
         "A"
-      ]
+      ],
+      "explanation": "Router-on-a-stick inter-VLAN routing does not scale beyond 50 VLANs.\n\nThe router can receive VLAN-tagged packets and send VLAN-tagged packets to a destination. Router-on-a-stick inter-VLAN routing can utilize a single router interface as a trunk link to receive and forward VLAN traffic and does not require multiple interfaces."
     },
     {
       "id": "q120",
@@ -3888,7 +3920,8 @@
       ],
       "correctOptionIds": [
         "B"
-      ]
+      ],
+      "explanation": "In OSPF, Area 0 is the backbone area, which is mandatory for all multi-area OSPF networks. All other areas must connect to Area 0 via Area Border Routers (ABRs). Area 1 is simply another area ID you can use, but it is not a default or recommended starting point."
     },
     {
       "id": "q131",
@@ -4064,7 +4097,8 @@
       ],
       "correctOptionIds": [
         "D"
-      ]
+      ],
+      "explanation": "IEEE 802.15 is the **Wireless Personal Area Networks (WPAN)** working group of the IEEE, which develops standards for short-range, low-power wireless communication between devices within a personal area, such as Bluetooth, Zigbee, and Thread."
     },
     {
       "id": "q137",
@@ -4188,7 +4222,8 @@
       ],
       "correctOptionIds": [
         "B"
-      ]
+      ],
+      "explanation": "While an IP address is the first step, the **default gateway** is the crucial component that allows the switch to communicate back to anyone trying to manage it from outside its local subnet.\n\n**Why the Other Answers Are Incorrect**\n\n- **MAC address**: A switch has MAC addresses for its ports and its own base MAC address from the factory. While essential for Layer 2 communication, a MAC address alone does not allow for routing traffic between different IP networks.\n\n- **Default VLAN**: The switch has a default VLAN (VLAN 1) out of the box. While the management IP address is often configured on the SVI for this VLAN, the VLAN itself doesn't provide a route to external networks. You still need to configure the gateway.\n\n- **Port number**: Port numbers (like TCP 22 for SSH and 23 for Telnet) identify the service being requested. The switch already knows what these ports are for. You don't \"set up\" the port number to enable communication; you configure an IP address and a default gateway so that traffic to that port number can be properly returned."
     },
     {
       "id": "q141",
@@ -4436,7 +4471,8 @@
       ],
       "correctOptionIds": [
         "C"
-      ]
+      ],
+      "explanation": "Normal range VLAN configurations on a Cisco Catalyst switch are stored in the `vlan.dat` file located in the switch's **flash memory**."
     },
     {
       "id": "q149",
@@ -4467,7 +4503,8 @@
       ],
       "correctOptionIds": [
         "D"
-      ]
+      ],
+      "explanation": "How a Cisco router determines its OSPF Router ID (ordered from highest priority to lowest):\n\n- **Manual Configuration**: The manually assigned IP address under the router-id command.\n\n- **Highest Loopback**: The highest IPv4 address configured on any active virtual loopback interface.\n\n- **Highest Physical**: The highest active IPv4 address configured on any up/up physical interface."
     },
     {
       "id": "q150",
@@ -4493,7 +4530,8 @@
       ],
       "correctOptionIds": [
         "A"
-      ]
+      ],
+      "explanation": "The device used to test a multimode fiber (MMF) connection is an **Optical Time Domain Reflectometer (OTDR)**."
     },
     {
       "id": "q151",
@@ -4555,7 +4593,8 @@
       ],
       "correctOptionIds": [
         "A"
-      ]
+      ],
+      "explanation": "Let's break down the key part of the output: `O*E2 0.0.0.0/0`\n\n*   **O**: This indicates the route was learned via the **OSPF** routing protocol.\n*   **`*`**: This is the most important symbol for this question. The asterisk (`*`) signifies that this route is a **candidate to be the default route**. Because the line \"Gateway of last resort is 10.1.1.6...\" is present, it also confirms that this candidate was successfully chosen and installed as the active default route for the router.\n*   **E2**: This means the route is an **OSPF External Type 2** route. This tells you the route did not originate within the OSPF domain but was redistributed into OSPF from another source (like a static route or another routing protocol).\n*   **0.0.0.0/0**: This is the network address and mask for a default route, meaning it will match any destination IP address that doesn't have a more specific route in the table.\n\n### Why the Other Options Are Incorrect:\n\n*   **B. The default route is a loopback address:** A default route (`0.0.0.0/0`) is a special route that acts as a catch-all. A loopback address is a specific type of virtual interface on a router, used for management and stability. They are two completely different concepts.\n*   **C. The router is using a static default route:** This is incorrect. The route source code is `O` (for OSPF), not `S` (for Static). While it's possible the original route on the *advertising* router was static, this router (R1) learned it dynamically through OSPF.\n*   **D. This is an internal route:** This is incorrect. The `E2` explicitly marks this as an **External** route, meaning it was injected into OSPF from an outside source. An internal OSPF route would be marked with just `O` or `O IA` (for Inter-Area)."
     },
     {
       "id": "q153",

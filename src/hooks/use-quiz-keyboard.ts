@@ -115,11 +115,15 @@ export function useQuizKeyboard(options: UseQuizKeyboardOptions): void {
             if (isCurrentAnswered) onCheck();
             return;
           }
-          if (!isLastQuestion) onNext();
+          if (!isLastQuestion) {
+            onNext();
+            return;
+          }
+          onSubmitPractice();
           return;
         }
 
-        // test mode
+        // test mode — Next mid-quiz; Submit on the last question
         if (!isLastQuestion) {
           onNext();
           return;

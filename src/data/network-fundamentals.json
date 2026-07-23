@@ -951,12 +951,12 @@
         {
           "id": "B",
           "text": "Version 2",
-          "isCorrect": false
+          "isCorrect": true
         },
         {
           "id": "C",
           "text": "Version 3",
-          "isCorrect": true
+          "isCorrect": false
         },
         {
           "id": "D",
@@ -965,7 +965,7 @@
         }
       ],
       "correctOptionIds": [
-        "C"
+        "B"
       ]
     },
     {

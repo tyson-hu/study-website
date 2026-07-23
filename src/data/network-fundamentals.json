@@ -4811,7 +4811,7 @@
         {
           "id": "A",
           "text": "2048",
-          "isCorrect": true
+          "isCorrect": false
         },
         {
           "id": "B",
@@ -4826,13 +4826,13 @@
         {
           "id": "D",
           "text": "1024",
-          "isCorrect": false
+          "isCorrect": true
         }
       ],
       "correctOptionIds": [
-        "A"
+        "D"
       ],
-      "explanation": "The current industry standard for the minimum recommended RSA modulus length is **2048 bits**, which provides 112-bit security strength and is generally considered acceptable through 2030."
+      "explanation": "The current industry standard for the minimum recommended RSA modulus length is 2048 bits, which provides 112-bit security strength and is generally considered acceptable through 2030.\n\n**BUT!!!! According to the exam, it should be 1024.**\nSource from: *CCNA Security Chapter 2 Exam (CCNAS v1.2)*"
     },
     {
       "id": "q162",

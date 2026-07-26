@@ -4896,7 +4896,7 @@
         {
           "id": "A",
           "text": "segments",
-          "isCorrect": false
+          "isCorrect": true
         },
         {
           "id": "B",
@@ -4906,7 +4906,7 @@
         {
           "id": "C",
           "text": "Packets",
-          "isCorrect": true
+          "isCorrect": false
         },
         {
           "id": "D",
@@ -4915,9 +4915,9 @@
         }
       ],
       "correctOptionIds": [
-        "C"
+        "A"
       ],
-      "explanation": "**Packets** are the network-layer PDU used to route data from the source host to the destination host across networks.\n\nHowever, the word **“guaranteed”** is misleading: reliable delivery is actually provided by TCP using **segments**, while IP packets themselves are best-effort."
+      "explanation": "TCP provides reliable end-to-end delivery at the transport layer, and TCP protocol data units are called segments. IP packets use best-effort delivery and are not guaranteed to arrive."
     },
     {
       "id": "q165",

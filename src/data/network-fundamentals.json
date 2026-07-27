@@ -4605,7 +4605,7 @@
         {
           "id": "A",
           "text": "2",
-          "isCorrect": true
+          "isCorrect": false
         },
         {
           "id": "B",
@@ -4620,11 +4620,11 @@
         {
           "id": "D",
           "text": "1",
-          "isCorrect": false
+          "isCorrect": true
         }
       ],
       "correctOptionIds": [
-        "A"
+        "D"
       ]
     },
     {
@@ -5041,7 +5041,7 @@
         {
           "id": "A",
           "text": "switchport port-security dynamic",
-          "isCorrect": true
+          "isCorrect": false
         },
         {
           "id": "B",
@@ -5055,13 +5055,13 @@
         },
         {
           "id": "D",
-          "text": "Switchport port-security",
-          "isCorrect": false
+          "text": "switchport port-security",
+          "isCorrect": true
         }
       ],
       "correctOptionIds": [
-        "A",
-        "B"
+        "B",
+        "D"
       ]
     },
     {

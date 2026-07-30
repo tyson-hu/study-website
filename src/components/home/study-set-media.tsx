@@ -7,7 +7,7 @@ import { GlyphMatrix } from "@/components/ui/glyph-matrix"
 import { KineticText } from "@/components/ui/kinetic-text"
 import { RetroGrid } from "@/components/ui/retro-grid"
 
-export type StudySetMediaVariant = "retro" | "glyph"
+export type StudySetMediaVariant = "retro" | "glyph" | "grid"
 
 interface StudySetMediaProps {
   label: string
@@ -28,7 +28,7 @@ export function StudySetMedia({
 
   return (
     <div className="relative h-48 w-full overflow-hidden rounded-lg border border-border bg-background md:h-56">
-      {variant === "retro" ? (
+      {variant === "retro" || variant === "grid" ? (
         <RetroGrid />
       ) : (
         <GlyphMatrix

@@ -2,12 +2,16 @@
 
 import { useTheme } from "next-themes"
 
-import { ComicText } from "@/components/ui/comic-text"
 import { GlyphMatrix } from "@/components/ui/glyph-matrix"
 import { KineticText } from "@/components/ui/kinetic-text"
-import { RetroGrid } from "@/components/ui/retro-grid"
+import { LineShadowText } from "@/components/ui/line-shadow-text"
+import { Meteors } from "@/components/ui/meteors"
+import { Particles } from "@/components/ui/particles"
+import { SparklesText } from "@/components/ui/sparkles-text"
 
-export type StudySetMediaVariant = "retro" | "glyph"
+export type StudySetMediaVariant = "meteors" | "glyph" | "particles"
+
+const SPARKLE_COLORS = { first: "#7928ca", second: "#ff0080" }
 
 interface StudySetMediaProps {
   label: string
@@ -18,6 +22,9 @@ export function StudySetMedia({
   label,
   variant = "glyph",
 }: StudySetMediaProps) {
+  const words = label.split(" ")
+  const lastWord = words[words.length - 1]
+  const leadingWords = words.slice(0, -1).join(" ")
   const { resolvedTheme } = useTheme()
   const color =
     resolvedTheme === "dark"
@@ -28,8 +35,17 @@ export function StudySetMedia({
 
   return (
     <div className="relative h-48 w-full overflow-hidden rounded-lg border border-border bg-background md:h-56">
-      {variant === "retro" ? (
-        <RetroGrid />
+      {variant === "meteors" ? (
+        <Meteors number={24} />
+      ) : variant === "particles" ? (
+        <Particles
+          className="absolute inset-0"
+          quantity={140}
+          staticity={30}
+          ease={50}
+          size={0.8}
+          color={color}
+        />
       ) : (
         <GlyphMatrix
           glyphs="01·•+*/\\<>="
@@ -41,10 +57,20 @@ export function StudySetMedia({
         />
       )}
       <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-        {variant === "retro" ? (
-          <ComicText fontSize={2.5} className="pointer-events-auto">
+        {variant === "meteors" ? (
+          <SparklesText
+            colors={SPARKLE_COLORS}
+            className="pointer-events-auto text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-5xl"
+          >
             {label}
-          </ComicText>
+          </SparklesText>
+        ) : variant === "particles" ? (
+          <span className="pointer-events-auto text-4xl font-semibold tracking-tighter text-foreground md:text-5xl">
+            {leadingWords ? `${leadingWords} ` : null}
+            <LineShadowText className="italic" shadowColor="var(--foreground)">
+              {lastWord}
+            </LineShadowText>
+          </span>
         ) : (
           <KineticText
             as="span"

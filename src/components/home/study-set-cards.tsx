@@ -22,7 +22,7 @@ const mediaLabels: Record<string, string> = {
 }
 
 const mediaVariants: Record<string, StudySetMediaVariant> = {
-  essentials: "retro",
+  essentials: "meteors",
   fundamentals: "glyph",
 }
 
@@ -91,6 +91,35 @@ export function StudySetCards() {
               </CardFooter>
             </Card>
           ))}
+
+          <Card className="shadow-elevation-3 border-border bg-card p-6 md:p-8">
+            <StudySetMedia label="Army Net" variant="particles" />
+            <CardHeader className="mt-6 px-0">
+              <CardTitle className="text-2xl font-semibold tracking-[-0.96px] text-foreground">
+                Army Net
+              </CardTitle>
+              <CardDescription className="text-base leading-6">
+                Network and Active Directory lab guide: switch, router, DNS,
+                DHCP, and user builds.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="px-0">
+              <p className="font-mono text-xs text-[var(--mute)]">
+                Lab reference
+              </p>
+            </CardContent>
+            <CardFooter className="mt-6 flex flex-wrap gap-3 border-0 bg-transparent px-0">
+              <Link
+                href="/army-net"
+                className={cn(
+                  buttonVariants({ variant: "default", size: "lg" }),
+                  "h-11 rounded-lg px-5 text-base"
+                )}
+              >
+                Open guide
+              </Link>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </section>

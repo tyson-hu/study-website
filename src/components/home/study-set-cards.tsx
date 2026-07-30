@@ -22,7 +22,7 @@ const mediaLabels: Record<string, string> = {
 }
 
 const mediaVariants: Record<string, StudySetMediaVariant> = {
-  essentials: "retro",
+  essentials: "meteors",
   fundamentals: "glyph",
 }
 
@@ -93,7 +93,7 @@ export function StudySetCards() {
           ))}
 
           <Card className="shadow-elevation-3 border-border bg-card p-6 md:p-8">
-            <StudySetMedia label="Army Net" variant="grid" />
+            <StudySetMedia label="Army Net" variant="particles" />
             <CardHeader className="mt-6 px-0">
               <CardTitle className="text-2xl font-semibold tracking-[-0.96px] text-foreground">
                 Army Net

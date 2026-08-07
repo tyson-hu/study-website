@@ -17,36 +17,56 @@ const STORAGE_KEY = "tysons-notes-disclaimer-accepted"
 const ACCEPTED_EVENT = "tysons-notes-disclaimer-change"
 
 function subscribe(onStoreChange: () => void) {
-  window.addEventListener("storage", onStoreChange)
+  const onStorage = (event: StorageEvent) => {
+    if (event.key === STORAGE_KEY || event.key === null) onStoreChange()
+  }
+  window.addEventListener("storage", onStorage)
   window.addEventListener(ACCEPTED_EVENT, onStoreChange)
   return () => {
-    window.removeEventListener("storage", onStoreChange)
+    window.removeEventListener("storage", onStorage)
     window.removeEventListener(ACCEPTED_EVENT, onStoreChange)
   }
 }
 
-function getAcceptedSnapshot() {
-  return sessionStorage.getItem(STORAGE_KEY) === "1"
-}
-
-function getServerSnapshot() {
-  return false
+function readAccepted(): boolean {
+  try {
+    if (window.localStorage.getItem(STORAGE_KEY) === "1") return true
+    // Migrate older session-only acceptance so refresh keeps working.
+    if (window.sessionStorage.getItem(STORAGE_KEY) === "1") {
+      window.localStorage.setItem(STORAGE_KEY, "1")
+      return true
+    }
+    return false
+  } catch {
+    return false
+  }
 }
 
 function setAccepted() {
-  sessionStorage.setItem(STORAGE_KEY, "1")
+  try {
+    window.localStorage.setItem(STORAGE_KEY, "1")
+  } catch {
+    // Still continue for this page load if storage is blocked.
+  }
   window.dispatchEvent(new Event(ACCEPTED_EVENT))
 }
 
 export function ContentDisclaimerDialog() {
-  const accepted = useSyncExternalStore(
-    subscribe,
-    getAcceptedSnapshot,
-    getServerSnapshot
-  )
+  // Server snapshot is `true` so returning visitors never flash the dialog
+  // during hydration. First-time visitors see it once the client snapshot loads.
+  const accepted = useSyncExternalStore(subscribe, readAccepted, () => true)
+
+  if (accepted) return null
 
   return (
-    <Dialog open={!accepted} disablePointerDismissal onOpenChange={() => {}}>
+    <Dialog
+      defaultOpen
+      disablePointerDismissal
+      onOpenChange={(nextOpen, eventDetails) => {
+        // Block backdrop / Escape dismissals until the user confirms.
+        if (!nextOpen) eventDetails.cancel()
+      }}
+    >
       <DialogContent
         showCloseButton={false}
         className="sm:max-w-md"

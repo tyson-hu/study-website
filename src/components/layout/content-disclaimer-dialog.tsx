@@ -69,7 +69,7 @@ export function ContentDisclaimerDialog() {
     >
       <DialogContent
         showCloseButton={false}
-        className="sm:max-w-md"
+        className="sm:max-w-lg"
         role="alertdialog"
       >
         <DialogHeader>
@@ -78,13 +78,24 @@ export function ContentDisclaimerDialog() {
               className="mt-0.5 size-5 shrink-0 text-[var(--warning-deep)] dark:text-amber-300"
               aria-hidden="true"
             />
-            <div className="space-y-2">
+            <div className="space-y-3">
               <DialogTitle>Exam content may change at any time</DialogTitle>
-              <DialogDescription>
-                Question source is from Blooket. Answers are only correct for
-                the version at the time these notes were created. Confirm your
-                test matches that version before studying. The author is not
-                responsible for question sequence or later exam updates.
+              <DialogDescription className="space-y-3 text-left">
+                <p>Please read before you continue:</p>
+                <ul className="list-disc space-y-2 pl-4 marker:text-[var(--warning-deep)] dark:marker:text-amber-300">
+                  <li>Question source is from Blooket.</li>
+                  <li>
+                    Answers are only correct for the version at the time these
+                    notes were created.
+                  </li>
+                  <li>
+                    Confirm your test matches that version before studying.
+                  </li>
+                  <li>
+                    The author is not responsible for question sequence or later
+                    exam updates.
+                  </li>
+                </ul>
               </DialogDescription>
             </div>
           </div>

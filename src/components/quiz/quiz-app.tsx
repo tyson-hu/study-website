@@ -16,7 +16,7 @@ import { toast } from "sonner";
 import { ExplanationMarkdown } from "@/components/quiz/explanation-markdown";
 import { MatchQuestion } from "@/components/quiz/match-question";
 import { TextFieldsQuestion } from "@/components/quiz/text-fields-question";
-import { ContentDisclaimerBanner } from "@/components/layout/content-disclaimer-banner";
+import { ContentDisclaimerDialog } from "@/components/layout/content-disclaimer-dialog";
 import { SiteHeader } from "@/components/layout/site-header";
 import { AnimatedCircularProgressBar } from "@/components/ui/animated-circular-progress-bar";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -608,7 +608,7 @@ function QuizAppView({
     return (
       <div className="relative flex min-h-full flex-1 flex-col bg-[var(--canvas-soft)]">
         <SiteHeader />
-        <ContentDisclaimerBanner />
+        <ContentDisclaimerDialog />
         <main className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
           <p className="text-sm text-muted-foreground">Preparing your test…</p>
         </main>
@@ -636,7 +636,7 @@ function QuizAppView({
           <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
         )}
         <SiteHeader />
-        <ContentDisclaimerBanner />
+        <ContentDisclaimerDialog />
         <main className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
           <Card className="shadow-elevation-3 w-full border-border">
             <CardHeader>
@@ -676,7 +676,7 @@ function QuizAppView({
         <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
       )}
       <SiteHeader />
-      <ContentDisclaimerBanner />
+      <ContentDisclaimerDialog />
 
       {isCompatible && (
         <div className="border-b border-border bg-[var(--canvas-soft)]">

@@ -84,6 +84,7 @@ export function ContentDisclaimerDialog() {
                 <p>Please read before you continue:</p>
                 <ul className="list-disc space-y-2 pl-4 marker:text-[var(--warning-deep)] dark:marker:text-amber-300">
                   <li>Question source is from Blooket.</li>
+                  <li>Latest notes version is current as of 8/1/2026.</li>
                   <li>
                     Answers are only correct for the version at the time these
                     notes were created.

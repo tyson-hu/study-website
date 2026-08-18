@@ -7,9 +7,12 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tyson's notes — IT Networking Quiz",
+  title: {
+    default: "Networking Study Platform",
+    template: "%s | Networking Study Platform",
+  },
   description:
-    "Practice Networking Essentials and Network Fundamentals with interactive quiz questions across two study sets.",
+    "Independent networking study platform with interactive Practice and timed Test modes.",
 };
 
 export default function RootLayout({

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useSyncExternalStore } from "react";
-import { unstable_catchError, type ErrorInfo } from "next/error";
+import { catchError, type ErrorInfo } from "next/error";
 import { useSearchParams } from "next/navigation";
 
 import { QuizApp, type QuizAppProps } from "@/components/quiz/quiz-app";
@@ -24,7 +24,7 @@ function QuizPersistErrorFallback(
   return <QuizApp {...props} progressMode="compatible" />;
 }
 
-const QuizPersistBoundary = unstable_catchError(QuizPersistErrorFallback);
+const QuizPersistBoundary = catchError(QuizPersistErrorFallback);
 
 const emptySubscribe = () => () => {};
 

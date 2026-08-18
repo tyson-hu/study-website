@@ -16,7 +16,6 @@ export const ARMY_NET_SECTIONS: GuideSectionMeta[] = [
   { id: "user-naming", number: "08", title: "User naming standards" },
   { id: "user-properties", number: "09", title: "User properties" },
   { id: "verification", number: "10", title: "Verification checklist" },
-  { id: "whiteboard", number: "11", title: "Source whiteboard" },
 ];
 
 export interface QuickFact {
@@ -42,7 +41,7 @@ export const LAB_VARIABLES: LabVariable[] = [
   { symbol: "VLAN 99", meaning: "Management VLAN" },
   {
     symbol: "VLAN 999",
-    meaning: "Additional/unused VLAN identified on the board",
+    meaning: "Additional/unused VLAN used in the lab",
   },
   { symbol: "DC", meaning: "Domain Controller" },
   { symbol: "DC/DNS IP", meaning: "10.0.0.10" },
@@ -115,7 +114,7 @@ export const VERIFICATION_GROUPS: ChecklistGroup[] = [
       "Users are placed in the correct S1 or S6 OU/group.",
       "Names follow the required format.",
       "General and Address tabs are complete.",
-      "The expiration year is set to 2027.",
+      "The account expiration matches the authorized source paperwork.",
     ],
   },
   {

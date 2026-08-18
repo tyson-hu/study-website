@@ -1,6 +1,6 @@
 {
   "title": "Networking Essentials",
-  "source": "Network Essentials Practice Exam + Question Set",
+  "source": "Cisco-related networking course and practice material",
   "totalQuestions": 205,
   "schemaVersion": "1.1",
   "questions": [
@@ -1760,11 +1760,11 @@
       "id": "orig-q020",
       "number": 65,
       "type": "single_choice",
-      "question": "Refer to the exhibit. Which router port connects to the modem provided by the service provider? (Assume port C is the WAN port)",
+      "question": "Which type of home-router port connects to the modem provided by the service provider?",
       "options": [
         {
           "id": "A",
-          "text": "A",
+          "text": "LAN / Ethernet port",
           "isCorrect": false
         },
         {
@@ -1774,23 +1774,17 @@
         },
         {
           "id": "C",
-          "text": "B",
+          "text": "USB port",
           "isCorrect": false
         },
         {
           "id": "D",
-          "text": "C",
+          "text": "WAN / Internet port",
           "isCorrect": true
         }
       ],
       "correctOptionIds": [
         "D"
-      ],
-      "media": [
-        {
-          "type": "image",
-          "url": "https://media.blooket.com/image/upload/c_limit,f_auto,h_250,fl_lossy,q_auto:low/v1769541473/jmvaniodmmi2iojucxoq.png"
-        }
       ]
     },
     {

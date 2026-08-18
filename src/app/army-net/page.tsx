@@ -4,6 +4,7 @@ import { ArrowLeftIcon } from "lucide-react"
 
 import { GuideContent } from "@/components/army-net/guide-content"
 import { GuideToc } from "@/components/army-net/guide-toc"
+import { ContentNotice } from "@/components/layout/content-notice"
 import { SiteHeader } from "@/components/layout/site-header"
 import { MeshGradient } from "@/components/ui/mesh-gradient"
 import { ARMY_NET_FACTS } from "@/lib/army-net"
@@ -18,6 +19,7 @@ export default function ArmyNetPage() {
   return (
     <div className="flex min-h-full flex-1 flex-col bg-[var(--canvas-soft)]">
       <SiteHeader />
+      <ContentNotice />
       <main>
         <section className="relative overflow-hidden bg-card px-6 py-14 md:py-20">
           <MeshGradient />

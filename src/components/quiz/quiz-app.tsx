@@ -16,7 +16,7 @@ import { toast } from "sonner";
 import { ExplanationMarkdown } from "@/components/quiz/explanation-markdown";
 import { MatchQuestion } from "@/components/quiz/match-question";
 import { TextFieldsQuestion } from "@/components/quiz/text-fields-question";
-import { ContentDisclaimerDialog } from "@/components/layout/content-disclaimer-dialog";
+import { ContentNotice } from "@/components/layout/content-notice";
 import { SiteHeader } from "@/components/layout/site-header";
 import { AnimatedCircularProgressBar } from "@/components/ui/animated-circular-progress-bar";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -608,7 +608,7 @@ function QuizAppView({
     return (
       <div className="relative flex min-h-full flex-1 flex-col bg-[var(--canvas-soft)]">
         <SiteHeader />
-        <ContentDisclaimerDialog />
+        <ContentNotice />
         <main className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
           <p className="text-sm text-muted-foreground">Preparing your test…</p>
         </main>
@@ -636,7 +636,7 @@ function QuizAppView({
           <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
         )}
         <SiteHeader />
-        <ContentDisclaimerDialog />
+        <ContentNotice />
         <main className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
           <Card className="shadow-elevation-3 w-full border-border">
             <CardHeader>
@@ -676,7 +676,7 @@ function QuizAppView({
         <div className="absolute inset-0 -z-10 bg-[var(--canvas-soft)]" />
       )}
       <SiteHeader />
-      <ContentDisclaimerDialog />
+      <ContentNotice />
 
       {isCompatible && (
         <div className="border-b border-border bg-[var(--canvas-soft)]">
@@ -692,8 +692,8 @@ function QuizAppView({
 
       <header className="sticky top-16 z-20 border-b border-border bg-card/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-3xl flex-col gap-3 px-4 py-4">
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex flex-col gap-1">
+          <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+            <div className="min-w-0 flex flex-col gap-1">
               <p className="font-mono text-xs text-muted-foreground">
                 Question {currentQuestion.number} of {totalQuestions}
               </p>
@@ -713,7 +713,7 @@ function QuizAppView({
                 )}
               </div>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
               {!isPractice && testStartedAt != null && !testSubmitted && (
                 <TestTimer
                   startedAt={testStartedAt}
@@ -752,7 +752,7 @@ function QuizAppView({
             <p className="mb-2 font-mono text-xs text-muted-foreground">
               Question {currentQuestion.number}
             </p>
-            <p className="text-lg leading-relaxed font-semibold tracking-[-0.4px] text-foreground sm:text-xl">
+            <p className="break-words text-lg leading-relaxed font-semibold tracking-[-0.4px] text-foreground sm:text-xl">
               {formatQuizText(currentQuestion.question)}
             </p>
 
@@ -1327,12 +1327,12 @@ function ResultsDialog({
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle>
-            {isTest ? "Test results" : "Practice complete"}
+            {isTest ? "Test results" : "Practice results"}
           </DialogTitle>
           <DialogDescription>
             {isTest
               ? `You answered ${stats.correct} of ${total} questions correctly (${stats.percent}%).`
-              : `You reviewed all ${total} questions.`}
+              : `You answered ${total - stats.unanswered} of ${total} practice questions.`}
           </DialogDescription>
         </DialogHeader>
 

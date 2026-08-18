@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, type CSSProperties } from "react"
+import { useMemo, type CSSProperties } from "react"
 import { motion } from "motion/react"
 
 import { cn } from "@/lib/utils"
@@ -29,13 +29,17 @@ const createRays = (count: number, cycle: number): LightRay[] => {
   if (count <= 0) return []
 
   return Array.from({ length: count }, (_, index) => {
-    const left = 8 + Math.random() * 84
-    const rotate = -28 + Math.random() * 56
-    const width = 160 + Math.random() * 160
-    const swing = 0.8 + Math.random() * 1.8
-    const delay = Math.random() * cycle
-    const duration = cycle * (0.75 + Math.random() * 0.5)
-    const intensity = 0.6 + Math.random() * 0.5
+    const random = (offset: number) => {
+      const value = Math.sin((index + 1) * 97 + offset * 31) * 10_000
+      return value - Math.floor(value)
+    }
+    const left = 8 + random(1) * 84
+    const rotate = -28 + random(2) * 56
+    const width = 160 + random(3) * 160
+    const swing = 0.8 + random(4) * 1.8
+    const delay = random(5) * cycle
+    const duration = cycle * (0.75 + random(6) * 0.5)
+    const intensity = 0.6 + random(7) * 0.5
 
     return {
       id: `${index}-${Math.round(left * 10)}`,
@@ -95,12 +99,11 @@ export function LightRays({
   ref,
   ...props
 }: LightRaysProps) {
-  const [rays, setRays] = useState<LightRay[]>([])
   const cycleDuration = Math.max(speed, 0.1)
-
-  useEffect(() => {
-    setRays(createRays(count, cycleDuration))
-  }, [count, cycleDuration])
+  const rays = useMemo(
+    () => createRays(count, cycleDuration),
+    [count, cycleDuration]
+  )
 
   return (
     <div

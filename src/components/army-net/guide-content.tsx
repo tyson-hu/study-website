@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 import { CommandBlock } from "@/components/army-net/command-block"
 import {
   Bullets,
@@ -17,7 +15,7 @@ import { CONFIG_ORDER, LAB_VARIABLES } from "@/lib/army-net"
 const TOPOLOGY = `Laptop ─── Switch ═══ Router ─── Instructor/Upstream Network
            Access     Trunk`
 
-const OU_TREE = `ACYBERBN
+const OU_TREE = `TrainingOrg
 ├── Users
 │   ├── S1
 │   └── S6
@@ -50,7 +48,7 @@ export function GuideContent() {
       >
         <CommandBlock code={TOPOLOGY} caption="topology" copyable={false} />
 
-        <Subsection title="Board port notes">
+        <Subsection title="Port assignments">
           <Bullets
             items={[
               <>
@@ -94,7 +92,7 @@ export function GuideContent() {
  shutdown`}
           />
           <Callout title="Important" tone="important">
-            <p>The board specifically shows unused ports being shut down.</p>
+            <p>The lab guidance specifies that unused ports should be shut down.</p>
           </Callout>
         </Subsection>
 
@@ -236,7 +234,7 @@ crypto key generate rsa`}
 
         <Subsection label="D" title="OSPF">
           <GuideText>
-            The board uses OSPF process ID <Mono>100</Mono>.
+            This lab uses OSPF process ID <Mono>100</Mono>.
           </GuideText>
           <CommandBlock
             caption="ospf"
@@ -278,7 +276,7 @@ crypto key generate rsa`}
         id="dns"
         number="05"
         title="DNS configuration"
-        summary="The board shows the creation of a secondary forward lookup zone."
+        summary="Create a secondary forward lookup zone."
       >
         <Subsection label="A" title="Add the DNS server">
           <Steps
@@ -450,7 +448,7 @@ Subnet mask: 255.255.255.0`}
 
         <Subsection label="D" title="Exclusions and reservations">
           <GuideText>
-            The board shows an exclusion beginning at{" "}
+            The lab uses an exclusion beginning at{" "}
             <Mono>192.100.X.1</Mono> and ending at an instructor-assigned host
             number <Mono>192.100.X.XX</Mono>.
           </GuideText>
@@ -540,8 +538,8 @@ Obtain a DNS server address automatically`}
             copyable={false}
             code={`LAST, First MI RANK/CIV
 
-Military example:  Del, Richard R SFC
-Civilian example:  Garcia, Nicole T CIV`}
+Military example:  <Last>, <First> <MI> <Rank>
+Civilian example:  <Last>, <First> <MI> CIV`}
           />
           <GuideText>Use:</GuideText>
           <Bullets
@@ -563,10 +561,7 @@ Civilian example:  Garcia, Nicole T CIV`}
             caption="format"
             copyable={false}
             code={`first.mi.last.mil
-first.mi.last.civ
-
-Examples:  richard.r.del.mil
-           nicole.t.garcia.civ`}
+first.mi.last.civ`}
           />
           <GuideText>
             Use lowercase letters and periods between each portion.
@@ -579,13 +574,13 @@ Examples:  richard.r.del.mil
           <FieldTable
             columns={["Field", "Example"]}
             rows={[
-              ["First name", "Richard"],
-              ["Initial", "R"],
-              ["Last name", "Del"],
-              ["Display name", "Del, Richard R SFC"],
-              ["Description", "Instructor / SFC"],
-              ["Office", "ACYBERBN-S6"],
-              ["Telephone", "706-791-8989"],
+              ["First name", "<First>"],
+              ["Initial", "<MI>"],
+              ["Last name", "<Last>"],
+              ["Display name", "<Last>, <First> <MI> <Rank/CIV>"],
+              ["Description", "<Authorized role / rank>"],
+              ["Office", "<Authorized unit / section>"],
+              ["Telephone", "<Authorized contact number>"],
               ["Email", "Leave blank"],
               ["Web page", "Leave blank"],
             ]}
@@ -615,7 +610,7 @@ Examples:  richard.r.del.mil
               ]}
             />
             <p>
-              The board notes that the email field will automatically populate
+              The course notes state that the email field will automatically populate
               after the user is added to the appropriate system.
             </p>
           </Callout>
@@ -625,13 +620,12 @@ Examples:  richard.r.del.mil
           <CommandBlock
             caption="address"
             copyable={false}
-            code={`Street:   520 Chamberlain Ave
-          Dixon Hall
-City:     Fort Gordon
-State:    GA
-ZIP:      30905
-Country:  United States
-PO Box:   Leave empty`}
+            code={`Street:   <Authorized street / building>
+City:     <City>
+State:    <State>
+ZIP:      <ZIP code>
+Country:  <Country>
+PO Box:   Leave empty if not required`}
           />
         </Subsection>
 
@@ -662,9 +656,7 @@ PO Box:   Leave empty`}
                 </strong>
                 .
               </>,
-              <>
-                Change the expiration year to <Mono>2027</Mono>.
-              </>,
+              "Set the expiration date to the authorized date from the source paperwork or instructor.",
             ]}
           />
         </Subsection>
@@ -679,22 +671,6 @@ PO Box:   Leave empty`}
         <VerificationChecklist />
       </GuideSection>
 
-      <GuideSection
-        id="whiteboard"
-        number="11"
-        title="Source whiteboard"
-        summary="The original board these notes were captured from."
-      >
-        <figure className="overflow-hidden rounded-lg border border-border bg-muted/40">
-          <Image
-            src="/army-net-whiteboard.jpg"
-            alt="Classroom whiteboard showing the switch, router, DNS, DHCP, OU, and user account lab notes"
-            width={2880}
-            height={2160}
-            className="h-auto w-full"
-          />
-        </figure>
-      </GuideSection>
     </div>
   )
 }
